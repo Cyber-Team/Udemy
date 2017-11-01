@@ -1,24 +1,21 @@
 
 .navbar {
   overflow: hidden;
-  background-color: #f44336;
+  background-color: #ffffff;
   box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
   position: fixed;
   top: 0;
   width: 100%;
+  height: 65px;
   z-index: 999;
 }
 
-.navbar a, p{
+
+.navbar p{
   float: left;
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 20px 16px;
-  text-decoration: none;
+  padding: 13px;
   font-size: 17px;
-}
-.example-sidenav {
-  padding: 70px;
-  background-color: #f44336;
 }
