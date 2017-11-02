@@ -11,7 +11,6 @@ import {MdButtonModule, MdCardModule, MdMenuModule, MdToolbarModule, MdIconModul
   MatDialogModule} from '@angular/material';
 import {MatIconModule} from '@angular/material';
 
-
 const appRoute: Routes = [
 ];
 
