@@ -6,9 +6,6 @@ import {RouterModule, Routes} from '@angular/router';
 import { FormsModule } from '@angular/forms';
 
 import {BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
-
-
 const appRoute: Routes = [
 ];
 
