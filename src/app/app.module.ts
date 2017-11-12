@@ -15,12 +15,18 @@ import {MatIconModule} from '@angular/material';
 import {BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
+import { TrainingComponent } from './training/training.component';
 
 // Routing started
 const appRoute: Routes = [
   {
     path:'contact',
     component:ContactComponent
+  },
+  {
+    path: 'training',
+    component: TrainingComponent
   }
 
 ];
@@ -29,7 +35,9 @@ const appRoute: Routes = [
   declarations: [
     AppComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    ContactFormComponent,
+    TrainingComponent
 
   ],
   imports: [

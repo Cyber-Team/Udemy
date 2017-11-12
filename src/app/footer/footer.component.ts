@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
+import {Http} from '@angular/http';
 
 @Component({
   selector: 'app-footer',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+  constructor(private http: Http,
+              private router: Router) { }
 
   ngOnInit() {
   }
-
+  preventNormal(event: MouseEvent){
+    this.router.navigate(['training']);
+  }
 }
