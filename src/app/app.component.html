@@ -1,10 +1,10 @@
  <div class="col-lg-12"  style="padding-left: 0px;padding-right: 0px;">
 
-   <ul class="row">
-     <li class="col-sm-3"><a href="#home">
+   <ul class="row three">
+     <li class="col-sm-2"><a href="#home">
        <img src="../assets/Images/logo-coral.svg" class="Helo1"/></a>
      </li>
-     <li class="col-sm-3">
+     <li class="col-sm-2">
        <button mat-button [matMenuTriggerFor]="animals"><mat-icon>apps</mat-icon>Categories</button>
 
        <mat-menu #animals="matMenu">
@@ -88,6 +88,13 @@
 
      </li>
 
+     <li class="col-sm-3"> <input class="form-control col-xs-4" placeholder="Search.." type="text"></li>
+     <li class="col-sm-1"><a href="#"><button mat-button>Teach here</button></a></li>
+     <li class="col-sm-1"><a href="#">
+       <button mat-icon-button >
+         <mat-icon><i class="fa fa-shopping-cart" aria-hidden="true"></i></mat-icon>
+       </button>
+     </a></li>
 
 
 
@@ -98,19 +105,8 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-     <li class="col-sm-3"><a href="#contact">Contact</a></li>
-     <li class="col-sm-3"><a href="#"> <button mat-raised-button [ngClass]="'One'">Basic</button></a></li>
+     <li class="col-sm-1"><a href="#"><button mat-raised-button [ngClass]="'Two'">SignIn</button></a></li>
+     <li class="col-sm-2"><a href="#"> <button mat-raised-button [ngClass]="'One'">SignUp</button></a></li>
 
    </ul>
 
