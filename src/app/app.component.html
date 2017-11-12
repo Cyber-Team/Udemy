@@ -1,13 +1,13 @@
  <div class="col-lg-12"  style="padding-left: 0px;padding-right: 0px;">
 
    <ul class="row three">
-     <li class="col-sm-2"><a href="#home">
+     <li class="col-sm-2"><a href="#">
        <img src="../assets/Images/logo-coral.svg" class="Helo1"/></a>
      </li>
-     <li class="col-sm-2">
+     <li class="col-sm-1">
        <button mat-button [matMenuTriggerFor]="animals"><mat-icon>apps</mat-icon>Categories</button>
 
-       <mat-menu #animals="matMenu">
+       <mat-menu #animals="matMenu" class="four">
            <button mat-menu-item [matMenuTriggerFor]="Development">
               <mat-icon><i class="fa fa-code" aria-hidden="true"></i></mat-icon>Development
            </button>
@@ -29,7 +29,6 @@
        </mat-menu>
 
        <mat-menu #Development="matMenu">
-         <button mat-menu-item>All Developement</button>
          <button mat-menu-item>Web developmemnt</button>
          <button mat-menu-item>Mobile Apps</button>
          <button mat-menu-item>Programming Languages</button>
@@ -40,7 +39,7 @@
        </mat-menu>
 
        <mat-menu #Business="matMenu">
-         <button mat-menu-item>All Business</button>
+
          <button mat-menu-item>Finance</button>
          <button mat-menu-item>Enterperneuship</button>
          <button mat-menu-item>Management</button>
@@ -50,7 +49,7 @@
        </mat-menu>
 
        <mat-menu #ITSoftware="matMenu">
-         <button mat-menu-item>All IT & Software</button>
+
          <button mat-menu-item>IT Certification</button>
          <button mat-menu-item>Network & Security</button>
          <button mat-menu-item>Hardware</button>
@@ -58,7 +57,7 @@
        </mat-menu>
 
        <mat-menu #Photography="matMenu">
-         <button mat-menu-item>All Photography</button>
+
          <button mat-menu-item>Digital Photography</button>
          <button mat-menu-item>Portaits</button>
          <button mat-menu-item>Landscape</button>
@@ -68,7 +67,7 @@
        </mat-menu>
 
        <mat-menu #Design="matMenu">
-         <button mat-menu-item>All Design</button>
+
          <button mat-menu-item>Web Design</button>
          <button mat-menu-item>Graphic Design</button>
          <button mat-menu-item>User Experience</button>
@@ -78,38 +77,30 @@
        </mat-menu>
 
        <mat-menu #Music="matMenu">
-         <button mat-menu-item>All Music</button>
+
          <button mat-menu-item>Instruments</button>
          <button mat-menu-item>Production</button>
          <button mat-menu-item>Music fundamentals</button>
          <button mat-menu-item>Vocal</button>
          <button mat-menu-item>Music Techniques</button>
        </mat-menu>
-
      </li>
-
-     <li class="col-sm-3"> <input class="form-control col-xs-4" placeholder="Search.." type="text"></li>
-     <li class="col-sm-1"><a href="#"><button mat-button>Teach here</button></a></li>
-     <li class="col-sm-1"><a href="#">
-       <button mat-icon-button >
+     <li class="col-sm-4"> <input class="form-control col-xs-4" placeholder="Search.." type="text"></li>
+     <li class="col-sm-1">
+       <button mat-button [matMenuTriggerFor]="Teach">Teach here</button>
+       <mat-menu #Teach="matMenu">
+         <button mat-menu-item>
+           Learn more</button>
+       </mat-menu>
+     </li>
+     <li class="col-sm-1">
+       <button mat-icon-button style="float: right;">
          <mat-icon><i class="fa fa-shopping-cart" aria-hidden="true"></i></mat-icon>
        </button>
-     </a></li>
-
-
-
-
-
-
-
-
-
-
+     </li>
      <li class="col-sm-1"><a href="#"><button mat-raised-button [ngClass]="'Two'">SignIn</button></a></li>
      <li class="col-sm-2"><a href="#"> <button mat-raised-button [ngClass]="'One'">SignUp</button></a></li>
-
    </ul>
-
  </div>
 
 
