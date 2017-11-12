@@ -9,9 +9,6 @@ ul {
   z-index: 1010;
 }
 
-li {
-  float: left;
-}
 
 li a {
   display: block;
@@ -19,12 +16,7 @@ li a {
   padding: 9px 16px;
   text-decoration: none;
 }
-/*.navbar p{
-  float: right;
-  color: #f2f2f2;
-  padding: 13px;
-  font-size: 17px;
-}*/
+
 .Helo1{
   width: 108px;
   height: 50px;

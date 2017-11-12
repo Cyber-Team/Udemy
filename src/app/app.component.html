@@ -1,8 +1,84 @@
- <div class="navbar">
+ <div class="col-sm-12"  style="padding-left: 0px;padding-right: 0px;">
 
    <ul class="row">
      <li class="col-sm-3"><a href="#home"><img src="../assets/Images/logo-coral.svg" class="Helo1"/></a></li>
-     <li class="col-sm-3"><a href="#news">News</a></li>
+     <li class="col-sm-3"><button mat-button [matMenuTriggerFor]="animals"><mat-icon>apps</mat-icon>
+       Categories</button>
+
+       <mat-menu #animals="matMenu">
+         <button mat-menu-item [matMenuTriggerFor]="vertebrates">Development</button>
+         <button mat-menu-item [matMenuTriggerFor]="invertebrates">Business</button>
+         <button mat-menu-item [matMenuTriggerFor]="invertebrates">IT& Software</button>
+         <button mat-menu-item [matMenuTriggerFor]="invertebrates">Photography</button>
+         <button mat-menu-item [matMenuTriggerFor]="invertebrates">Personal Developement</button>
+         <button mat-menu-item [matMenuTriggerFor]="invertebrates">Design</button>
+         <button mat-menu-item [matMenuTriggerFor]="invertebrates">Music</button>
+         <button mat-menu-item [matMenuTriggerFor]="invertebrates">Lifestyle</button>
+       </mat-menu>
+
+       <mat-menu #vertebrates="matMenu">
+         <button mat-menu-item [matMenuTriggerFor]="fish">Fishes</button>
+         <button mat-menu-item [matMenuTriggerFor]="amphibians">Amphibians</button>
+         <button mat-menu-item [matMenuTriggerFor]="reptiles">Reptiles</button>
+         <button mat-menu-item>Birds</button>
+         <button mat-menu-item>Mammals</button>
+       </mat-menu>
+
+       <mat-menu #invertebrates="matMenu">
+         <button mat-menu-item>Insects</button>
+         <button mat-menu-item>Molluscs</button>
+         <button mat-menu-item>Crustaceans</button>
+         <button mat-menu-item>Corals</button>
+         <button mat-menu-item>Arachnids</button>
+         <button mat-menu-item>Velvet worms</button>
+         <button mat-menu-item>Horseshoe crabs</button>
+       </mat-menu>
+
+       <mat-menu #fish="matMenu">
+         <button mat-menu-item>Baikal oilfish</button>
+         <button mat-menu-item>Bala shark</button>
+         <button mat-menu-item>Ballan wrasse</button>
+         <button mat-menu-item>Bamboo shark</button>
+         <button mat-menu-item>Banded killifish</button>
+       </mat-menu>
+
+       <mat-menu #amphibians="matMenu">
+         <button mat-menu-item>Sonoran desert toad</button>
+         <button mat-menu-item>Western toad</button>
+         <button mat-menu-item>Arroyo toad</button>
+         <button mat-menu-item>Yosemite toad</button>
+       </mat-menu>
+
+       <mat-menu #reptiles="matMenu">
+         <button mat-menu-item>Banded Day Gecko</button>
+         <button mat-menu-item>Banded Gila Monster</button>
+         <button mat-menu-item>Black Tree Monitor</button>
+         <button mat-menu-item>Blue Spiny Lizard</button>
+         <button mat-menu-item disabled>Velociraptor</button>
+       </mat-menu>
+     </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
      <li class="col-sm-3"><a href="#contact">Contact</a></li>
      <li class="col-sm-3"><a href="#"> <button mat-raised-button [ngClass]="'One'">Basic</button></a></li>
 
@@ -10,7 +86,7 @@
 
  </div>
 
- 
+
 
  <!--<router-outlet ></router-outlet>-->
 
