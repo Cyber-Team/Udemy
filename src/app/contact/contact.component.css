@@ -9,7 +9,7 @@
   font-size: 3rem;
 }
 .input{
-  height: 8rem;
+  height: 7rem;
   padding: 1rem;
   margin: 0;
   font-size: 14px;
@@ -24,12 +24,37 @@
   position: relative;
 
 }
+.input:hover, .message:hover{
+  transform: translateY(-1px);
+  box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+}
 .message{
   width: 100%;
-  height: 28rem;
+  height: 25rem;
   box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
   display: flex;
   border: none;
   outline: none;
 }
-
+ul{
+  list-style-type: none;
+}
+ul li{
+  margin: .2em 0;
+  font-size: 16px;
+}
+ul li a{
+  color: #667081;
+  text-decoration: none;
+  cursor: pointer;
+}
+ul li a hr{
+  width: 25px;
+  border-radius: 5px;
+  background-image: linear-gradient(90deg,#00cfc6,#00a8ff 99%);
+  height: 2px;
+}
+.hac{
+  color: #4d5562;
+  font-size: 1.5rem;
+}
