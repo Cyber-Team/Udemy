@@ -1,0 +1,23 @@
+/*footer style started*/
+ul{
+  list-style-type: none;
+}
+ul li{
+  margin: .2em 0;
+  font-size: 16px;
+}
+ul li a{
+  color: #667081;
+  text-decoration: none;
+  cursor: pointer;
+}
+ul li a hr{
+  width: 25px;
+  border-radius: 5px;
+  background-image: linear-gradient(90deg,#00cfc6,#00a8ff 99%);
+  height: 2px;
+}
+.hac{
+  color: #4d5562;
+  font-size: 1.5rem;
+}

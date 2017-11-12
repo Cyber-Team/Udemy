@@ -14,6 +14,7 @@ import {MatIconModule} from '@angular/material';
 
 import {BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
 
 // Routing started
 const appRoute: Routes = [
@@ -27,7 +28,8 @@ const appRoute: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    ContactComponent
+    ContactComponent,
+    FooterComponent
 
   ],
   imports: [
