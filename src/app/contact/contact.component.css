@@ -1,0 +1,10 @@
+.text{
+  text-align: center;
+}
+.big{
+  color: #667081;
+  font-weight: 400;
+  margin-top: .5rem;
+  line-height: 1.1em;
+  font-size: 3rem;
+}

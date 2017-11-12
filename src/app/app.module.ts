@@ -13,12 +13,21 @@ import {MatIconModule} from '@angular/material';
 
 
 import {BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ContactComponent } from './contact/contact.component';
+
+// Routing started
 const appRoute: Routes = [
+  {
+    path:'contact',
+    component:ContactComponent
+  }
+
 ];
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ContactComponent
 
   ],
   imports: [

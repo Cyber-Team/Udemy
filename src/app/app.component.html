@@ -100,14 +100,16 @@
      </li>
      <li class="col-sm-1"><a href="#"><button mat-raised-button [ngClass]="'Two'">LogIn</button></a></li>
      <li class="col-sm-1"><a href="#"> <button mat-raised-button [ngClass]="'Two'">SignUp</button></a></li>
-     <li class="col-sm-1"><a href="#">
+     <li class="col-sm-1"><a routerLink="contact">
        <button mat-raised-button [ngClass]="'One'">TALK</button></a>
      </li>
    </ul>
  </div>
 
+<!--<app-contact></app-contact>-->
 
 
- <!--<router-outlet ></router-outlet>-->
 
-
+ <div class="container-fluid" >
+   <router-outlet></router-outlet>
+ </div>
