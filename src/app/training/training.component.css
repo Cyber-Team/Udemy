@@ -75,7 +75,7 @@
 /*training box color*/
 .training-box{
   border: 1px solid #d0d4da;
-  border-radius: 4px;
+  border-radius: 27px;
   transition: border-color .2s ease-in-out;
   padding: 1em;
   display: flex;
@@ -93,4 +93,22 @@
   font-family: Montserrat,sans-serif;
   margin-bottom: 20px;
   line-height: 1.6;
+}
+.hacc{
+  background-image: linear-gradient(90deg,#00cfc6,#00a8ff 99%);
+  font-family: Montserrat,sans-serif;
+}
+.juk{
+  margin: auto;
+  width: 60%;
+  padding: 30px;
+}
+.jur{
+  font-size: 3rem;
+  color: #fff;
+}
+.jurr{
+  font-size: 2rem;
+  line-height: 1.6;
+  color: #fff;
 }
