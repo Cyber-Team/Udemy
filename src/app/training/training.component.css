@@ -1,11 +1,11 @@
-.container{
+.huk{
   width:100%;
   overflow:hidden;
   padding: 0px;
   display: flex;
   min-height: 80vh;
   position: relative;
-  opacity: 0.8;
+
   background-size: cover;
   background-image: url("../../assets/Images/training.jpg");
 }
@@ -53,4 +53,44 @@
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 18px;
+}
+.pee{
+  background-color: #f7f5f4;
+  height: 148px;
+}
+.pee>div{
+  height: 112px;
+}
+.pee img{
+  height: 81px;
+  padding-top: 26px;
+  opacity: 0.7;
+}
+.os-text{
+  font-size: 4.8rem;
+  font-family: Montserrat,sans-serif;
+  color: #4d5562;
+  margin-bottom: 20px;
+}
+/*training box color*/
+.training-box{
+  border: 1px solid #d0d4da;
+  border-radius: 4px;
+  transition: border-color .2s ease-in-out;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.training-logo img{
+  width: 100px;
+  height: 100px;
+}
+.oss{
+  font-size: 1.5em;
+  font-family: Montserrat,sans-serif;
+  margin-bottom: 20px;
+  line-height: 1.6;
 }
