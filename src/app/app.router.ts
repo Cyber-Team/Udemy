@@ -2,17 +2,26 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ContactComponent } from "./contact/contact.component";
 import { TrainingComponent } from "./training/training.component"
+import {HomeComponent} from "./home/home.component"
 import {provideRoutes} from "@angular/router";
 
 
 const appRoute: Routes = [
   {
+    path: 'home',
+    component:HomeComponent,
+  },
+  {
     path:'contact',
-    component:ContactComponent
+    component:ContactComponent,
   },
   {
     path: 'training',
-    component: TrainingComponent
+    component: TrainingComponent,
+  },
+  {
+    path: '',
+    component: HomeComponent,
   }
 
 ];

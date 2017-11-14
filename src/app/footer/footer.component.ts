@@ -17,4 +17,9 @@ export class FooterComponent implements OnInit {
   preventNormal(event: MouseEvent){
     this.router.navigate(['training']);
   }
+  preventNorma(event: MouseEvent) {
+    this.router.navigate(['contact']);
+  }
 }
+
+
