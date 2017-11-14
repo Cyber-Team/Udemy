@@ -43,3 +43,13 @@ body{
   color-stop(.6,#00a8ff))
 }
 
+.os-text{
+  font-size: 3.8rem;
+  color: #4d5562;
+  margin-bottom: 20px;
+}
+.jurr{
+  font-size: 2rem;
+  line-height: 1.6;
+
+}

@@ -1,0 +1,71 @@
+.huk{
+  width:100%;
+  overflow:hidden;
+  padding: 0px;
+  display: flex;
+  min-height: 80vh;
+  position: relative;
+  background-size: cover;
+  background-image: url("../../assets/Images/home-hero.jpg");
+}
+.hee{
+  color: white;
+  background-color:#fc5965;
+  height: 40px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .025em;
+  border: 0px;
+  outline: none;
+}
+.hee:hover{
+  transform: translateY(-1px);
+  box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+  border-color: coral;
+}
+.text-light{
+  font-size: 4rem;
+  color: #fff;
+}
+.text-light1{
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #fff;
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+}
+.training{
+  border: 1px solid #dcdfe3;
+  border-radius: 4px;
+  transition: border-color .2s ease-in-out;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 45%;
+  height: 128px;
+  flex-wrap: wrap;
+}
+.training:hover{
+  border: 1px solid #00a8ff;
+}
+.training-log img{
+  width: 60px;
+  height: 60px;
+}
+.os{
+  color: #00a8ff;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+.oss{
+  font-size: 1.2em;
+  line-height: 1.4;
+}
