@@ -1,0 +1,34 @@
+<div class="container huk">
+  <div class="center">
+    <h1 class="text-light"><b>We Are The Leading JavaScript Experts.</b></h1>
+    <p class="text-light1">We specialize in React, Angular, Vue, and Node. Partner with us on your next project and get to market faster.</p>
+    <button mat-raised-button [ngClass]="'hee'" routerLink="/contact">Let's Talk &gt;&gt;</button>
+  </div>
+</div>
+
+
+<div class="container">
+  <h1 class="os-text"><b>Mobile App Services</b></h1>
+  <p class="jurr">We use cutting edge technologies like React Native, NativeScript, and Ionic to build your Mobile App once, and deploy to all platforms. Our engineers are the top contributors and creators of the same technologies that will help your business with a beautiful mobile experience.</p>
+</div>
+<!--http-->
+
+<div class="container">
+  <h1 class="os-text"><b>The Best JavaScript Training</b></h1>
+  <div class="training-box" *ngFor="let repee of myLis">
+    <div class="col-lg-1">
+      <div class="training-logo">
+        <img src="../../assets/Images/{{repee.imgg}}" />
+      </div>
+    </div>
+    <div class="col-lg-11">
+      <h3 class="oss"><b>{{repee.titl}}</b></h3>
+      <p class="oss" style="font-size: 1.2em;">{{repee.topi}}</p>
+    </div>
+  </div>
+</div>
+
+<h1 class="os-text col-md-offset-1"><b>Let Us Know About Your Project.</b></h1>
+
+<app-contact-form></app-contact-form>
+<app-footer></app-footer>

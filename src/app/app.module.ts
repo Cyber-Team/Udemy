@@ -19,6 +19,8 @@ import { FooterComponent } from './footer/footer.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { TrainingComponent } from './training/training.component';
 import { HomeComponent } from './home/home.component';
+import { MobileComponent } from './mobile/mobile.component';
+
 
 @NgModule({
   declarations: [
@@ -27,7 +29,8 @@ import { HomeComponent } from './home/home.component';
     FooterComponent,
     ContactFormComponent,
     TrainingComponent,
-    HomeComponent
+    HomeComponent,
+    MobileComponent
   ],
   imports: [
     BrowserModule,
