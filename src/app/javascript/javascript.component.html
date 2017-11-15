@@ -1,0 +1,39 @@
+<div class="container huk">
+  <div class="center">
+    <h1 class="text-light"><b>JavaScript is Beyond The Web, and So Are We</b></h1>
+    <p class="text-light1">No matter your JavaScript project, partner with us and get it right the first time.</p>
+    <button mat-raised-button [ngClass]="'hee'" routerLink="/contact">Let's Talk &gt;&gt;</button>
+  </div>
+</div>
+
+<div class="container">
+  <h1 class="os-text"><b>Javascript Development Services</b></h1>
+  <p class="jurr">JavaScript is at our core. Our solutions are tailored to assist you with all your JavaScript needs.</p>
+</div>
+
+
+<div class="container">
+  <h1 class="os-text"><b>The Best JavaScript Training</b></h1>
+  <div class="training-box" *ngFor="let repee of myLii">
+    <div class="col-lg-2">
+      <div class="training-logo">
+        <img src="../../assets/Images/{{repee.imgg}}" />
+      </div>
+    </div>
+    <div class="col-lg-10">
+      <h3 class="oss"><b>{{repee.titl}}</b></h3>
+      <p class="oss" style="font-size: 1.2em;">{{repee.topi}}</p>
+    </div>
+  </div>
+</div>
+<br/>
+
+<section class="row hacc">
+  <div class="juk">
+    <h1 class="jur"><b>The Right Team For Your JavaScript Project.</b></h1>
+    <p class="jurr">We've developed solutions for companies in many different industries, from e-commerce to security. No matter what your team's focus, we're able to dive in and assist.</p>
+  </div>
+</section>
+
+<app-contact-form></app-contact-form>
+<app-footer></app-footer>

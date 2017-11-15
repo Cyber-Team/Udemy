@@ -70,23 +70,7 @@
 }
 /*training box color*/
 
-.hacc{
-  background-image: linear-gradient(90deg,#00cfc6,#00a8ff 99%);
-}
-.juk{
-  margin: auto;
-  width: 60%;
-  padding: 30px;
-}
-.jur{
-  font-size: 3rem;
-  color: #fff;
-}
-.jurr{
-  font-size: 2rem;
-  line-height: 1.6;
-  color: #fff;
-}
+
 .has{
   background-color: white;
   margin: 20px;
