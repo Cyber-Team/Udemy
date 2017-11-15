@@ -11,7 +11,7 @@ import { AppRoutingModule} from "./app.router";
 import {MatButtonModule} from '@angular/material';
 import {MatMenuModule} from '@angular/material';
 import {MatIconModule} from '@angular/material';
-
+import {MatChipsModule} from '@angular/material';
 /*components*/
 import {BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContactComponent } from './contact/contact.component';
@@ -33,12 +33,14 @@ import { JavascriptComponent } from './javascript/javascript.component';
     TrainingComponent,
     HomeComponent,
     MobileComponent,
+
     JavascriptComponent
   ],
   imports: [
     BrowserModule,
     MatButtonModule,
     MatMenuModule,
+    MatChipsModule,
     MatIconModule,
     BrowserAnimationsModule,
     HttpModule,
