@@ -13,6 +13,7 @@ import {MatMenuModule} from '@angular/material';
 import {MatIconModule} from '@angular/material';
 import {MatChipsModule} from '@angular/material';
 import {MatInputModule} from '@angular/material';
+import {MatCardModule} from '@angular/material';
 
 /*components*/
 import {BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -26,6 +27,7 @@ import { JavascriptComponent } from './javascript/javascript.component';
 import { SignupComponent } from './signup/signup.component';
 import { SigninComponent } from './signin/signin.component';
 import { ForgetComponent } from './forget/forget.component';
+import { TeachComponent } from './teach/teach.component';
 
 
 
@@ -42,7 +44,8 @@ import { ForgetComponent } from './forget/forget.component';
     JavascriptComponent,
     SignupComponent,
     SigninComponent,
-    ForgetComponent
+    ForgetComponent,
+    TeachComponent
   ],
   imports: [
     BrowserModule,
@@ -51,6 +54,7 @@ import { ForgetComponent } from './forget/forget.component';
     MatChipsModule,
     MatInputModule,
     MatIconModule,
+    MatCardModule,
     BrowserAnimationsModule,
     HttpModule,
     AppRoutingModule,

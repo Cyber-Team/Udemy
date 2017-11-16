@@ -8,6 +8,7 @@ import {JavascriptComponent} from './javascript/javascript.component';
 import {SignupComponent} from './signup/signup.component';
 import {SigninComponent} from './signin/signin.component';
 import {ForgetComponent} from './forget/forget.component';
+import {TeachComponent} from './teach/teach.component';
 import {provideRoutes} from "@angular/router";
 
 
@@ -43,6 +44,10 @@ const appRoute: Routes = [
   {
     path:'forget',
     component: ForgetComponent,
+  },
+  {
+    path:'teach',
+    component: TeachComponent,
   },
   {
     path: '',
