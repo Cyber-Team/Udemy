@@ -1,0 +1,20 @@
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 col-md-4 col-md-offset-4">
+      <h1 class="text-center login-title">Password Reset</h1>
+      <form class="form-signin">
+        <input type="text" class="form-control" placeholder="Email" required autofocus>
+        <!--<button class="btn btn-lg btn-primary btn-block" type="submit">
+          Sign up</button>-->
+        <button mat-raised-button [ngClass]="'One'" style="width: 100%; border-radius: 7px;">Reset Password</button>
+        <label class="checkbox pull-left">
+          <input type="checkbox" value="remember-me">
+          Remember me
+        </label>
+        <a routerLink="/forget" class="pull-right need-help">Need help? </a><span class="clearfix"></span>
+      </form>
+      <a routerLink="/signin" class="text-center new-account">Alreadt have account LogIn </a>
+    </div>
+  </div>
+</div>

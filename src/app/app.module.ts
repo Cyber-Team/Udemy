@@ -12,6 +12,8 @@ import {MatButtonModule} from '@angular/material';
 import {MatMenuModule} from '@angular/material';
 import {MatIconModule} from '@angular/material';
 import {MatChipsModule} from '@angular/material';
+import {MatInputModule} from '@angular/material';
+
 /*components*/
 import {BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContactComponent } from './contact/contact.component';
@@ -22,6 +24,9 @@ import { HomeComponent } from './home/home.component';
 import { MobileComponent } from './mobile/mobile.component';
 import { JavascriptComponent } from './javascript/javascript.component';
 import { SignupComponent } from './signup/signup.component';
+import { SigninComponent } from './signin/signin.component';
+import { ForgetComponent } from './forget/forget.component';
+
 
 
 
@@ -34,16 +39,17 @@ import { SignupComponent } from './signup/signup.component';
     TrainingComponent,
     HomeComponent,
     MobileComponent,
-
     JavascriptComponent,
-
-    SignupComponent
+    SignupComponent,
+    SigninComponent,
+    ForgetComponent
   ],
   imports: [
     BrowserModule,
     MatButtonModule,
     MatMenuModule,
     MatChipsModule,
+    MatInputModule,
     MatIconModule,
     BrowserAnimationsModule,
     HttpModule,

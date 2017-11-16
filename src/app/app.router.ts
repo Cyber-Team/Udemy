@@ -6,6 +6,8 @@ import {HomeComponent} from "./home/home.component";
 import {MobileComponent } from './mobile/mobile.component';
 import {JavascriptComponent} from './javascript/javascript.component';
 import {SignupComponent} from './signup/signup.component';
+import {SigninComponent} from './signin/signin.component';
+import {ForgetComponent} from './forget/forget.component';
 import {provideRoutes} from "@angular/router";
 
 
@@ -33,6 +35,14 @@ const appRoute: Routes = [
   {
     path: 'signup',
     component: SignupComponent,
+  },
+  {
+    path: 'signin',
+    component: SigninComponent,
+  },
+  {
+    path:'forget',
+    component: ForgetComponent,
   },
   {
     path: '',
