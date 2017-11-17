@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TeachComponent implements OnInit {
   followOrUnfollow: string = "follow";
+  numbers: number = 1;
   constructor() { }
 
   ngOnInit() {
@@ -14,8 +15,10 @@ export class TeachComponent implements OnInit {
   toggledFanSwitch() {
     if(this.followOrUnfollow === 'follow') {
       this.followOrUnfollow = 'unfollow';
+      this.numbers = 2;
     } else {
       this.followOrUnfollow = 'follow';
+      this.numbers = 1;
     }
   }
 }
