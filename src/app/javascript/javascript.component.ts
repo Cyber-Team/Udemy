@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Http} from '@angular/http';
+import {DataService} from '../services/data.service';
 
 @Component({
   selector: 'app-javascript',
@@ -8,12 +9,16 @@ import {Http} from '@angular/http';
 })
 export class JavascriptComponent implements OnInit {
   myLii: any[];
-  constructor(private http: Http) { }
+  error: string;
+  constructor(private http: Http,private dataService: DataService,) { }
 
   ngOnInit() {
-    this.http.get('../assets/json/javascript.json')
-      .map(response => response.json())
-      .subscribe(res => this.myLii = res);
+
+    this.dataService.getAllData()
+    .subscribe(res => this.myLii = res,
+    error => this.error = error.statusText);
+
+
   }
 
 }

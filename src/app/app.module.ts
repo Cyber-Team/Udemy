@@ -28,6 +28,7 @@ import { SignupComponent } from './signup/signup.component';
 import { SigninComponent } from './signin/signin.component';
 import { ForgetComponent } from './forget/forget.component';
 import { TeachComponent } from './teach/teach.component';
+import {DataService} from "./services/data.service";
 
 
 
@@ -60,7 +61,7 @@ import { TeachComponent } from './teach/teach.component';
     AppRoutingModule,
     FormsModule,
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
