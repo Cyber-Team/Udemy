@@ -12,7 +12,7 @@ titl: string;
   constructor(private http: Http) { }
 
   ngOnInit() {
-    this.http.get('../assets/json/home.json')
+    this.http.get('https://udemy-35149.firebaseio.com/.json')
       .map(response => response.json())
       .subscribe(res => this.myLi = res);
   }
