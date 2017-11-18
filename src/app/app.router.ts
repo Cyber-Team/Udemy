@@ -53,7 +53,6 @@ const appRoute: Routes = [
     path: '',
     component: HomeComponent,
   }
-
 ];
 
 @NgModule({
@@ -64,6 +63,5 @@ const appRoute: Routes = [
     RouterModule
   ]
 })
-
 
 export class AppRoutingModule{}
