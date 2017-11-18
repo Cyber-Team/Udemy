@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import {RouterModule, Routes} from '@angular/router';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 /*routing*/
 import { AppRoutingModule} from "./app.router";
 
@@ -14,6 +14,9 @@ import {MatIconModule} from '@angular/material';
 import {MatChipsModule} from '@angular/material';
 import {MatInputModule} from '@angular/material';
 import {MatCardModule} from '@angular/material';
+
+/*angular firebase and auth module */
+
 
 /*components*/
 import {BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -60,6 +63,7 @@ import {DataService} from "./services/data.service";
     HttpModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent]
