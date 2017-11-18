@@ -17,6 +17,14 @@ import {MatCardModule} from '@angular/material';
 
 /*angular firebase and auth module */
 
+import {AngularFireDatabaseModule} from "angularfire2/database";
+import {AngularFireAuthModule} from "angularfire2/auth";
+/*
+import { Observable } from 'rxjs/Observable';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule, AngularFireDatabase} from 'angularfire2/database';
+import { AngularFireAuthModule} from "angularfire2/auth";
+*/
 
 /*components*/
 import {BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -32,9 +40,7 @@ import { SigninComponent } from './signin/signin.component';
 import { ForgetComponent } from './forget/forget.component';
 import { TeachComponent } from './teach/teach.component';
 import {DataService} from "./services/data.service";
-
-
-
+import {AuthService} from "./services/Auth/auth.service";
 
 @NgModule({
   declarations: [
@@ -63,9 +69,10 @@ import {DataService} from "./services/data.service";
     HttpModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,AngularFireDatabaseModule,
+    AngularFireAuthModule
   ],
-  providers: [DataService],
+  providers: [DataService,AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
