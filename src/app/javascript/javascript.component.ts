@@ -12,8 +12,9 @@ export class JavascriptComponent implements OnInit {
   error: string;
   constructor(private http: Http,private dataService: DataService,) { }
 
+  
   ngOnInit() {
-
+    // service call added
     this.dataService.getAllData()
     .subscribe(res => this.myLii = res,
     error => this.error = error.statusText);
