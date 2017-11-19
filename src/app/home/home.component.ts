@@ -7,7 +7,7 @@ import {Http} from '@angular/http';
 })
 export class HomeComponent implements OnInit {
   myLi: any[];
-titl: string;
+  titl: string;
 
   constructor(private http: Http) { }
 

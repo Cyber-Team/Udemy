@@ -22,6 +22,7 @@ import {environment} from "../environments/environment";
 /*angular firebase and auth module */
 
 
+
 /*
 import { Observable } from 'rxjs/Observable';
 import { AngularFireModule } from 'angularfire2';
@@ -44,6 +45,7 @@ import { ForgetComponent } from './forget/forget.component';
 import { TeachComponent } from './teach/teach.component';
 import { DataService } from './services/data.service';
 import { AuthService } from './services/Auth/auth.service';
+
 
 @NgModule({
   declarations: [
