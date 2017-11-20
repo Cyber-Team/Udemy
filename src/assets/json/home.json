@@ -3,22 +3,27 @@
   {
     "titl":"JavaScript Development",
     "imgg":"home1.png",
-    "topi":"From new web apps to performance tuning your JavaScript Apps, we've got you covered."
+    "topi":"From new web apps to performance tuning your JavaScript Apps, we've got you covered.",
+    "url":"javascript"
   },
   {
     "titl":"Mobile App Development",
     "imgg":"home2.png",
-    "topi":"We build, design, and support your Mobile Apps from start to finish. One codebase, all platforms."
+    "topi":"We build, design, and support your Mobile Apps from start to finish. One codebase, all platforms.",
+    "url":"mobile"
+
   },
   {
     "titl":"Team Training",
     "imgg":"home3.png",
-    "topi":"Our custom curriculum will transform your team, just in time for your next project. Specializing in Angular, Vue, and React."
+    "topi":"Our custom curriculum will transform your team, just in time for your next project. Specializing in Angular, Vue, and React.",
+    "url":"training"
   },
   {
     "titl":"Tech Stack Migration",
     "imgg":"home4.png",
-    "topi":"Migrating your legacy stack to a modern JavaScript stack? Partner with us to ensure a seamless transition."
+    "topi":"Migrating your legacy stack to a modern JavaScript stack? Partner with us to ensure a seamless transition.",
+    "url":""
   }
 ]
 

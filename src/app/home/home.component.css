@@ -31,3 +31,6 @@
   line-height: 1.4;
 }
 
+.chan:hover{
+  text-decoration: none;
+}

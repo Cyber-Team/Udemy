@@ -11,6 +11,7 @@ export class HomeComponent implements OnInit {
   myLi: any;
   titl: string;
   error: string;
+  url: string;
 
   constructor(private http: Http) { }
 

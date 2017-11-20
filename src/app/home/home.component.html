@@ -12,18 +12,27 @@
 </div>
 
 <div class="container">
-  <div class="col-sm-6 training" *ngFor="let number of myLi; let i=index">
-    <div class="col-sm-2">
-      <div class="training-log">
-        <img src="../../assets/Images/{{number.imgg}}" />
-      </div>
-    </div>
-    <div class="col-sm-10">
-      <h3 class="os"><b>{{number.titl}}</b></h3>
-      <p class="oss">{{number.topi}}</p>
-    </div>
-  </div>
+  
+     <div class="col-sm-6 training" *ngFor="let number of myLi; let i=index">
+
+        <div class="col-sm-2">
+          <div class="training-log">
+            <img src="../../assets/Images/{{number.imgg}}" />
+          </div>
+        </div>
+        <div class="col-sm-10">
+          <a routerLink="/{{number.url}}" class="chan">
+            <h3 class="os"><b>{{number.titl}}</b></h3>
+            <p class="oss">{{number.topi}}</p>
+          </a>
+        </div>
+
+     </div>
+
+
 </div>
+
+
 
 <br/>
 <div class="row pp">
@@ -37,13 +46,6 @@
   </div>
 
 </div>
-
-
-
-
-
-
-
 
 <!--footer added-->
 <app-footer></app-footer>
