@@ -21,8 +21,6 @@ import {environment} from "../environments/environment";
 
 /*angular firebase and auth module */
 
-
-
 /*
 import { Observable } from 'rxjs/Observable';
 import { AngularFireModule } from 'angularfire2';

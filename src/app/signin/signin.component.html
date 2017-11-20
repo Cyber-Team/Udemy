@@ -8,10 +8,10 @@
         <form class="form-signin" autocomplete="off" novalidate [formGroup]="form" (submit)="login()">
           <input type="text" class="form-control" placeholder="Email" formControlName="email" autofocus>
           <input type="password" class="form-control" placeholder="Password" formControlName="password">
-          <!--<button class="btn btn-lg btn-primary btn-block" type="submit">
-            Sign in</button>-->
-          <button mat-raised-button [ngClass]="'One'" style="width: 100%;border-radius: 7px;" type="submit">
-            Sign In</button>
+
+          <button mat-raised-button [ngClass]="'One'" style="width: 100%;border-radius: 7px;" type="submit"
+          (click)="SignChange()">{{signin}}</button>
+
           <label class="checkbox pull-left">
             <input type="checkbox" value="remember-me">
             Remember me
