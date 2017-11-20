@@ -1,3 +1,12 @@
+![Latest Version](https://img.shields.io/github/release/justinwalsh/daux.io.svg?style=flat-square)
+![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)
+![Build Status](https://img.shields.io/travis/onigoetz/daux.io/master.svg?style=flat-square)
+![Coverage Status](https://img.shields.io/scrutinizer/coverage/g/onigoetz/daux.io.svg?style=flat-square)
+![Quality Score](https://img.shields.io/scrutinizer/g/onigoetz/daux.io.svg?style=flat-square)
+
+
+
+
 # Youtube
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.4.
