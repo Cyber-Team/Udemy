@@ -8,7 +8,7 @@ import {DataService} from '../services/data.service';
   styleUrls: ['./javascript.component.css']
 })
 export class JavascriptComponent implements OnInit {
-  myLii: any[];
+  myLii: any;
   error: string;
   constructor(private http: Http,private dataService: DataService,) { }
 

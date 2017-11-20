@@ -24,7 +24,7 @@
 
 <div class="container">
   <h1 class="os-text"><b>The Best JavaScript Training</b></h1>
-  <div class="training-box" *ngFor="let numbers of myList; let i=index">
+  <div class="training-box" *ngFor="let numbers of myList.training">
      <div class="col-lg-2">
         <div class="training-logo">
           <img src="../../assets/Images/{{numbers.img}}" />
@@ -38,6 +38,8 @@
   </div>
 </div>
 <br/>
+
+
 
 <section class="row hacc">
   <div class="juk">

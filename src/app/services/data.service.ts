@@ -8,7 +8,7 @@ export class DataService {
   constructor(private http:Http) { }
 
   getAllData(){
-    return this.http.get('../assets/json/javascript.json')
+    return this.http.get('../assets/json/data.json')
       .map(response => response.json());
   }
 

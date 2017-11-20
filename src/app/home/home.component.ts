@@ -6,14 +6,14 @@ import {Http} from '@angular/http';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  myLi: any[];
+  myLi: any;
   titl: string;
 
   constructor(private http: Http) { }
 
   ngOnInit() {
     // firebase
-    this.http.get('https://udemy-35149.firebaseio.com/.json')
+    this.http.get('../assets/json/data.json')
       .map(response => response.json())
       .subscribe(res => this.myLi = res);
   }

@@ -7,11 +7,11 @@ import {Http} from '@angular/http';
   styleUrls: ['./mobile.component.css']
 })
 export class MobileComponent implements OnInit {
-  myLis: any[];
+  myLis: any;
   constructor(private http: Http) { }
 
   ngOnInit() {
-    this.http.get('../assets/json/mobile.json')
+    this.http.get('../assets/json/data.json')
       .map(response => response.json())
       .subscribe(res => this.myLis = res);
   }

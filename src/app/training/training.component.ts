@@ -8,14 +8,13 @@ import {Training } from '../training';
   styleUrls: ['./training.component.css']
 })
 export class TrainingComponent implements OnInit {
-  myList: Training[];
+  myList: any;
 
   constructor(private http: Http) { }
 //http request
   ngOnInit() {
-    this.http.get('../assets/json/traning.json')
+    this.http.get('../assets/json/data.json')
       .map(response => response.json())
       .subscribe(res => this.myList = res);
   }
-
 }
