@@ -1,18 +1,19 @@
 {
-  "home":[{
-    "titl":"JavaScript Development",
-    "imgg":"home1.png",
-    "topi":"From new web apps to performance tuning your JavaScript Apps, we've got you covered."
-  },
+  "home":[
+    {
+       "titl":"JavaScript Development",
+       "imgg":"home1.png",
+        "topi":"From new web apps to performance tuning your JavaScript Apps, we've got you covered."
+    },
     {
       "titl":"Mobile App Development",
       "imgg":"home2.png",
-      "topi":"We build, design, and support your Mobile Apps from start to finish. One codebase, all platforms."
+      "topi":"We build, design, and support your Mobile Apps from start to finish. One codebase, all                  platforms."
     },
     {
       "titl":"Team Training",
       "imgg":"home3.png",
-      "topi":"Our custom curriculum will transform your team, just in time for your next project. Specializing in Angular, Vue, and React."
+      "topi":"Our custom curriculum will transform your team, just in time for your next project.          Specializing in Angular, Vue, and React."
     },
     {
       "titl":"Tech Stack Migration",
@@ -20,11 +21,12 @@
       "topi":"Migrating your legacy stack to a modern JavaScript stack? Partner with us to ensure a seamless transition."
     }],
 
-  "javascript":[{
-    "titl":"Fullstack Web App Development",
-    "imgg":"java1.png",
-    "topi":"Our team has built fullstack web apps using frameworks like Angular, React, Vue, and Nodejs for companies big and small. Leverage our expertise and get your Web App to market faster."
-  },
+  "javascript":[
+    {
+      "titl":"Fullstack Web App Development",
+       "imgg":"java1.png",
+       "topi":"Our team has built fullstack web apps using frameworks like Angular, React, Vue, and Nodejs for companies big and small. Leverage our expertise and get your Web App to market faster."
+    },
     {
       "titl":"Web App UX and Design",
       "imgg":"java2.png",
@@ -38,7 +40,7 @@
     {
       "titl":"Developer Experience and Automations",
       "imgg":"java4.png",
-      "topi":"Exponentially increase your team's productivity by partnering with us to better your developer experience and build automations. Just 1 second saved on a build step that is executed dozens a time a day per developer will result in a massive amount of time and money saved."
+      "topi":"Exponentially increase your team's productivity by partnering with us to better your   developer experience and build automations. Just 1 second saved on a build step that is executed dozens a time a day per developer will result in a massive amount of time and money saved."
     },
     {
       "titl":"Web App Strategy and Approach",
@@ -71,11 +73,12 @@
       "imgg":"mobile5.png",
       "topi":"Designing and building a mobile app is only part of what it takes to have a successful mobile app. We offer end to end support like app store strategies and project hand off. Your development team will be trained and mentored for an easy tranistion as well."
     }],
-  "training":[{
-    "title":"Angular Traning",
-    "img":"angular.png",
-    "para":"Angular is quickly becoming selected framework for big teams. Our instructors are the authors of some of the best Angular open source projects and have experience teaching hundreds of students."
-  },
+  "training":[
+    {
+      "title":"Angular Traning",
+      "img":"angular.png",
+      "para":"Angular is quickly becoming selected framework for big teams. Our instructors are the authors of some of the best Angular open source projects and have experience teaching hundreds of students."
+    },
     {
       "title":"Vue Training",
       "img":"vue.png",
@@ -96,5 +99,4 @@
       "img":"type.png",
       "para":"Learning TypeScript is cake for a JavaScript developer, but mastering it and using it to its fullest capabilites is no easy task. Our instructors will get your team there."
     }]
-
 }
