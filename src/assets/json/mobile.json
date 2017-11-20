@@ -1,0 +1,27 @@
+[
+  {
+    "titl":"iOS Development",
+    "imgg":"mobile1.png",
+    "topi":"We have experience shipping iOS apps for iPhone, Ipad, and Apple Watch. Our team has expert knowledge of the Apple ecosystems and API's that allow them to create the best and Apple compliant mobile experiences for your users."
+  },
+  {
+    "titl":"Android Development",
+    "imgg":"mobile2.png",
+    "topi":"Our team will navigate the path to your successful Android mobile app release. We have experience shipping Android mobile apps from start to finish. Partner with our team to get your mobile app on the play store and into your user's hands."
+  },
+  {
+    "titl":"Mobile Web App",
+    "imgg":"mobile3.png",
+    "topi":"There is more to mobile web than a responsive design. We use cutting edge technolgies like AMP and progress web app frameworks combined with features like offline support and push notifications to build performant mobile web experiences that rival native apps."
+  },
+  {
+    "titl":"Mobile App Design",
+    "imgg":"mobile4.png",
+    "topi":"Our team designs stunning mobile experiences. A mobile app's design can hold your business back or sky rocket you forward. Our team uses an iterative process that will find the best design and experince for your users."
+  },
+  {
+    "titl":"Start To Finish Support",
+    "imgg":"mobile5.png",
+    "topi":"Designing and building a mobile app is only part of what it takes to have a successful mobile app. We offer end to end support like app store strategies and project hand off. Your development team will be trained and mentored for an easy tranistion as well."
+  }
+]

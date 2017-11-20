@@ -11,7 +11,7 @@ export class MobileComponent implements OnInit {
   constructor(private http: Http) { }
 
   ngOnInit() {
-    this.http.get('../assets/json/data.json')
+    this.http.get('../assets/json/mobile.json')
       .map(response => response.json())
       .subscribe(res => this.myLis = res);
   }

@@ -10,7 +10,7 @@ import {DataService} from '../services/data.service';
 export class JavascriptComponent implements OnInit {
   myLii: any;
   error: string;
-  constructor(private http: Http,private dataService: DataService,) { }
+  constructor(private http: Http,private dataService: DataService) { }
 
 
   ngOnInit() {
@@ -18,7 +18,6 @@ export class JavascriptComponent implements OnInit {
     this.dataService.getAllData()
     .subscribe(res => this.myLii = res,
     error => this.error = error.statusText);
-
   }
 
 }
