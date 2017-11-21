@@ -13,7 +13,7 @@ export class TrainingComponent implements OnInit {
   constructor(private http: Http) { }
 //http request
   ngOnInit() {
-    this.http.get('../assets/json/training.json')
+    this.http.get('../assets/json/traning.json')
       .map(response => response.json())
       .subscribe(res => this.myList = res);
   }

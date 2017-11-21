@@ -2,7 +2,8 @@
   {
     "title":"Angular Traning",
     "img":"angular.png",
-    "para":"Angular is quickly becoming selected framework for big teams. Our instructors are the authors of some of the best Angular open source projects and have experience teaching hundreds of students."
+    "para":"Angular is quickly becoming selected framework for big teams. Our instructors are the authors of some of the best Angular open source projects and have experience teaching hundreds of students.",
+    "color":"#ff0000"
   },
   {
     "title":"Vue Training",

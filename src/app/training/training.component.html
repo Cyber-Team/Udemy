@@ -3,7 +3,7 @@
          <h1 class="text-light"><b>Data Driven JavaScript <br/>Team Training</b></h1>
          <p class="text-light1">Transform your team today with our custom JavaScript training taught by<br/>
              our experienced instructors.</p>
-         <button mat-raised-button [ngClass]="'hee'">Let's get started &gt;&gt;</button>
+         <button mat-raised-button [ngClass]="'hee'" routerLink="/contact">Let's get started &gt;&gt;</button>
       </div>
 </div>
 
@@ -31,7 +31,8 @@
         </div>
      </div>
     <div class="col-lg-10">
-      <h3 class="oss"><b>{{numbers.title}}</b></h3>
+
+      <h3 class="oss"><b style="color: {{numbers.color}}">{{numbers.title}}</b></h3>
       <hr/>
       <p class="oss">{{numbers.para}}</p>
     </div>
@@ -39,6 +40,7 @@
 </div>
 <br/>
 
+{{title | json}}
 
 
 <section class="row hacc">
