@@ -1,0 +1,28 @@
+
+<h1 class="os-text text-center"><b>Udemy Blog</b></h1>
+
+<div class="container">
+  <div class="card col-md-6" *ngFor="let blog of myBlog">
+    <div class="post">
+        <img class="card-img-top" src="../../assets/Images/{{blog.image}}.svg" alt="Card image cap">
+        <div class="card-block">
+          <div class="post-meta">
+            <span class="os-text blue-text">{{blog.name}}</span><br/>
+              <span class="oss">{{blog.date}}</span>
+          </div>
+          <div class="post-contect">
+               <h1 class="card-title os-text">{{blog.titlee}}</h1>
+               <p class="card-text oss" style="color: #4d5562;">{{blog.parag}}</p>
+            <a routerLink="/blog">
+              <button mat-raised-button [ngClass]="'One'">Read More..</button>
+            </a>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<app-footer></app-footer>

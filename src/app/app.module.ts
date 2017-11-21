@@ -43,6 +43,7 @@ import { ForgetComponent } from './forget/forget.component';
 import { TeachComponent } from './teach/teach.component';
 import { DataService } from './services/data.service';
 import { AuthService } from './services/Auth/auth.service';
+import { BlogComponent } from './blog/blog.component';
 
 
 @NgModule({
@@ -58,7 +59,8 @@ import { AuthService } from './services/Auth/auth.service';
     SignupComponent,
     SigninComponent,
     ForgetComponent,
-    TeachComponent
+    TeachComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule,
