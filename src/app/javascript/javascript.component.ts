@@ -10,6 +10,8 @@ import {DataService} from '../services/data.service';
 export class JavascriptComponent implements OnInit {
   myLii: any;
   error: string;
+  ite: any[] = ["angular","react","vue","node"];
+  ites: any[] = ["typescript",'javascripts','graph','webpack'];
   constructor(private http: Http,private dataService: DataService) { }
 
 
