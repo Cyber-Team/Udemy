@@ -10,6 +10,7 @@ import {Training } from '../training';
 export class TrainingComponent implements OnInit {
   myList: any;
 
+  item: string[] = ['american','boom','cap','net'];
   constructor(private http: Http) { }
 //http request
   ngOnInit() {
