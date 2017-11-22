@@ -9,8 +9,6 @@
   display: flex;
   align-items: center;
   flex-direction: row;
-  width: 45%;
-  height: 128px;
   flex-wrap: wrap;
 }
 .training:hover{

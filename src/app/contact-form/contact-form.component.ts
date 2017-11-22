@@ -10,11 +10,7 @@ import { Component, OnInit } from '@angular/core';
 export class ContactFormComponent implements OnInit {
 
   constructor() {
-    /*this.signInForm = this.formBuilder.group({
-      email: ['', Validators.required],
-      name: ['', Validators.required],
-      company: ['', Validators.required]
-    });*/
+
   }
 
   ngOnInit() {
