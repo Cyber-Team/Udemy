@@ -5,16 +5,12 @@
     <button mat-raised-button [ngClass]="'hee'" routerLink="/contact">Let's Talk &gt;&gt;</button>
   </div>
 </div>
-
 <div class="container">
   <h1 class="os-text"><b>Our Services</b></h1>
   <p class="jurr" style="color: #4d5562;">We have successfully delivered JavaScript solutions to some of the most well-known brands and our experience with frameworks like Angular, React, Vue, and Node is unmatched. No matter your project, partner with us and let's build it</p>
 </div>
-
 <div class="container">
-
      <div class="col-md-6 training" *ngFor="let number of myLi; let i=index">
-
         <div class="col-lg-2 col-xs-12">
           <div class="training-log">
             <img src="../../assets/Images/{{number.imgg}}" />
@@ -22,14 +18,11 @@
         </div>
         <div class="col-lg-10 col-xs-12">
           <a routerLink="/{{number.url}}" class="chan">
-            <h3 class="os"><b>{{number.titl}}</b></h3>
+            <h3 class="os"><b>{{number.titl }}</b></h3>
             <p class="oss">{{number.topi}}</p>
           </a>
         </div>
-
      </div>
-
-
 </div>
 <br/>
 <div class="row pp">

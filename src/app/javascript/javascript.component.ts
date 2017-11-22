@@ -14,7 +14,6 @@ export class JavascriptComponent implements OnInit {
   ites: any[] = ["typescript",'javascripts','graph','webpack'];
   constructor(private http: Http,private dataService: DataService) { }
 
-
   ngOnInit() {
     // service call added
     this.dataService.getAllData()

@@ -25,9 +25,7 @@
   margin-bottom: 20px;
 }
 .banner-img {
-  min-height: 316px;
   border-radius: 22px;
-  width: 100%;
   box-shadow: 0 2px 8px grey;
   background-repeat: no-repeat;
   background-size: cover;

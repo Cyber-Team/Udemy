@@ -19,14 +19,6 @@ import {BrowserAnimationsModule } from '@angular/platform-browser/animations';
 /*environment setup*/
 import {environment} from "../environments/environment";
 
-/*angular firebase and auth module */
-
-/*
-import { Observable } from 'rxjs/Observable';
-import { AngularFireModule } from 'angularfire2';
-import { AngularFireDatabaseModule, AngularFireDatabase} from 'angularfire2/database';
-import { AngularFireAuthModule} from "angularfire2/auth";
-*/
 
 /*components*/
 

@@ -1,12 +1,10 @@
  <div>
-
    <ul class="row three">
      <li class="col-md-2 col-xs-4 "><a href="#">
        <img src="../assets/Images/logo-coral.svg" class="Helo1"/></a>
      </li>
      <li class="col-md-1 col-xs-4">
        <button mat-button [matMenuTriggerFor]="animals"><mat-icon>apps</mat-icon>Categories</button>
-
        <mat-menu #animals="matMenu" class="four">
            <button mat-menu-item [matMenuTriggerFor]="Development">
               <mat-icon><i class="fa fa-code" aria-hidden="true"></i></mat-icon>Development
@@ -27,16 +25,13 @@
              <mat-icon><i class="fa fa-music" aria-hidden="true"></i></mat-icon>Music
            </button>
        </mat-menu>
-
        <mat-menu #Development="matMenu">
          <button mat-menu-item routerLink="/javascript">Web developmemnt</button>
          <button mat-menu-item routerLink="/mobile">Mobile Apps</button>
          <button mat-menu-item>Development Tools</button>
          <button mat-menu-item>E-Commerce</button>
        </mat-menu>
-
        <mat-menu #Business="matMenu">
-
          <button mat-menu-item>Finance</button>
          <button mat-menu-item>Enterperneuship</button>
          <button mat-menu-item>Management</button>
@@ -44,17 +39,13 @@
          <button mat-menu-item>Management</button>
          <button mat-menu-item>Sales</button>
        </mat-menu>
-
        <mat-menu #ITSoftware="matMenu">
-
          <button mat-menu-item>IT Certification</button>
          <button mat-menu-item>Network & Security</button>
          <button mat-menu-item>Hardware</button>
          <button mat-menu-item>Operating System</button>
        </mat-menu>
-
        <mat-menu #Photography="matMenu">
-
          <button mat-menu-item>Digital Photography</button>
          <button mat-menu-item>Portaits</button>
          <button mat-menu-item>Landscape</button>
@@ -62,17 +53,12 @@
          <button mat-menu-item>Photography Tools</button>
          <button mat-menu-item>Mobile photography</button>
        </mat-menu>
-
        <mat-menu #Design="matMenu">
-
          <button mat-menu-item>Web Design</button>
          <button mat-menu-item>Graphic Design</button>
          <button mat-menu-item>User Experience</button>
-
        </mat-menu>
-
        <mat-menu #Music="matMenu">
-
          <button mat-menu-item>Instruments</button>
          <button mat-menu-item>Production</button>
          <button mat-menu-item>Music fundamentals</button>
@@ -82,11 +68,7 @@
      </li>
      <li class="col-md-4 col-xs-4"> <input class="form-control col-xs-4" placeholder="Search.." type="text"></li>
      <li class="col-md-1 col-xs-3">
-       <button mat-button [matMenuTriggerFor]="Teach" routerLink="/teach">Teach here</button>
-       <mat-menu #Teach="matMenu">
-         <button mat-menu-item>
-           Learn more</button>
-       </mat-menu>
+       <button mat-button routerLink="/teach">Teach here</button>
      </li>
      <li class="col-md-1 hidden-xs">
        <button mat-icon-button style="float: right;">

@@ -16,10 +16,6 @@ export class HomeComponent implements OnInit {
   constructor(private http: Http) { }
 
   ngOnInit() {
-    // firebase
-    /*this.dataService.getAllData()
-      .subscribe(res => this.myLi = res,
-        error => this.error = error.statusText);*/
     this.http.get('../assets/json/home.json')
       .map(response => response.json())
       .subscribe(res => this.myLi = res);

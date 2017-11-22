@@ -13,7 +13,6 @@
   z-index: 1;
   width: 100%;
   position: relative;
-
 }
 .input:hover, .message:hover{
   transform: translateY(-1px);
