@@ -36,6 +36,8 @@ import { TeachComponent } from './teach/teach.component';
 import { DataService } from './services/data.service';
 import { AuthService } from './services/Auth/auth.service';
 import { BlogComponent } from './blog/blog.component';
+import { BloPipe } from './blo.pipe';
+
 
 
 @NgModule({
@@ -52,7 +54,8 @@ import { BlogComponent } from './blog/blog.component';
     SigninComponent,
     ForgetComponent,
     TeachComponent,
-    BlogComponent
+    BlogComponent,
+    BloPipe
   ],
   imports: [
     BrowserModule,

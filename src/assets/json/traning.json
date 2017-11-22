@@ -8,21 +8,25 @@
   {
     "title":"Vue Training",
     "img":"vue.png",
-    "para":"Vue has proven itself to be a performant framework and our instructors have mastered and developed curriculum to transform your team and ready them for your next project."
+    "para":"Vue has proven itself to be a performant framework and our instructors have mastered and developed curriculum to transform your team and ready them for your next project.",
+    "color":"#00cfc6"
   },
   {
     "title":"React Training",
     "img":"react.png",
-    "para":"React's ecosystem can be tough to navigate. Let our intructors guide your team and prepare them for your next React project."
+    "para":"React's ecosystem can be tough to navigate. Let our intructors guide your team and prepare them for your next React project.",
+    "color": "#4dc2ff"
   },
   {
     "title":"Nodejs Training",
     "img":"node.png",
-    "para":"Nodejs isn't just JavaScript. Applications built with NodeJs require a different skill than web applications. Our instructors will guide your team to NodeJs mastery."
+    "para":"Nodejs isn't just JavaScript. Applications built with NodeJs require a different skill than web applications. Our instructors will guide your team to NodeJs mastery.",
+    "color":"#00a69e"
   },
   {
     "title":"Typescript Training",
     "img":"type.png",
-    "para":"Learning TypeScript is cake for a JavaScript developer, but mastering it and using it to its fullest capabilites is no easy task. Our instructors will get your team there."
+    "para":"Learning TypeScript is cake for a JavaScript developer, but mastering it and using it to its fullest capabilites is no easy task. Our instructors will get your team there.",
+    "color":"#0086cc"
   }
 ]

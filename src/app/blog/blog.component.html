@@ -2,7 +2,7 @@
 <div class="text-center">
   <h1 class="os-text text-center" style="display: inline-block"><b>Udemy Blog</b> </h1>
   <span class="col-xs-2" style="float:right">
-      <input class="form-control" type="text" placeholder="serach here..."/>
+      <input class="form-control" type="text"  placeholder="serach here..."/>
   </span>
 </div>
 
@@ -12,11 +12,11 @@
         <img class="card-img-top img-responsive" src="../../assets/Images/{{blog.image}}.svg" alt="Card image cap">
         <div class="card-block">
           <div class="post-meta">
-            <span class="os-text blue-text">{{blog.name}}</span><br/>
+            <span class="os-text blue-text">{{blog.name }}</span><br/>
               <span class="oss">{{blog.date}}</span>
           </div>
           <div class="post-contect">
-               <h1 class="card-title os-text">{{blog.titlee}}</h1>
+               <h1 class="card-title os-text">{{blog.titlee }}</h1>
                <p class="card-text oss" style="color: #4d5562;">{{blog.parag}}</p>
             <a routerLink="/blog">
               <button mat-raised-button [ngClass]="'One'">Read More..</button>
