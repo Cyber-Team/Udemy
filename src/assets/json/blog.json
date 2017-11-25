@@ -15,10 +15,17 @@
   },
   {
     "titlee":"Why paying software firms by the hour is bad",
-    "parag":"Paying a software firm by the hour to assist with development is a waste of money. Yes, hiring a firm to come in and help out can be effective and lifesaving, but that doesn't mean you should be punished for it. There's a better way for both parties.",
+    "parag":"Paying a software firm by the hour to assist with development is a waste of money. Yes, hiring a firm to come in and help out can be effective and lifesaving, but that doesn't mean you should be punished for it. There's a better way for both parties.JavaScript performance lag has already claimed thousands of victims.",
     "name":"Scott Moss",
     "date":"September 6, 2017",
     "image":"clock"
+  },
+  {
+    "titlee":"Prevent JavaScript Performance Lag",
+    "parag":"JavaScript performance lag has already claimed thousands of victims just this year. Don't wait until your            JavaScript app is feature complete, 3 days before launch, to start thinking about performance. Consider               performance tuning an ongoing task, like tuning a race car,it's really never done.",
+    "name":"Mike Mose",
+    "date":"July 2016",
+    "image":"js-perf"
   }
 ]
 

@@ -24,5 +24,67 @@
     </div>
   </div>
 </div>
+    <!--<div class="form-group">
+      <div class="form-group">
+         <label for="inputlg" class="os-text">Leave a Replay</label>
+         <input class="form-control input-lg" id="inputlg" type="text">
+      </div>
+    </div>-->
+
+<div class="container">
+  <hr/>
+  <div class="row">
+      <div class="col-md-2">
+        <button mat-button><b>Comments</b></button>
+      </div>
+      <div class="col-md-2">
+        <button mat-button><b>Demo</b></button>
+      </div>
+      <div class="col-md-2 pull-right">
+        <button mat-button [matMenuTriggerFor]="menu"> <b>Login</b>
+           <i class="fa fa-arrow-down" aria-hidden="true"></i></button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>Facebook</button>
+          <button mat-menu-item>Twitter</button>
+          <button mat-menu-item>Google</button>
+        </mat-menu>
+      </div>
+  </div>
+  <hr/>
+  <div class="row">
+    <div class="col-sm-1 col-md-1">
+      <div class="thumbnail">
+        <img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png">
+      </div>
+    </div>
+    <div class="col-sm-5 col-md-10">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <span class="text-muted">Join The Discussion</span>
+        </div>
+        <div class="panel-body">
+          <div class="form-group">
+            <div class="input-group input-file">
+              <input class="form-control input-lg" id="inputlg" type="text" placeholder="Your comments">
+              <span class="input-group-btn">
+       			     <button class="btn btn-default">Add</button>
+    		      </span>
+            </div>
+          </div>
+        </div>
+          <div class="panel-footer"><i class="fa fa-picture-o" aria-hidden="true"></i></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
 
 <app-footer></app-footer>
