@@ -8,7 +8,8 @@
 <div class="container">
   <div class="card col-md-6" *ngFor="let blog of myBlog">
     <div class="post">
-        <img class="card-img-top img-responsive" src="../../assets/Images/{{blog.image}}.svg" alt="Card image cap">
+        <img class="card-img-top img-responsive" src="../../assets/Images/{{blog.image}}.svg"
+             alt="Card image cap">
         <div class="card-block">
           <div class="post-meta">
             <span class="os-text blue-text">{{blog.name }}</span><br/>
@@ -64,23 +65,46 @@
               <input class="form-control input-lg" id="inputlg" type="text"
                       placeholder="Your comments" [(ngModel)]="goatText">
               <span class="input-group-btn">
-       			     <button class="btn btn-default">{{ btnText }}</button>
+       			     <button class="btn btn-default" [ngClass]="'One'" (click)="addComment()">
+                   {{ btnText }}
+                 </button>
     		      </span>
+            </div>
+            <div class="col-xs-4">
+              <input class="form-control" id="ex2" type="text" placeholder="Enter your name"
+                     [(ngModel)]="goatName" >
             </div>
           </div>
         </div>
           <div class="panel-footer">
-            <div class="fileinput fileinput-new" data-provides="fileinput">
+           <!-- <div class="fileinput fileinput-new" data-provides="fileinput">
               <span class="btn btn-default btn-file">
                 <input type="file" multiple /></span>
               <span class="fileinput-filename"></span><span class="fileinput-new">No file chosen</span>
-            </div>
+            </div>-->
+
           </div>
       </div>
     </div>
   </div>  <!--comment section end-->
+
+  <!--child comment start-->
+  <div class="col-md-9" *ngFor="let goal of name">
+    <div class="col-sm-1 col-md-1">
+      <div class="thumbnail">
+        <img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png">
+      </div>
+    </div>
+    <div class="panel panel-primary col-sm-5 col-md-10">
+      <div class="panel-heading">Your name: {{goal}}</div>
+      <div class="panel-body">Your comment: {{goals}}</div>
+     
+    </div>
+  </div><!--child comment end-->
 </div>
 
-<span>{{goatText}}</span>
 
+
+
+<!--footer started-->
 <app-footer></app-footer>
