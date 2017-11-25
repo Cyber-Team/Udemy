@@ -9,6 +9,10 @@ import {Http} from '@angular/http';
 })
 export class BlogComponent implements OnInit {
   myBlog:any;
+  itemCount:number = 4;
+  btnText: string = "Add";
+  goatText: string = "";
+
   constructor(private http: Http) { }
 
   ngOnInit() {
