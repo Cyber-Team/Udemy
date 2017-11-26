@@ -15,6 +15,7 @@ export class BlogComponent implements OnInit {
   goatName: string = "";
   goals = [];
   name = [];
+  // img = [];
   goatImg: string;
   constructor(private http: Http) { }
 
@@ -29,8 +30,11 @@ export class BlogComponent implements OnInit {
       this.goals.push(this.goatText);
       this.goatText='';
       this.itemCount = this.goals.length;
-      this.name.push(this.goatName);
+     // this.name.push(this.goatName);
+    this.name.push(this.goatName);
       this.goatName='';
+     // this.img.push(this.goatImg);
+      // this.goatImg='';
       // console.log(this.goatImg);
   }
 }

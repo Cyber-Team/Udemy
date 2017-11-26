@@ -77,34 +77,30 @@
           </div>
         </div>
           <div class="panel-footer">
-           <!-- <div class="fileinput fileinput-new" data-provides="fileinput">
+            <!--<div class="fileinput fileinput-new" data-provides="fileinput">
               <span class="btn btn-default btn-file">
-                <input type="file" multiple /></span>
+                <input type="file" multiple [(ngModel)]="goatImg"/></span>
               <span class="fileinput-filename"></span><span class="fileinput-new">No file chosen</span>
             </div>-->
-
           </div>
       </div>
     </div>
   </div>  <!--comment section end-->
 
   <!--child comment start-->
-  <div class="col-md-9" *ngFor="let goal of name">
-    <div class="col-sm-1 col-md-1">
+  <div class="col-md-9 col-sm-12" *ngFor="let goal of name" >
+    <div class="col-sm-1 col-xs-3 col-md-1" >
       <div class="thumbnail">
-        <img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png">
+        <img class="img-responsive user-photo" src="../../assets/Images/comment.jpg">
       </div>
     </div>
-    <div class="panel panel-primary col-sm-5 col-md-10">
+    <div class="panel panel-default col-sm-5 col-xs-9 col-md-10" style="padding: 0px;">
       <div class="panel-heading">Your name: {{goal}}</div>
       <div class="panel-body">Your comment: {{goals}}</div>
-     
+      <div class="panel-footer"><button mat-raised-button color="warn">Delete</button></div>
     </div>
   </div><!--child comment end-->
 </div>
-
-
-
 
 <!--footer started-->
 <app-footer></app-footer>
