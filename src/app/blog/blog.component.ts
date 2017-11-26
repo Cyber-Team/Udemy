@@ -16,7 +16,8 @@ export class BlogComponent implements OnInit {
   goals = [];
   name = [];
  // onReplyor: string = "reply";
-  onReplyor: boolean = true;
+  onRe: string = "Reply";
+  onReplyor: boolean = false;
   // show: boolean = true;
   // img = [];
   goatImg: string;
@@ -45,12 +46,13 @@ export class BlogComponent implements OnInit {
     // this.itemCount=i-1;
    // console.log(this.goals.length= i+1);
   }
-  /*onReply(){
-    if(this.onReplyor === 'reply'){
-      this.onReplyor = 'remove';
+  onReply(){
+    this.onReplyor = true;
+    if(this.onRe === 'Reply'){
+      this.onRe = 'Remove';
     }else {
-      this.onReplyor = 'reply';
+      this.onRe = 'Reply';
+      this.onReplyor = false;
     }
-  }*/
-
+  }
 }
