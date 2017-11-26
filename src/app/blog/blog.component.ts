@@ -33,11 +33,13 @@ export class BlogComponent implements OnInit {
      // this.name.push(this.goatName);
     this.name.push(this.goatName);
       this.goatName='';
-     // this.img.push(this.goatImg);
+      // this.img.push(this.goatImg);
       // this.goatImg='';
       // console.log(this.goatImg);
   }
-  onDelte(){
-
+  onDelte(i){
+    this.name.splice(i, 1);
+    // this.itemCount=i-1;
+   // console.log(this.goals.length= i+1);
   }
 }

@@ -88,7 +88,7 @@
   </div>  <!--comment section end-->
 
   <!--child comment start-->
-  <div class="col-md-9 col-sm-12" *ngFor="let goal of name" >
+  <div class="col-md-9 col-sm-12" *ngFor="let goal of name; let i=index" >
     <div class="col-sm-1 col-xs-3 col-md-1" >
       <div class="thumbnail">
         <img class="img-responsive user-photo" src="../../assets/Images/comment.jpg">
@@ -98,7 +98,7 @@
       <div class="panel-heading">Your name: {{goal}}</div>
       <div class="panel-body">Your comment: {{goals}}</div>
       <div class="panel-footer"><button mat-raised-button color="warn"
-                                        (click)="onDelte()">Delete</button></div>
+                                        (click)="onDelte(i)">Delete</button></div>
     </div>
   </div><!--child comment end-->
 </div>
