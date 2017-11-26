@@ -42,4 +42,7 @@ export class BlogComponent implements OnInit {
     // this.itemCount=i-1;
    // console.log(this.goals.length= i+1);
   }
+  onReply(){
+    
+  }
 }

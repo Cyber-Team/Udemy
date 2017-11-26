@@ -97,8 +97,10 @@
     <div class="panel panel-default col-sm-5 col-xs-9 col-md-10" style="padding: 0px;">
       <div class="panel-heading">Your name: {{goal}}</div>
       <div class="panel-body">Your comment: {{goals}}</div>
-      <div class="panel-footer"><button mat-raised-button color="warn"
-                                        (click)="onDelte(i)">Delete</button></div>
+      <div class="panel-footer">
+        <button mat-raised-button color="warn" (click)="onDelte(i)">Delete</button>
+        <button mat-raised-button color="primary" (click)="onReply()">Reply</button>
+      </div>
     </div>
   </div><!--child comment end-->
 </div>
