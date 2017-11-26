@@ -37,4 +37,7 @@ export class BlogComponent implements OnInit {
       // this.goatImg='';
       // console.log(this.goatImg);
   }
+  onDelte(){
+
+  }
 }
