@@ -1,0 +1,99 @@
+{
+"home":[{
+    "titl":"JavaScript Development",
+    "imgg":"home1.png",
+    "topi":"From new web apps to performance tuning your JavaScript Apps, we've got you covered."
+  },
+  {
+    "titl":"Mobile App Development",
+    "imgg":"home2.png",
+    "topi":"We build, design, and support your Mobile Apps from start to finish. One codebase, all platforms."
+  },
+  {
+    "titl":"Team Training",
+    "imgg":"home3.png",
+    "topi":"Our custom curriculum will transform your team, just in time for your next project. Specializing in Angular, Vue, and React."
+  },
+  {
+    "titl":"Tech Stack Migration",
+    "imgg":"home4.png",
+    "topi":"Migrating your legacy stack to a modern JavaScript stack? Partner with us to ensure a seamless transition."
+  }],
+  
+ "javascript":[{
+    "titl":"Fullstack Web App Development",
+    "imgg":"java1.png",
+    "topi":"Our team has built fullstack web apps using frameworks like Angular, React, Vue, and Nodejs for companies big and small. Leverage our expertise and get your Web App to market faster."
+  },
+  {
+    "titl":"Web App UX and Design",
+    "imgg":"java2.png",
+    "topi":"Today's apps have to be as beautiful and easy to use as they are fast. Our iterative processes will produce an amazing experience your users will love."
+  },
+  {
+    "titl":"API Development",
+    "imgg":"java3.png",
+    "topi":"Need an API to power your web or mobile app? We have experience building efficient REST and GraphQL API's at scale. No matter if you need realtime solutions or a CRUD API, our team has you covered."
+  },
+  {
+    "titl":"Developer Experience and Automations",
+    "imgg":"java4.png",
+    "topi":"Exponentially increase your team's productivity by partnering with us to better your developer experience and build automations. Just 1 second saved on a build step that is executed dozens a time a day per developer will result in a massive amount of time and money saved."
+  },
+  {
+    "titl":"Web App Strategy and Approach",
+    "imgg":"java5.png",
+    "topi":"You wouldn't build a house without planning it, software is no different. A great strategy for architecture and approach will shorten releases and avoid costly mistakes."
+  }],
+ "mobile":[{
+    "titl":"iOS Development",
+    "imgg":"mobile1.png",
+    "topi":"We have experience shipping iOS apps for iPhone, Ipad, and Apple Watch. Our team has expert knowledge of the Apple ecosystems and API's that allow them to create the best and Apple compliant mobile experiences for your users."
+  },
+  {
+    "titl":"Android Development",
+    "imgg":"mobile2.png",
+    "topi":"Our team will navigate the path to your successful Android mobile app release. We have experience shipping Android mobile apps from start to finish. Partner with our team to get your mobile app on the play store and into your user's hands."
+  },
+  {
+    "titl":"Mobile Web App",
+    "imgg":"mobile3.png",
+    "topi":"There is more to mobile web than a responsive design. We use cutting edge technolgies like AMP and progress web app frameworks combined with features like offline support and push notifications to build performant mobile web experiences that rival native apps."
+  },
+  {
+    "titl":"Mobile App Design",
+    "imgg":"mobile4.png",
+    "topi":"Our team designs stunning mobile experiences. A mobile app's design can hold your business back or sky rocket you forward. Our team uses an iterative process that will find the best design and experince for your users."
+  },
+  {
+    "titl":"Start To Finish Support",
+    "imgg":"mobile5.png",
+    "topi":"Designing and building a mobile app is only part of what it takes to have a successful mobile app. We offer end to end support like app store strategies and project hand off. Your development team will be trained and mentored for an easy tranistion as well."
+  }],
+ "training":[{
+    "title":"Angular Traning",
+    "img":"angular.png",
+    "para":"Angular is quickly becoming selected framework for big teams. Our instructors are the authors of some of the best Angular open source projects and have experience teaching hundreds of students."
+  },
+  {
+    "title":"Vue Training",
+    "img":"vue.png",
+    "para":"Vue has proven itself to be a performant framework and our instructors have mastered and developed curriculum to transform your team and ready them for your next project."
+  },
+  {
+    "title":"React Training",
+    "img":"react.png",
+    "para":"React's ecosystem can be tough to navigate. Let our intructors guide your team and prepare them for your next React project."
+  },
+  {
+    "title":"Nodejs Training",
+    "img":"node.png",
+    "para":"Nodejs isn't just JavaScript. Applications built with NodeJs require a different skill than web applications. Our instructors will guide your team to NodeJs mastery."
+  },
+  {
+    "title":"Typescript Training",
+    "img":"type.png",
+    "para":"Learning TypeScript is cake for a JavaScript developer, but mastering it and using it to its fullest capabilites is no easy task. Our instructors will get your team there."
+  }]
+  
+}

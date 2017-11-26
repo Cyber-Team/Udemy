@@ -1,0 +1,28 @@
+[
+  {
+    "titl":"Fullstack Web App Development",
+    "imgg":"java1.png",
+    "topi":"Our team has built fullstack web apps using frameworks like Angular, React, Vue, and Nodejs for companies big and small. Leverage our expertise and get your Web App to market faster."
+
+  },
+  {
+    "titl":"Web App UX and Design",
+    "imgg":"java2.png",
+    "topi":"Today's apps have to be as beautiful and easy to use as they are fast. Our iterative processes will produce an amazing experience your users will love."
+  },
+  {
+    "titl":"API Development",
+    "imgg":"java3.png",
+    "topi":"Need an API to power your web or mobile app? We have experience building efficient REST and GraphQL API's at scale. No matter if you need realtime solutions or a CRUD API, our team has you covered."
+  },
+  {
+    "titl":"Developer Experience and Automations",
+    "imgg":"java4.png",
+    "topi":"Exponentially increase your team's productivity by partnering with us to better your developer experience and build automations. Just 1 second saved on a build step that is executed dozens a time a day per developer will result in a massive amount of time and money saved."
+  },
+  {
+    "titl":"Web App Strategy and Approach",
+    "imgg":"java5.png",
+    "topi":"You wouldn't build a house without planning it, software is no different. A great strategy for architecture and approach will shorten releases and avoid costly mistakes."
+  }
+]
