@@ -9,11 +9,20 @@ import { Component, OnInit } from '@angular/core';
 
 export class ContactFormComponent implements OnInit {
 
-  constructor() {}
+  Hel = [];
+
+  constructor() {
+
+  }
 
   ngOnInit() {
-  }
-  onSend(){
 
   }
+  addContact(name,compa,email,mess){
+     console.log(name,compa,email,mess);
+     this.Hel.push(name,compa,email,mess);
+
+
+  }
+
 }

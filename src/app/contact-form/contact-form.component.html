@@ -1,15 +1,24 @@
 <!--contact form started-->
 <div class="row">
-  <div class ="col-md-4 col-md-offset-2">
-    <input class="input" name="name" placeholder="*Name" type="text"><br/>
-    <input class="input" name="name" placeholder="*Company" type="text"><br/>
-    <input class="input" name="name" placeholder="*Work Email" type="text">
+  <div class ="col-md-4 col-md-offset-2" >
+
+<form #valForm="ngForm">
+    <input class="input" name="name"  placeholder="*Name" type="text" #name required><br/>
+    <input class="input" name="company" placeholder="*Company" type="text" #compa required><br/>
+    <input class="input" name="email"  placeholder="*Work Email" type="text" #email required>
+</form>
   </div>
   <div class = "col-md-4">
-    <input class="message" name="name" placeholder="Enter your message" type="text">
+    <input class="message" name="name"  placeholder="Enter your message" type="text" #mess>
   </div>
 </div><!--contact form end-->
 <br/>
 <div class="text-center">
-  <button mat-raised-button [ngClass]="'One'" (click)="onSend()">Send</button>
+  <button mat-raised-button [ngClass]="'One'" (click)="addContact(name.value,compa.value,email.value,mess.value)" >Send</button>
 </div>
+
+
+Your entered:
+<p *ngFor="let hack of Hel">{{hack}}</p>
+
+
