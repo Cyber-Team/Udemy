@@ -30,6 +30,10 @@ export class BlogComponent implements OnInit {
 
     this.itemCount = this.goals.length;
   }
+  onReset(){
+    this.goatName = '';
+    this.goatText = '';
+  }
   addComment(){
       this.goals.push(this.goatText);
       this.goatText='';
@@ -55,4 +59,5 @@ export class BlogComponent implements OnInit {
       this.onReplyor = false;
     }
   }
+
 }

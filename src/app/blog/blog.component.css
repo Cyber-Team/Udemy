@@ -18,3 +18,7 @@
   width: 540px;
 }
 
+input[type=text] {
+  color: red;
+}
+

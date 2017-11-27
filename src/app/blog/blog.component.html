@@ -55,35 +55,31 @@
       </div>
     </div>
     <div class="col-sm-5 col-md-10">
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <span class="text-muted">Join The Discussion</span>
-        </div>
-        <div class="panel-body">
-          <div class="form-group">
-            <div class="input-group input-file">
-              <input class="form-control input-lg" id="inputlg" type="text"
-                      placeholder="Your comments" [(ngModel)]="goatText">
-              <span class="input-group-btn">
-       			     <button class="btn btn-default" [ngClass]="'One'" (click)="addComment()">
-                   {{ btnText }}
-                 </button>
-    		      </span>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+              <span class="text-muted">Join The Discussion</span>
             </div>
-            <div class="col-xs-4">
-              <input class="form-control" id="ex2" type="text" placeholder="Enter your name"
-                     [(ngModel)]="goatName" >
+            <div class="panel-body">
+              <div class="form-group">
+                <div class="input-group input-file">
+                  <input class="form-control input-lg" id="inputlg" type="text"
+                          placeholder="Your comments" [(ngModel)]="goatText">
+                  <span class="input-group-btn">
+                     <button class="btn btn-default" [ngClass]="'One'" (click)="addComment()">
+                       {{ btnText }}
+                     </button>
+                  </span>
+                </div>
+                <div class="col-xs-4">
+                  <input class="form-control" id="ex2" type="text" placeholder="Enter your name"
+                         [(ngModel)]="goatName" >
+                </div>
+              </div>
             </div>
-          </div>
+            <div class="panel-footer">
+              <button mat-raised-button color="warn" (click)="onReset()">Reset</button>
+            </div>
         </div>
-          <div class="panel-footer">
-            <!--<div class="fileinput fileinput-new" data-provides="fileinput">
-              <span class="btn btn-default btn-file">
-                <input type="file" multiple [(ngModel)]="goatImg"/></span>
-              <span class="fileinput-filename"></span><span class="fileinput-new">No file chosen</span>
-            </div>-->
-          </div>
-      </div>
     </div>
   </div>  <!--comment section end-->
 
