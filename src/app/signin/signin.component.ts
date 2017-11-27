@@ -9,7 +9,7 @@ import {Router} from '@angular/router';
 export class SigninComponent implements OnInit {
   signin: string = "SignIn";
   firstName: string;
-  password: any;
+  // password: any;
   wrong: string = "";
   data: any = [];
   constructor(private router: Router) {}

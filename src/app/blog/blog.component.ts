@@ -38,10 +38,13 @@ export class BlogComponent implements OnInit {
       this.itemCount = this.goals.length;
       this.name.push(this.goatName);
       this.goatName='';
-
   }
   onDelte(i){
     this.name.splice(i, 1);
+   // this.goals.splice(i, this.goals.length);
+   // this.goals.length = --i;   degrement counter for comments
+    this.goals.splice(i, this.goals.length);
+    this.itemCount --;
   }
   onReply(){
     this.onReplyor = true;
@@ -52,5 +55,4 @@ export class BlogComponent implements OnInit {
       this.onReplyor = false;
     }
   }
-
 }
