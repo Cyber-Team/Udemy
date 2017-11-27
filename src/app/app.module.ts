@@ -37,6 +37,8 @@ import { DataService } from './services/data.service';
 import { AuthService } from './services/Auth/auth.service';
 import { BlogComponent } from './blog/blog.component';
 import { BloPipe } from './blo.pipe';
+import { CartComponent } from './cart/cart.component';
+
 
 
 
@@ -55,7 +57,8 @@ import { BloPipe } from './blo.pipe';
     ForgetComponent,
     TeachComponent,
     BlogComponent,
-    BloPipe
+    BloPipe,
+    CartComponent
   ],
   imports: [
     BrowserModule,

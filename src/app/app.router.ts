@@ -10,6 +10,7 @@ import {SigninComponent} from './signin/signin.component';
 import {ForgetComponent} from './forget/forget.component';
 import {TeachComponent} from './teach/teach.component';
 import {BlogComponent} from './blog/blog.component';
+import {CartComponent} from './cart/cart.component';
 import {provideRoutes} from "@angular/router";
 
 
@@ -53,6 +54,10 @@ const appRoute: Routes = [
   {
     path:'blog',
     component: BlogComponent,
+  },
+  {
+    path:'cart',
+    component: CartComponent,
   },
   {
     path: '',

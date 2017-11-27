@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {FormBuilder, FormGroup, Validators} from "@angular/forms";
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-signin',
@@ -7,28 +7,32 @@ import {FormBuilder, FormGroup, Validators} from "@angular/forms";
   styleUrls: ['./signin.component.css']
 })
 export class SigninComponent implements OnInit {
-  public form: FormGroup;
   signin: string = "SignIn";
-  constructor(private formBuilder: FormBuilder) {
-    this.form = this.formBuilder.group({
-      email: ['', Validators.required],
-      password: ['', Validators.required]
-    });
+  firstName: string;
+  password: any;
+  data: any = [];
+  constructor(private router: Router) {}
+
+  formSubmit(){
+    if(this.data.firstName == "admin" && this.data.password == "admin"){
+      this.router.navigate(['./cart']);
+    }else{
+       this.data.firstName = '';
+       this.data.password= '';
+    }
   }
+
+
 
   ngOnInit() {
 
   }
   SignChange(){
     if(this.signin === 'SignIn'){
-      this.signin = 'Please SignIn';
+      this.signin = 'Please enter';
     }else{
       this.signin = 'SignIn';
     }
   }
 
-  login(){
-    const inputValue = this.form.value;
-    console.log(inputValue.email, inputValue.password);
-  }
 }
