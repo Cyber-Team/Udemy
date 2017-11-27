@@ -5,11 +5,13 @@
       <h1 class="text-center login-title os-text">Welcome to app</h1>
       <div class="account-wall">
         <img class="profile-img" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png" alt="">
-
+        <!--form started-->
         <form class="form-signin" (ngSubmit)="formSubmit()">
           <input type="text" class="form-control" placeholder="Email"  autofocus [(ngModel)]="data.firstName" name="first">
           <input type="password" class="form-control" placeholder="Password" [(ngModel)]="data.password" name="pass" >
-          <button mat-raised-button [ngClass]="'One'" style="width: 100%;border-radius: 7px;" type="submit" (click)="SignChange()">{{signin}}</button>
+          <p class="wrn">{{wrong}}</p>
+          <button mat-raised-button [ngClass]="'One'" style="width: 100%;border-radius: 7px;"
+                  type="submit" (click)="SignChange()">{{signin}}</button>
           <label class="checkbox pull-left">
             <input type="checkbox" value="remember-me">
             Remember me
@@ -17,6 +19,7 @@
           <a routerLink="/forget" class="pull-right need-help">Forget password?</a>
           <span class="clearfix"></span>
         </form>
+        <!--form end-->
       </div>
       <a routerLink="/signup" class="text-center new-account">Create an account </a>
     </div>
