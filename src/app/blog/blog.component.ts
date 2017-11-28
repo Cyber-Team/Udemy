@@ -18,7 +18,6 @@ export class BlogComponent implements OnInit {
   onRe: string = "Reply";
   onReplyor: boolean = false;
 
-  goatImg: string;
   constructor(private http: Http) { }
 
   ngOnInit() {
