@@ -7,7 +7,7 @@ import { Router, NavigationEnd } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
+  showNav: true;
    constructor(private router: Router) {}
   ngOnInit() {
      // navgation goto top
