@@ -18,4 +18,5 @@ export class TrainingComponent implements OnInit {
       .map(response => response.json())
       .subscribe(res => this.myList = res);
   }
+
 }
