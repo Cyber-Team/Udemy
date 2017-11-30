@@ -13,7 +13,7 @@ export class SigninComponent implements OnInit {
   // password: any;
   wrong: string = "";
   data: any = [];
-  constructor(private router: Router) {}
+  constructor(private router: Router, private _data: CartService) {}
 
   formSubmit(){
     if(this.data.firstName == "admin" && this.data.password == "admin"){
