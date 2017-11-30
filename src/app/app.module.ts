@@ -20,9 +20,12 @@ import {BrowserAnimationsModule } from '@angular/platform-browser/animations';
 /*environment setup*/
 import {environment} from "../environments/environment";
 
+/*services*/
+import { DataService } from './services/data.service';
+import { AuthService } from './services/Auth/auth.service';
+import { CartService } from './services/cart/cart.service';
 
 /*components*/
-
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
@@ -34,8 +37,6 @@ import { SignupComponent } from './signup/signup.component';
 import { SigninComponent } from './signin/signin.component';
 import { ForgetComponent } from './forget/forget.component';
 import { TeachComponent } from './teach/teach.component';
-import { DataService } from './services/data.service';
-import { AuthService } from './services/Auth/auth.service';
 import { BlogComponent } from './blog/blog.component';
 import { BloPipe } from './blo.pipe';
 import { CartComponent } from './cart/cart.component';
@@ -68,7 +69,7 @@ import { CartComponent } from './cart/cart.component';
     FormsModule, ReactiveFormsModule
 
   ],
-  providers: [DataService,AuthService],
+  providers: [DataService,AuthService, CartService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
