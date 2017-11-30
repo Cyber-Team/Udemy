@@ -11,7 +11,8 @@
 </div>
 <!--http started-->
 <div class="container">
-     <div class="col-md-6 training" *ngFor="let number of myLi; let i=index">
+     <div class="col-sm-6 " *ngFor="let number of myLi; let i=index">
+       <div class=" training thumbnail">
         <div class="col-lg-2 col-xs-12">
           <div class="training-log">
             <img src="../../assets/Images/{{number.imgg}}" />
@@ -23,6 +24,7 @@
             <p class="oss">{{number.topi}}</p>
           </a>
         </div>
+     </div>
      </div>
 </div>
 <!--http end-->

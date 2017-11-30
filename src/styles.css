@@ -84,7 +84,6 @@ body{
 
 .training-box{
   border: 1px solid #d0d4da;
-  border-radius: 27px;
   transition: border-color .2s ease-in-out;
   padding: 1em;
   display: flex;
