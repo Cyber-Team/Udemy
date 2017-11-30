@@ -8,7 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class ContactFormComponent implements OnInit {
-
+  nameText: string;
+  compText: string;
+  emailText: string;
+  messText: string;
+  onReplyor: boolean = true;
+  sendOr: string = "Send";
   Hel = [];
 
   constructor() {
@@ -18,11 +23,23 @@ export class ContactFormComponent implements OnInit {
   ngOnInit() {
 
   }
-  addContact(name,compa,email,mess){
+ /* addContact(name,compa,email,mess){
      console.log(name,compa,email,mess);
      this.Hel.push(name,compa,email,mess);
-
-
   }
+*/
+ addContact($event){
+   this.Hel.push(this.nameText,this.compText, this.emailText, this.messText);
+   this.nameText='';
+   this.onReplyor = false;
 
+   if(this.sendOr === "Send"){
+     this.sendOr = "Submit";
+   }else{
+     this.sendOr = "Send";
+   }
+ }
+  Reset(){
+    this.nameText= '';
+  }
 }

@@ -41,8 +41,6 @@ import { BloPipe } from './blo.pipe';
 import { CartComponent } from './cart/cart.component';
 
 
-
-
 @NgModule({
   declarations: [
     AppComponent,
