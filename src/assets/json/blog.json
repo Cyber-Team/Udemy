@@ -8,7 +8,7 @@
   },
   {
     "titlee":"Patent Free React Ecosystem Migration Plan",
-    "parag":"Due to recent news, you might consider moving away from React.js or any technology under Facebook’s BSD+Patents License. If you are considering migrating or if you're trying to evaluate the scope of a migration, we've provided you a table of contents to determine what you need to know.",
+    "parag":"Due to recent news, you might consider moving away from React.js or any technology under Facebook’s BSD+Patents License. If you are considering migrating or if you're trying to evaluate the scope of a migration, we've provided you a table of contents to determine.",
     "name":"Patrick Stapleton",
     "date":"August 28, 2017",
     "image":"react-bsd"
