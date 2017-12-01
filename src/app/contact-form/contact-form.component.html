@@ -1,28 +1,3 @@
-<!--
-&lt;!&ndash;contact form started&ndash;&gt;
-<div class="row" *ngIf="onReplyor; else elseBlock;">
-  <div class ="col-md-4 col-md-offset-2" >
-
-    <input class="input" name="name"  placeholder="*Name" type="text" #name required><br/>
-    <input class="input" name="company" placeholder="*Company" type="text" #compa required><br/>
-    <input class="input" name="email"  placeholder="*Work Email" type="text" #email required>
-
-  </div>
-  <div class = "col-md-4">
-    <input class="message" name="name"  placeholder="Enter your message" type="text" #mess>
-  </div>
-</div>&lt;!&ndash;contact form end&ndash;&gt;
-<br/>
-<div class="text-center">
-  <button mat-raised-button [ngClass]="'One'" (click)="addContact(name.value,compa.value,email.value,mess.value)" >Send</button>
-</div>
-
-<ng-template #elseBlock>
-Your entered:
-<p *ngFor="let hack of Hel">{{hack}}</p>
-</ng-template>
-
--->
 <!--contact form started-->
 <div class="row" *ngIf="onReplyor; else elseBlock;">
     <div class ="col-md-4 col-md-offset-2" >

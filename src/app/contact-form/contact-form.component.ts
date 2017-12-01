@@ -23,11 +23,7 @@ export class ContactFormComponent implements OnInit {
   ngOnInit() {
 
   }
- /* addContact(name,compa,email,mess){
-     console.log(name,compa,email,mess);
-     this.Hel.push(name,compa,email,mess);
-  }
-*/
+
  addContact($event){
    this.Hel.push(this.nameText,this.compText, this.emailText, this.messText);
    this.nameText='';

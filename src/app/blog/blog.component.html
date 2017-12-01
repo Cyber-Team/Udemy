@@ -80,7 +80,8 @@
             </div>
         </div>
     </div>
-  </div>  <!--comment section end-->
+  </div>
+  <!--comment section end-->
 
   <!--child comment start-->
   <div class="col-md-9 col-sm-12" *ngFor="let goal of name; let i=index" >
@@ -95,7 +96,7 @@
       <div class="panel-footer">
         <button mat-raised-button color="warn" (click)="onDelte(i)">Delete</button>
         <button mat-raised-button color="primary" (click)="onReply()">{{onRe}}</button>
-   <!--sub comment start-->
+    <!--sub comment start-->
         <div class="row" *ngIf="onReplyor; else elseBlock;">
           <div class="col-sm-1 col-md-1">
             <div class="thumbnail">
@@ -128,7 +129,7 @@
           </div>
         </div>
         <ng-template #elseBlock></ng-template>
-<!--sub comment end-->
+    <!--sub comment end-->
       </div>
     </div>
   </div><!--child comment end-->
