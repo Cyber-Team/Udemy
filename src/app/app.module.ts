@@ -16,7 +16,7 @@ import {MatChipsModule} from '@angular/material';
 import {MatInputModule} from '@angular/material';
 import {MatCardModule} from '@angular/material';
 import {BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { Angular2FontawesomeModule } from 'angular2-fontawesome/angular2-fontawesome'
 /*environment setup*/
 import {environment} from "../environments/environment";
 
@@ -66,7 +66,8 @@ import { CartComponent } from './cart/cart.component';
     BrowserAnimationsModule,
     HttpModule,
     AppRoutingModule,
-    FormsModule, ReactiveFormsModule
+    FormsModule, ReactiveFormsModule,
+    Angular2FontawesomeModule
 
   ],
   providers: [DataService,AuthService, CartService],
