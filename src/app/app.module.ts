@@ -40,6 +40,8 @@ import { TeachComponent } from './teach/teach.component';
 import { BlogComponent } from './blog/blog.component';
 import { BloPipe } from './blo.pipe';
 import { CartComponent } from './cart/cart.component';
+import { EmployeeComponent } from './teach/employee/employee.component';
+import { EmployeeListComponent } from './teach/employee-list/employee-list.component';
 
 
 @NgModule({
@@ -58,7 +60,9 @@ import { CartComponent } from './cart/cart.component';
     TeachComponent,
     BlogComponent,
     BloPipe,
-    CartComponent
+    CartComponent,
+    EmployeeComponent,
+    EmployeeListComponent
   ],
   imports: [
     BrowserModule,
