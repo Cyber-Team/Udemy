@@ -22,8 +22,8 @@ import { Angular2FontawesomeModule } from 'angular2-fontawesome/angular2-fontawe
 import {environment} from "../environments/environment";
 
 /*firebase setup*/
-import { AngularFireModule} from "angularfire2";
-import { AngularFireDatabaseModule} from "angularfire2/database-deprecated";
+/*import { AngularFireModule} from "angularfire2";
+import { AngularFireDatabaseModule} from "angularfire2/database-deprecated";*/
 /*services*/
 import { DataService } from './services/data.service';
 import { AuthService } from './services/Auth/auth.service';
@@ -44,6 +44,9 @@ import { TeachComponent } from './teach/teach.component';
 import { BlogComponent } from './blog/blog.component';
 import { BloPipe } from './blo.pipe';
 import { CartComponent } from './cart/cart.component';
+import { EmployeeComponent } from './teach/employee/employee.component';
+import { EmployeeListComponent } from './teach/employee-list/employee-list.component';
+
 /*sub components*/
 
 
@@ -63,7 +66,9 @@ import { CartComponent } from './cart/cart.component';
     TeachComponent,
     BlogComponent,
     BloPipe,
-    CartComponent
+    CartComponent,
+    EmployeeComponent,
+    EmployeeListComponent
   ],
   imports: [
     BrowserModule,
@@ -72,9 +77,7 @@ import { CartComponent } from './cart/cart.component';
     HttpModule,
     AppRoutingModule,
     FormsModule, ReactiveFormsModule,
-    Angular2FontawesomeModule,
-    AngularFireModule.initializeApp(environment.firebaseConfig),
-    AngularFireDatabaseModule
+    Angular2FontawesomeModule
 
   ],
   providers: [DataService,AuthService, CartService],
