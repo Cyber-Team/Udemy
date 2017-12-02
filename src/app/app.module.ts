@@ -16,15 +16,19 @@ import {MatChipsModule} from '@angular/material';
 import {MatInputModule} from '@angular/material';
 import {MatCardModule} from '@angular/material';
 import {BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { Angular2FontawesomeModule } from 'angular2-fontawesome/angular2-fontawesome'
+import { Angular2FontawesomeModule } from 'angular2-fontawesome/angular2-fontawesome';
+
 /*environment setup*/
 import {environment} from "../environments/environment";
 
+/*firebase setup*/
+import { AngularFireModule} from "angularfire2";
+import { AngularFireDatabaseModule} from "angularfire2/database-deprecated";
 /*services*/
 import { DataService } from './services/data.service';
 import { AuthService } from './services/Auth/auth.service';
 import { CartService } from './services/cart/cart.service';
-
+import {EmployeeService} from './teach/shared/employee.service';
 /*components*/
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
@@ -40,6 +44,7 @@ import { TeachComponent } from './teach/teach.component';
 import { BlogComponent } from './blog/blog.component';
 import { BloPipe } from './blo.pipe';
 import { CartComponent } from './cart/cart.component';
+/*sub components*/
 import { EmployeeComponent } from './teach/employee/employee.component';
 import { EmployeeListComponent } from './teach/employee-list/employee-list.component';
 
@@ -71,10 +76,12 @@ import { EmployeeListComponent } from './teach/employee-list/employee-list.compo
     HttpModule,
     AppRoutingModule,
     FormsModule, ReactiveFormsModule,
-    Angular2FontawesomeModule
+    Angular2FontawesomeModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireDatabaseModule
 
   ],
-  providers: [DataService,AuthService, CartService],
+  providers: [DataService,AuthService, CartService, EmployeeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

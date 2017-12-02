@@ -1,14 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-
+import {EmployeeService} from './shared/employee.service';
 @Component({
   selector: 'app-teach',
   templateUrl: './teach.component.html',
-  styleUrls: ['./teach.component.css']
+  styleUrls: ['./teach.component.css'],
+  providers: [EmployeeService]
 })
 export class TeachComponent implements OnInit {
   followOrUnfollow: string = "follow";
   numbers: number = 1;
-  constructor() { }
+  constructor(private employeeService: EmployeeService) { }
 
   ngOnInit() {
   }
