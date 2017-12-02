@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Http} from '@angular/http';
-
+import { BlogInterface } from '../Interfaces/blog-interface'
 
 @Component({
   selector: 'app-blog',
@@ -8,7 +8,7 @@ import {Http} from '@angular/http';
   styleUrls: ['./blog.component.css']
 })
 export class BlogComponent implements OnInit {
-  myBlog:any;
+  myBlog:BlogInterface[];
   itemCount:number;
   btnText: string = "Add";
   goatText: string = "";
@@ -40,8 +40,6 @@ export class BlogComponent implements OnInit {
   }
   onDelte(i){
     this.name.splice(i, 1);
-   // this.goals.splice(i, this.goals.length);
-   // this.goals.length = --i;   degrement counter for comments
     this.goals.splice(i, this.goals.length);
     this.itemCount --;
   }
