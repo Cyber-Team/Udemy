@@ -2,11 +2,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
-import {RouterModule, Routes} from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PatternValidator } from '@angular/forms';
 /*routing*/
 import { AppRoutingModule} from "./app.router";
+import {RouterModule, Routes} from '@angular/router';
 
 /*material desing imports*/
 import {MatButtonModule} from '@angular/material';

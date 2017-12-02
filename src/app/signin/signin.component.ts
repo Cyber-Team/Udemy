@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import {Router} from '@angular/router';
 import { CartService } from '../services/cart/cart.service';
 
@@ -13,6 +13,8 @@ export class SigninComponent implements OnInit {
   // password: any;
   wrong: string = "";
   data: any = [];
+
+
   constructor(private router: Router, private _data: CartService) {}
 
   formSubmit(){

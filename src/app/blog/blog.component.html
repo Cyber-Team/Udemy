@@ -1,139 +1,139 @@
-<div class="text-center">
-  <h1 class="os-text text-center" style="display: inline-block"><b>Udemy Blog</b> </h1>
-  <span class="col-xs-2" style="float:right">
-      <input class="form-control" type="text"  placeholder="serach here..."/>
-  </span>
-</div>
+  <div class="text-center">
+    <h1 class="os-text text-center" style="display: inline-block"><b>Udemy Blog</b> </h1>
+    <span class="col-xs-2" style="float:right">
+        <input class="form-control" type="text"  placeholder="serach here..."/>
+    </span>
+  </div>
 <!--blog content started-->
-<div class="container">
-  <div class="card col-md-6" *ngFor="let blog of myBlog">
-    <div class="post thumbnail">
-        <img class="card-img-top img-responsive" src="../../assets/Images/{{blog.image}}.svg"
-             alt="Card image cap">
-        <div class="card-block">
-          <div class="post-meta">
-            <span class="os-text blue-text">{{blog.name }}</span><br/>
-              <span class="oss">{{blog.date}}</span>
+  <div class="container">
+    <div class="card col-md-6" *ngFor="let blog of myBlog">
+      <div class="post thumbnail">
+          <img class="card-img-top img-responsive" src="../../assets/Images/{{blog.image}}.svg"
+               alt="Card image cap">
+          <div class="card-block">
+            <div class="post-meta">
+              <span class="os-text blue-text">{{blog.name }}</span><br/>
+                <span class="oss">{{blog.date}}</span>
+            </div>
+            <div class="post-contect">
+                 <h1 class="card-title os-text">{{blog.titlee }}</h1>
+                 <p class="card-text oss" style="color: #4d5562;">{{blog.parag}}</p>
+              <a routerLink="/blog">
+                <button mat-raised-button [ngClass]="'One'">Read More..</button>
+              </a>
+            </div>
           </div>
-          <div class="post-contect">
-               <h1 class="card-title os-text">{{blog.titlee }}</h1>
-               <p class="card-text oss" style="color: #4d5562;">{{blog.parag}}</p>
-            <a routerLink="/blog">
-              <button mat-raised-button [ngClass]="'One'">Read More..</button>
-            </a>
-          </div>
+      </div>
+    </div>
+  </div>
+  <!--blog content end-->
+  <div class="container">
+    <hr/>
+    <div class="row">
+        <div class="col-md-2">
+          <button mat-button><b>Comments ({{itemCount}})</b></button>
+        </div>
+        <div class="col-md-2">
+          <button mat-button><b>Demo</b></button>
+        </div>
+        <div class="col-md-2 pull-right">
+          <button mat-button [matMenuTriggerFor]="menu"> <b>Login</b>
+             <i class="fa fa-arrow-down" aria-hidden="true"></i></button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item>Facebook</button>
+            <button mat-menu-item>Twitter</button>
+            <button mat-menu-item>Google</button>
+          </mat-menu>
         </div>
     </div>
-  </div>
-</div>
-<!--blog content end-->
-<div class="container">
-  <hr/>
-  <div class="row">
-      <div class="col-md-2">
-        <button mat-button><b>Comments ({{itemCount}})</b></button>
-      </div>
-      <div class="col-md-2">
-        <button mat-button><b>Demo</b></button>
-      </div>
-      <div class="col-md-2 pull-right">
-        <button mat-button [matMenuTriggerFor]="menu"> <b>Login</b>
-           <i class="fa fa-arrow-down" aria-hidden="true"></i></button>
-        <mat-menu #menu="matMenu">
-          <button mat-menu-item>Facebook</button>
-          <button mat-menu-item>Twitter</button>
-          <button mat-menu-item>Google</button>
-        </mat-menu>
-      </div>
-  </div>
-  <hr/>
-  <!--comment section started-->
-  <div class="row">
-    <div class="col-sm-1 col-md-1">
-      <div class="thumbnail">
-        <img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png">
-      </div>
-    </div>
-    <div class="col-sm-5 col-md-10">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-              <span class="text-muted">Join The Discussion</span>
-            </div>
-            <div class="panel-body">
-              <div class="form-group">
-                <div class="input-group input-file">
-                  <input class="form-control input-lg" id="inputlg" type="text"
-                         placeholder="Your comments" [(ngModel)]="goatText">
-                  <span class="input-group-btn">
-                     <button class="btn btn-default" [ngClass]="'One'" (click)="addComment()">
-                       {{ btnText }}
-                     </button>
-                  </span>
-                </div>
-                <div class="col-xs-4">
-                  <input class="form-control" id="ex2" type="text" placeholder="Enter your name" [(ngModel)]="goatName" >
-                </div>
-              </div>
-            </div>
-            <div class="panel-footer">
-              <button mat-raised-button color="warn" (click)="onReset()">Reset</button>
-            </div>
-        </div>
-    </div>
-  </div>
-  <!--comment section end-->
-
-  <!--child comment start-->
-  <div class="col-md-9 col-sm-12" *ngFor="let goal of name; let i=index" >
-    <div class="col-sm-1 col-xs-3 col-md-1" >
-      <div class="thumbnail">
-        <img class="img-responsive user-photo" src="../../assets/Images/comment.jpg">
-      </div>
-    </div>
-    <div class="panel panel-default col-sm-5 col-xs-9 col-md-10" style="padding: 0px;">
-      <div class="panel-heading">Your name: {{goal}}</div>
-      <div class="panel-body">Your comment: {{goals}}</div>
-      <div class="panel-footer">
-        <button mat-raised-button color="warn" (click)="onDelte(i)">Delete</button>
-        <button mat-raised-button color="primary" (click)="onReply()">{{onRe}}</button>
-    <!--sub comment start-->
-        <div class="row" *ngIf="onReplyor; else elseBlock;">
-          <div class="col-sm-1 col-md-1">
-            <div class="thumbnail">
-              <img class="img-responsive user-photo" src="../../assets/Images/comment.jpg"/>
-            </div>
+    <hr/>
+    <!--comment section started-->
+    <div class="row">
+        <div class="col-sm-1 col-md-1">
+          <div class="thumbnail">
+            <img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png">
           </div>
-          <div class="col-sm-5 col-md-10">
+        </div>
+        <div class="col-sm-5 col-md-10">
             <div class="panel panel-default">
-              <div class="panel-heading">
-                <span class="text-muted">Join The Discussion</span>
-              </div>
-              <div class="panel-body">
-                <div class="form-group">
-                  <div class="input-group input-file">
-                    <input class="form-control input-lg" type="text" placeholder="Your comments"/>
-                    <span class="input-group-btn">
-       			     <button class="btn btn-default" [ngClass]="'One'">
-                   {{ btnText }}
-                 </button>
-    		      </span>
-                  </div>
-                  <div class="col-xs-4">
-                    <input class="form-control"  type="text" placeholder="Enter your name">
+                <div class="panel-heading">
+                  <span class="text-muted">Join The Discussion</span>
+                </div>
+                <div class="panel-body">
+                  <div class="form-group">
+                    <div class="input-group input-file">
+                      <input class="form-control input-lg" id="inputlg" type="text"
+                             placeholder="Your comments" [(ngModel)]="goatText">
+                      <span class="input-group-btn">
+                         <button class="btn btn-default" [ngClass]="'One'" (click)="addComment()">
+                           {{ btnText }}
+                         </button>
+                      </span>
+                    </div>
+                    <div class="col-xs-4">
+                      <input class="form-control" id="ex2" type="text" placeholder="Enter your name" [(ngModel)]="goatName" >
+                    </div>
                   </div>
                 </div>
+                <div class="panel-footer">
+                  <button mat-raised-button color="warn" (click)="onReset()">Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--comment section end-->
+
+    <!--child comment start-->
+    <div class="col-md-9 col-sm-12" *ngFor="let goal of name; let i=index" >
+      <div class="col-sm-1 col-xs-3 col-md-1" >
+        <div class="thumbnail">
+          <img class="img-responsive user-photo" src="../../assets/Images/comment.jpg">
+        </div>
+      </div>
+      <div class="panel panel-default col-sm-5 col-xs-9 col-md-10" style="padding: 0px;">
+        <div class="panel-heading">Your name: {{goal}}</div>
+        <div class="panel-body">Your comment: {{goals}}</div>
+        <div class="panel-footer">
+          <button mat-raised-button color="warn" (click)="onDelte(i)">Delete</button>
+          <button mat-raised-button color="primary" (click)="onReply()">{{onRe}}</button>
+      <!--sub comment start-->
+          <div class="row" *ngIf="onReplyor; else elseBlock;">
+            <div class="col-sm-1 col-md-1">
+              <div class="thumbnail">
+                <img class="img-responsive user-photo" src="../../assets/Images/comment.jpg"/>
               </div>
-              <div class="panel-footer">
+            </div>
+            <div class="col-sm-5 col-md-10">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <span class="text-muted">Join The Discussion</span>
+                </div>
+                <div class="panel-body">
+                  <div class="form-group">
+                    <div class="input-group input-file">
+                      <input class="form-control input-lg" type="text" placeholder="Your comments"/>
+                      <span class="input-group-btn">
+                   <button class="btn btn-default" [ngClass]="'One'">
+                     {{ btnText }}
+                   </button>
+                </span>
+                    </div>
+                    <div class="col-xs-4">
+                      <input class="form-control"  type="text" placeholder="Enter your name">
+                    </div>
+                  </div>
+                </div>
+                <div class="panel-footer">
+                </div>
               </div>
             </div>
           </div>
+          <ng-template #elseBlock></ng-template>
+      <!--sub comment end-->
         </div>
-        <ng-template #elseBlock></ng-template>
-    <!--sub comment end-->
       </div>
-    </div>
-  </div><!--child comment end-->
-</div>
+    </div><!--child comment end-->
+  </div>
 
 <!--footer started-->
 <app-footer></app-footer>
