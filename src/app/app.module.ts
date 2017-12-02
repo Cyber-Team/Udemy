@@ -28,7 +28,7 @@ import { AngularFireDatabaseModule} from "angularfire2/database-deprecated";
 import { DataService } from './services/data.service';
 import { AuthService } from './services/Auth/auth.service';
 import { CartService } from './services/cart/cart.service';
-import {EmployeeService} from './teach/shared/employee.service';
+
 /*components*/
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
@@ -45,8 +45,6 @@ import { BlogComponent } from './blog/blog.component';
 import { BloPipe } from './blo.pipe';
 import { CartComponent } from './cart/cart.component';
 /*sub components*/
-import { EmployeeComponent } from './teach/employee/employee.component';
-import { EmployeeListComponent } from './teach/employee-list/employee-list.component';
 
 
 @NgModule({
@@ -65,9 +63,7 @@ import { EmployeeListComponent } from './teach/employee-list/employee-list.compo
     TeachComponent,
     BlogComponent,
     BloPipe,
-    CartComponent,
-    EmployeeComponent,
-    EmployeeListComponent
+    CartComponent
   ],
   imports: [
     BrowserModule,
@@ -81,7 +77,7 @@ import { EmployeeListComponent } from './teach/employee-list/employee-list.compo
     AngularFireDatabaseModule
 
   ],
-  providers: [DataService,AuthService, CartService, EmployeeService],
+  providers: [DataService,AuthService, CartService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
