@@ -6,18 +6,43 @@ import { NgForm } from '@angular/forms'
   styleUrls: ['./employee.component.css']
 })
 export class EmployeeComponent implements OnInit {
-
-  constructor() { }
+   employees = [
+     {name:"Krishna", position:"CEO", salary:"$500"}
+   ];
+   model:any={};
+   model2: any={};
+   myValue;
+   msg:any="";
+   constructor() { }
 
   ngOnInit() {
   }
-  onSubmit(){
-
+  addEmployee(){
+      this.employees.push(this.model);
+      this.model={};
+      this.msg = "Record is successfully added";
   }
-  onDelete(){
-
+  deleteEmployee(i){
+    this.employees.splice(i,1);
+    this.msg = "Record is successfully deleted";
   }
-  resetForm(){
-
+  editEmployee(k){
+    this.model2.name = this.employees[k].name;
+    this.model2.position = this.employees[k].position;
+    this.model2.salary = this.employees[k].salary;
+    this.myValue = k;
+  }
+  updateEmployee(){
+    let k= this.myValue;
+    for(let i =0; i<this.employees.length; i++){
+     if(i==k){
+       this.employees[i]= this.model2;
+       this.model2 = {};
+       this.msg = "Record is successfully updated";
+     }
+    }
+  }
+  clickMe(){
+     this.msg="";
   }
 }
