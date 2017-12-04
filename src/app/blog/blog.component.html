@@ -1,18 +1,18 @@
   <div class="text-center">
     <h1 class="os-text text-center" style="display: inline-block"><b>Udemy Blog</b> </h1>
     <span class="col-xs-2" style="float:right">
-        <input class="form-control" type="text"  placeholder="serach here..."/>
+        <input class="form-control" type="text"  placeholder="serach here..." name="search" [(ngModel)]="search"/>
     </span>
   </div>
 <!--blog content started-->
   <div class="container">
-    <div class="card col-md-6" *ngFor="let blog of myBlog">
+    <div class="card col-md-6" *ngFor="let blog of myBlog | blog:search">
       <div class="post thumbnail">
           <img class="card-img-top img-responsive" src="../../assets/Images/{{blog.image}}.svg"
                alt="Card image cap">
           <div class="card-block">
             <div class="post-meta">
-              <span class="os-text blue-text">{{blog.name }}</span><br/>
+              <span class="os-text blue-text">{{blog.name | lowercase}}</span><br/>
                 <span class="oss">{{blog.date}}</span>
             </div>
             <div class="post-contect">
@@ -82,7 +82,6 @@
         </div>
     </div>
     <!--comment section end-->
-
     <!--child comment start-->
     <div class="col-md-9 col-sm-12" *ngFor="let goal of name; let i=index" >
       <div class="col-sm-1 col-xs-3 col-md-1" >

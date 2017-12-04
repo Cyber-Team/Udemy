@@ -46,6 +46,7 @@ import { BloPipe } from './blo.pipe';
 import { CartComponent } from './cart/cart.component';
 import { EmployeeComponent } from './teach/employee/employee.component';
 import { EmployeeListComponent } from './teach/employee-list/employee-list.component';
+import { BlogPipe } from './pipes/blog.pipe';
 
 /*sub components*/
 
@@ -68,7 +69,8 @@ import { EmployeeListComponent } from './teach/employee-list/employee-list.compo
     BloPipe,
     CartComponent,
     EmployeeComponent,
-    EmployeeListComponent
+    EmployeeListComponent,
+    BlogPipe
   ],
   imports: [
     BrowserModule,

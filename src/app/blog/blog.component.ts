@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Http} from '@angular/http';
 import { BlogInterface } from '../Interfaces/blog-interface'
-
+import { BlogPipe } from '../pipes/blog.pipe';
 @Component({
   selector: 'app-blog',
   templateUrl: './blog.component.html',
