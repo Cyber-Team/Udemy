@@ -6,8 +6,10 @@
     </div>
     <div class="col-md-4">
       <div class="alert alert-success alert-dismissable" *ngIf="msg">
-        <a href="#" class="close" (click)="clickMe()">&times;</a>
         {{msg}}
+      </div>
+      <div class="alert alert-danger fade in" *ngIf="msgg">
+        {{msgg}}
       </div>
       <div class="clearfix"></div>
       <hr>
@@ -46,7 +48,6 @@
   </form>
   <!--form end-->
   <!--form updated-->
-
   <form class="form-horizontal col-sm-6">
     <h1>Update your details</h1>
     <div class="form-group">
@@ -78,7 +79,6 @@
     </div>
   </form>
   <!--form updted end-->
-
   <!--table started-->
   <h1>Your details</h1>
     <table class="table table-hover">
@@ -103,5 +103,4 @@
       </tbody>
     </table>
   <!--table end-->
-
 </div>

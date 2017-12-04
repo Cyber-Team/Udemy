@@ -13,6 +13,7 @@ export class EmployeeComponent implements OnInit {
    model2: any={};
    myValue;
    msg:any="";
+  msgg:any="";
    constructor() { }
 
   ngOnInit() {
@@ -24,7 +25,7 @@ export class EmployeeComponent implements OnInit {
   }
   deleteEmployee(i){
     this.employees.splice(i,1);
-    this.msg = "Record is successfully deleted";
+    this.msgg = "Record is successfully deleted";
   }
   editEmployee(k){
     this.model2.name = this.employees[k].name;
@@ -41,8 +42,5 @@ export class EmployeeComponent implements OnInit {
        this.msg = "Record is successfully updated";
      }
     }
-  }
-  clickMe(){
-     this.msg="";
   }
 }

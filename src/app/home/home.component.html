@@ -1,43 +1,43 @@
-<div class="container huk img-responsive" >
-  <div class="center">
-    <h1 class="text-light"><b>We Are The Leading JavaScript Experts.</b></h1>
-    <p class="text-light1">We specialize in React, Angular, Vue, and Node. Partner with us on your next project and get to market faster.</p>
-    <button mat-raised-button [ngClass]="'hee'" routerLink="/contact">Let's Talk &gt;&gt;</button>
+  <div class="container huk img-responsive" >
+    <div class="center">
+      <h1 class="text-light"><b>We Are The Leading JavaScript Experts.</b></h1>
+      <p class="text-light1">We specialize in React, Angular, Vue, and Node. Partner with us on your next project and get to market faster.</p>
+      <button mat-raised-button [ngClass]="'hee'" routerLink="/contact">Let's Talk &gt;&gt;</button>
+    </div>
   </div>
-</div>
-<div class="container">
-  <h1 class="os-text"><b>Our Services</b></h1>
-  <p class="jurr" style="color: #4d5562;">We have successfully delivered JavaScript solutions to some of the most well-known brands and our experience with frameworks like Angular, React, Vue, and Node is unmatched. No matter your project, partner with us and let's build it</p>
-</div>
+  <div class="container">
+    <h1 class="os-text"><b>Our Services</b></h1>
+    <p class="jurr" style="color: #4d5562;">We have successfully delivered JavaScript solutions to some of the most well-known brands and our experience with frameworks like Angular, React, Vue, and Node is unmatched. No matter your project, partner with us and let's build it</p>
+  </div>
 <!--http started-->
-<div class="container">
-     <div class="col-sm-6 " *ngFor="let number of myLi; let i=index">
+  <div class="container">
+     <div class="col-sm-6" *ngFor="let number of myLi; let i=index">
        <div class=" training thumbnail">
-        <div class="col-lg-2 col-xs-12">
-          <div class="training-log">
-            <img src="../../assets/Images/{{number.imgg}}" />
+          <div class="col-lg-2 col-xs-12">
+            <div class="training-log">
+              <img src="../../assets/Images/{{number.imgg}}" />
+            </div>
           </div>
-        </div>
-        <div class="col-lg-10 col-xs-12">
-          <a routerLink="/{{number.url}}" class="chan">
-            <h3 class="os"><b>{{number.titl }}</b></h3>
-            <p class="oss">{{number.topi}}</p>
-          </a>
-        </div>
+          <div class="col-lg-10 col-xs-12">
+            <a routerLink="/{{number.url}}" class="chan">
+              <h3 class="os"><b>{{number.titl }}</b></h3>
+              <p class="oss">{{number.topi}}</p>
+            </a>
+          </div>
+       </div>
      </div>
-     </div>
-</div>
+  </div>
 <!--http end-->
-<br/>
-<div class="row pp">
-  <div class="col-lg-4 col-lg-offset-2 col-xs-12">
-    <h1 class="os-text" style="color: white"><b>Let's Collaborate on your project</b></h1>
+  <br/>
+  <div class="row pp">
+    <div class="col-lg-4 col-lg-offset-2 col-xs-12">
+      <h1 class="os-text" style="color: white"><b>Let's Collaborate on your project</b></h1>
+    </div>
+    <div class="col-lg-4 col-xs-12">
+      <p class="jurr">Are you looking to build a mobile app, migrate your tech stack to a modern JavaScript framework, or train your developers for an upcoming project?</p>
+      <button mat-raised-button [ngClass]="'hee'" routerLink="/contact">Let's Get started &gt;&gt;</button>
+    </div>
   </div>
-  <div class="col-lg-4 col-xs-12">
-    <p class="jurr">Are you looking to build a mobile app, migrate your tech stack to a modern JavaScript framework, or train your developers for an upcoming project?</p>
-    <button mat-raised-button [ngClass]="'hee'" routerLink="/contact">Let's Get started &gt;&gt;</button>
-  </div>
-</div>
 
 <!--footer added-->
 <app-footer></app-footer>

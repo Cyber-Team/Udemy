@@ -13,7 +13,7 @@ export class SigninComponent implements OnInit {
   // password: any;
   wrong: string = "";
   data: any = [];
-
+  msg:any="";
 
   constructor(private router: Router, private _data: CartService) {}
 
@@ -24,6 +24,7 @@ export class SigninComponent implements OnInit {
        this.data.firstName = '';
        this.data.password= '';
        this.wrong = "*Please enter correct input";
+      this.msg = "*Please enter correct input";
     }
   }
 
