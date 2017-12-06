@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { NgForm } from '@angular/forms'
 @Component({
   selector: 'app-employee',
@@ -7,13 +7,18 @@ import { NgForm } from '@angular/forms'
 })
 export class EmployeeComponent implements OnInit {
    employees = [
-     {name:"Krishna", position:"CEO", salary:"$500"}
+                { name:"Krishna",
+                  position:"CEO",
+                  salary:"$500"
+                }
    ];
    model:any={};
    model2: any={};
    myValue;
    msg:any="";
-  msgg:any="";
+   msgg:any="";
+
+  // Input() review:string;
    constructor() { }
 
   ngOnInit() {
