@@ -17,9 +17,12 @@
             <span class="orr">OR</span>
           </div>
           <form class="form-signin" (ngSubmit)="formSubmi()">
-            <input type="text" class="form-control" placeholder="Your Name" [(ngModel)]="data.name" name="first" required autofocus>
-            <input type="text" class="form-control" placeholder="Email address" [(ngModel)]="data.email"  name="email" required autofocus>
-            <input type="password" class="form-control" placeholder="Password" [(ngModel)]="data.pass" name="pass" required>
+            <input type="text" class="form-control" placeholder="Your Name" [(ngModel)]="data.name"
+                   name="first" required autofocus>
+            <input type="text" class="form-control" placeholder="Email address" [(ngModel)]="data.email"
+                   name="email" required autofocus>
+            <input type="password" class="form-control" placeholder="Password" [(ngModel)]="data.pass"
+                   name="pass" required>
 
             <p class="wrn">{{wrong}}</p>
             <div class="wrap">
@@ -39,4 +42,5 @@
       </div>
     </div>
   </div>
+
 <app-footer></app-footer>

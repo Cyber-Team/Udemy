@@ -17,8 +17,6 @@ export class SignupComponent implements OnInit {
   ngOnInit() {
   }
   formSubmi(){
-    // console.log(this.data.name);
-    // console.log(this.data.email);
     if(this.data.name == "" && this.data.email == "" && this.data.pass == ""){
        console.log("success");
     }else{
