@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-signup',
@@ -11,17 +12,18 @@ export class SignupComponent implements OnInit {
   email: string;
   pass: any;
   wrong: string = "";
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
   formSubmi(){
     // console.log(this.data.name);
     // console.log(this.data.email);
-    if(this.data.name == "" || this.data.email == "" || this.data.pass == ""){
+    if(this.data.name == "" && this.data.email == "" && this.data.pass == ""){
        console.log("success");
     }else{
-      this.wrong = "*Please enter correct input";
+     // this.wrong = "*Please enter correct input";
+      this.router.navigate(['./cart']);
     }
   }
 }
