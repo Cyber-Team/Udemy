@@ -11,6 +11,7 @@ import {ForgetComponent} from './forget/forget.component';
 import {TeachComponent} from './teach/teach.component';
 import {BlogComponent} from './blog/blog.component';
 import {CartComponent} from './cart/cart.component';
+import {FeaturesComponent} from './footer/features/features.component';
 import {provideRoutes} from "@angular/router";
 import { AboutComponent } from './about/about.component';
 
@@ -46,6 +47,10 @@ const appRoute: Routes = [
   {
     path: 'signin',
     component: SigninComponent,
+  },
+  {
+    path: 'features',
+    component: FeaturesComponent,
   },
   {
     path:'forget',
