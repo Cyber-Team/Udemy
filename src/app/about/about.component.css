@@ -1,3 +1,17 @@
 .huk{
   background-image: url("../../assets/Images/about_hero.jpg");
 }
+.copy{
+  padding-left: 12em;
+  padding-right: 12em;
+  margin-bottom: 30px;
+}
+.person{
+  background-color: #fafafa;
+}
+.person-img{
+  width: 330px;
+  height: 327px;
+  border-radius: 4px;
+  box-shadow: 0 1px 0 0 rgba(0,197,212,.25), 0 -1px 0 0 rgba(0,177,240,.25), 1px 0 0 0 rgba(0,197,212,.25), -1px 0 0 0 rgba(0,177,240,.25), 1px -1px 0 0 rgba(0,187,226,.5), -1px 1px 0 0 rgba(0,187,226,.5), 1px 1px 0 0 rgba(0,207,198,.75), -1px -1px 0 0 rgba(0,168,255,.75);
+}
