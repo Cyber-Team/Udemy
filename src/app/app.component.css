@@ -2,8 +2,9 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
-  box-shadow: 0 0 1px 1px rgba(20,23,28,.1), 0 3px 1px 0 rgba(20,23,28,.1);
-
+  box-shadow: 2px 7px 29px 0 rgba(38,38,38,.1);
+  background-color: #fff;
+  background-image: linear-gradient(rgba(255,255,255,.03) 0,rgba(255,255,255,.03) 65%,rgba(0,0,0,.03) 100%);
   z-index: 1010;
 }
 li{

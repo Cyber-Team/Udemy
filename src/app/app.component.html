@@ -75,8 +75,13 @@
          <mat-icon><i class="fa fa-shopping-cart"></i></mat-icon>
        </button>
      </li>
-     <li class="col-md-1 col-xs-3"><a routerLink="/signin"><button mat-raised-button [ngClass]="'Two'">LogIn</button></a></li>
-     <li class="col-md-1 col-xs-3"><a routerLink="/signup"> <button mat-raised-button [ngClass]="'Two'">SignUp</button></a></li>
+     <li class="col-md-1 col-xs-3"><a routerLink="/signin">
+       <button mat-raised-button [ngClass]="'Two'">
+         <i class="material-icons">fingerprint</i>LogIn
+       </button></a>
+     </li>
+     <li class="col-md-1 col-xs-3"><a routerLink="/signup">
+       <button mat-raised-button [ngClass]="'Two'">SignUp</button></a></li>
      <li class="col-md-1 col-xs-3"><a routerLink="contact">
        <button mat-raised-button [ngClass]="'One'">TALK</button></a>
      </li>
