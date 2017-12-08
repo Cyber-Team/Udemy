@@ -47,12 +47,12 @@ import { ForgetComponent } from './forget/forget.component';
 import { TeachComponent } from './teach/teach.component';
 import { BlogComponent } from './blog/blog.component';
 import { CartComponent } from './cart/cart.component';
-import { EmployeeComponent } from './teach/employee/employee.component';
-import { EmployeeListComponent } from './teach/employee-list/employee-list.component';
-
+import { AboutComponent } from './about/about.component';
 
 /*sub components*/
-
+import { EmployeeComponent } from './teach/employee/employee.component';
+import { EmployeeListComponent } from './teach/employee-list/employee-list.component';
+import { ProjectComponent } from './home/project/project.component';
 
 @NgModule({
   declarations: [
@@ -73,7 +73,9 @@ import { EmployeeListComponent } from './teach/employee-list/employee-list.compo
     CartComponent,
     EmployeeComponent,
     EmployeeListComponent,
-    BlogPipe
+    BlogPipe,
+    AboutComponent,
+    ProjectComponent
   ],
   imports: [
     BrowserModule,

@@ -12,12 +12,16 @@ import {TeachComponent} from './teach/teach.component';
 import {BlogComponent} from './blog/blog.component';
 import {CartComponent} from './cart/cart.component';
 import {provideRoutes} from "@angular/router";
-
+import { AboutComponent } from './about/about.component';
 
 const appRoute: Routes = [
   {
     path: 'home',
     component:HomeComponent,
+  },
+  {
+    path:'about',
+    component: AboutComponent,
   },
   {
     path:'contact',
