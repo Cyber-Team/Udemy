@@ -2,6 +2,9 @@
   width: 263px;
   height:321px;
   border-radius: 15px;
+  box-shadow: 2px 7px 29px 0 rgba(38,38,38,.1) !important;
+  background-color: #fff;
+  background-image: linear-gradient(rgba(255,255,255,.03) 0,rgba(255,255,255,.03) 65%,rgba(0,0,0,.03) 100%) !important;
 }
 .example-card img{
   background-size: cover;
@@ -26,7 +29,7 @@
 }
 .banner-img {
   border-radius: 22px;
-  box-shadow: 0 2px 8px grey;
+  box-shadow: 2px 7px 29px 0 rgba(38,38,38,.1);
   background-repeat: no-repeat;
   background-size: cover;
   display: -webkit-flex;
@@ -50,3 +53,4 @@
   width: 86px;
   height: 86px;
 }
+

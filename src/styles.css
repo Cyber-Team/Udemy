@@ -184,12 +184,15 @@ body{
 
 .account-wall
 {
-  padding: 1px;
+  box-shadow: 2px 7px 29px 0 rgba(38,38,38,.1);
+  background-color: #fff;
+  background-image: linear-gradient(rgba(255,255,255,.03) 0,rgba(255,255,255,.03) 65%,rgba(0,0,0,.03) 100%);
+
   margin-top: 20px;
   padding: 12px 0px 20px 10px;
-  background-color: white;
+
   border: 1px solid #dddddd;
-  box-shadow: none;
+
   border-radius: 10px;
 }
 .login-title
