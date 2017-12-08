@@ -1,0 +1,8 @@
+.munni{
+  box-shadow: 2px 7px 29px 0 rgba(38,38,38,.1);
+  background-color: #fff;
+  background-image: linear-gradient(rgba(255,255,255,.03) 0,rgba(255,255,255,.03) 65%,rgba(0,0,0,.03) 100%);
+  padding: 37px !important;
+  border-radius: 14px;
+  margin: 2px;
+}

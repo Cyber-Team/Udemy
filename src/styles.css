@@ -83,7 +83,7 @@ body{
 /*training box*/
 
 .training-box{
-  border: 1px solid #d0d4da;
+  /*border: 1px solid #d0d4da;*/
   transition: border-color .2s ease-in-out;
   padding: 1em;
   display: flex;
@@ -262,4 +262,10 @@ body{
 }
 .wrap{
   text-align: center;
+}
+.thumbnail{
+  border: 0px !important;
+  box-shadow: 2px 7px 29px 0 rgba(38,38,38,.1);
+  background-color: #fff;
+  background-image: linear-gradient(rgba(255,255,255,.03) 0,rgba(255,255,255,.03) 65%,rgba(0,0,0,.03) 100%);
 }
