@@ -14,7 +14,7 @@
 }
 .input:hover, .message:hover{
   transform: translateY(-1px);
-  
+
 }
 .message{
   width: 100%;
