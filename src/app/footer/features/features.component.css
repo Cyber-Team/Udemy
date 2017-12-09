@@ -6,7 +6,7 @@
   color:#fff;
 }
 
-.container{
+.heer{
   max-width:960px;
   padding-left:1rem;
   padding-right:1rem;
@@ -58,14 +58,11 @@
   font-size:50px;
   margin-bottom:0;
 }
-
 .header-content p{
   font-size:1.5rem;
   display:block;
   padding-bottom:2rem;
 }
-
-
 .find{
   transition: opacity .25s ease,background-color .25s ease;
   border: 2px solid #cbd3dd;
@@ -78,4 +75,11 @@
   cursor: pointer;
   line-height: 1;
   text-decoration: none;
+}
+.jurd{
+  line-height: 1.6;
+  font-size: 1.25em;
+  color: #808488;
+  max-width: 80%;
+  margin: 0 auto;
 }
