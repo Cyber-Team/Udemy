@@ -108,3 +108,46 @@
   padding: 35px;
   text-align: center;
 }
+/*price list stated*/
+.price-list {
+  position: relative;
+  padding: 40px 50px;
+  margin: 0 15px 50px;
+  border-radius: 10px;
+  min-height: 100px;
+  box-shadow: 2px 7px 29px 0 rgba(38,38,38,.1);
+  background-color: #fff;
+  background-image: linear-gradient(rgba(255,255,255,.03) 0,rgba(255,255,255,.03) 65%,rgba(0,0,0,.03) 100%);
+}
+.price-list-title {
+  text-align: center;
+  color: #808488;
+}
+.price-list-price {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.price-list-features {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.price-list-feature-item {
+  padding: 5px 0;
+  font-weight: 300;
+}
+/*button*/
+.price-list-button {
+  margin-top: 30px;
+  display: block;
+  text-align: center;
+  line-height: 50px;
+  font-weight: 300;
+  border: 1px solid #28c;
+  border-radius: 26px;
+  color: #28c;
+  text-decoration: none;
+}
+
