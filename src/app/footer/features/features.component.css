@@ -86,6 +86,7 @@
 .dia{
   opacity: .3;
   font-size: 29px;
+  color:red;
 }
 .nik{
   position: absolute;
@@ -98,4 +99,12 @@
 }
 .box-title{
   font-size: 1.5625em;
+}
+.dd{
+  padding: 50px;
+}
+.df{
+  border: 1px solid #e9eaec;
+  padding: 35px;
+  text-align: center;
 }
