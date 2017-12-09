@@ -19,7 +19,7 @@ export class SigninComponent implements OnInit {
 
   formSubmit(){
     if(this.data.firstName == "admin@admin.com" && this.data.password == "password"){
-      this.router.navigate(['./cart']);
+      this.router.navigate(['cart',this.data.firstName]);
     }else{
        this.data.firstName = '';
        this.data.password= '';
