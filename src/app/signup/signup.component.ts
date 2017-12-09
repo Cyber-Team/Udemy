@@ -20,7 +20,6 @@ export class SignupComponent implements OnInit {
     if(this.data.name == "" && this.data.email == "" && this.data.pass == ""){
        console.log("success");
     }else{
-     // this.wrong = "*Please enter correct input";
       this.router.navigate(['./cart',this.data.name]);
     }
   }

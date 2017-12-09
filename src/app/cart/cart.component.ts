@@ -9,6 +9,7 @@ import {_ParseAST} from "@angular/compiler";
 })
 export class CartComponent implements OnInit {
   name:string;
+  email: string;
   constructor(public route:ActivatedRoute) {
     this.route.params.subscribe(params=>{
       this.name=params['id'];

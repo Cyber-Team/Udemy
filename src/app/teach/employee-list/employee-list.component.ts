@@ -8,7 +8,6 @@ import {Component, Input, OnInit, Output, EventEmitter} from '@angular/core';
 })
 export class EmployeeListComponent implements OnInit {
 
- /* @Input() reviews: string;*/
  @Input() model2: any={};
  @Output() notify: EventEmitter<any> = new EventEmitter();
 

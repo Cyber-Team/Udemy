@@ -1,6 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
 
-
 @Component({
   selector: 'app-employee',
   templateUrl: './employee.component.html',
@@ -17,7 +16,7 @@ export class EmployeeComponent implements OnInit {
    ];
    model:any={};
    model2: any={};
-   myValue;
+
    msg:any="";
    msgg:any="";
 
@@ -29,11 +28,11 @@ export class EmployeeComponent implements OnInit {
 
   onNotify(event){
      for(let i =0; i<this.employees.length; i++){
-      if(this.employees[i].id== event.id){
-        this.employees[i]= event;
-        this.msg = "Record is successfully updated";
-      }
-  }
+        if(this.employees[i].id== event.id){
+          this.employees[i]= event;
+          this.msg = "Record is successfully updated";
+        }
+     }
 
   };
   addEmployee(){
@@ -51,16 +50,5 @@ export class EmployeeComponent implements OnInit {
     this.model2.name = this.employees[k].name;
     this.model2.position = this.employees[k].position;
     this.model2.salary = this.employees[k].salary;
-    this.myValue = k;
   }
-  /*updateEmployee(){
-    let k= this.myValue;
-    for(let i =0; i<this.employees.length; i++){
-     if(i==k){
-       this.employees[i]= this.model2;
-       this.model2 = {};
-       this.msg = "Record is successfully updated";
-     }
-    }
-  }*/
 }
