@@ -10,7 +10,6 @@ import { CartService } from '../services/cart/cart.service';
 export class SigninComponent implements OnInit {
   signin: string = "SignIn";
   firstName: string;
-  // password: any;
   wrong: string = "";
   data: any = [];
   msg:any="";
