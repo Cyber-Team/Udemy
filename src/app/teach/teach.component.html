@@ -1,45 +1,40 @@
+<!--div started-->
   <div class="row" style="padding: 22px;">
       <div class="col-lg-2 col-md-3 hidden-sm col-lg-offset-1 col-xs-12">
-        <mat-card class="example-card">
-          <img mat-card-image src="../../assets/Images/back.jpg">
-          <mat-card-content class="text-center kr">
-            <img alt="Logo" class="center-block" src="../../assets/Images/c.png">
-            <p  class="jurr text-center" style="color:black">Code4Startup</p>
-          <button class="c4s-btn" type="button" (click)="toggledFanSwitch()">{{followOrUnfollow}} </button>
-          </mat-card-content>
-          <mat-card-actions class="text-center">
-              <button mat-fab>
-                <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
-              </button>
-            <button mat-button>Followers {{numbers}}</button>
-          </mat-card-actions>
-        </mat-card>
+          <mat-card class="example-card">
+              <img mat-card-image src="../../assets/Images/back.jpg">
+              <mat-card-content class="text-center kr">
+                   <img alt="Logo" class="center-block" src="../../assets/Images/c.png">
+                   <p  class="jurr text-center" style="color:black">Code4Startup</p>
+                   <button class="c4s-btn" type="button" (click)="toggledFanSwitch()">{{followOrUnfollow}} </button>
+              </mat-card-content>
+              <mat-card-actions class="text-center">
+                  <button mat-fab>
+                    <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+                  </button>
+                  <button mat-button>Followers {{numbers}}</button>
+              </mat-card-actions>
+          </mat-card>
       </div>
       <!--banner started-->
       <div class="col-lg-7 col-md-7 col-sm-12 col-lg-push-1 col-xs-12">
-        <div class="banner-img" style="background-image: url(../../assets/Images/back2.jpg)">
-          <div style="padding: 75px;">
-            <h1>Learn to code by creating</h1>
-            <h1>Real life Startups</h1>
-            <p>(AirBnb, UberEats, Tinder, Fiverr, ProductHunt...)</p>
+          <div class="banner-img" style="background-image: url(../../assets/Images/back2.jpg)">
+              <div style="padding: 75px;">
+                <h1>Learn to code by creating</h1>
+                <h1>Real life Startups</h1>
+                <p>(AirBnb, UberEats, Tinder, Fiverr, ProductHunt...)</p>
+              </div>
           </div>
-        </div>
       </div>
   </div>
 <!--employee started-->
   <div class="container">
-    <div class="row">
-      <!--app employee started-->
-      <div class="col-md-7">
-         <app-employee></app-employee>
+      <div class="row">
+          <!--app employee started-->
+          <div class="col-md-7">
+             <app-employee></app-employee>
+          </div>
       </div>
-      <!--app employee ended-->
-      <!--app employee list starated-->
-      <!--<div class="col-md-5">
-        <app-employee-list></app-employee-list>
-      </div>-->
-      <!--employee list ended-->
-    </div>
   </div>
 <!--employee ended-->
   <app-footer></app-footer>
