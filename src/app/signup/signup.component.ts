@@ -21,7 +21,7 @@ export class SignupComponent implements OnInit {
        console.log("success");
     }else{
      // this.wrong = "*Please enter correct input";
-      this.router.navigate(['./cart']);
+      this.router.navigate(['./cart',this.data.name]);
     }
   }
 }

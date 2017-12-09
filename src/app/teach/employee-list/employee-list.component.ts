@@ -10,11 +10,11 @@ export class EmployeeListComponent implements OnInit {
 
  /* @Input() reviews: string;*/
  @Input() model2: any={};
-/* @Output() notify: EventEmitter<string> = new EventEmitter<string>();*/
+ @Output() notify: EventEmitter<any> = new EventEmitter();
 
-  /*updateEmployee(): void{
-    this.notify.emit('msg');
-  }*/
+  updateEmployee(): void{
+    this.notify.emit(this.model2);
+  }
   constructor() { }
 
   ngOnInit() {

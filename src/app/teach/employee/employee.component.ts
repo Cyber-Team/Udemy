@@ -8,7 +8,9 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class EmployeeComponent implements OnInit {
    employees = [
-                { name:"Krishna",
+                {
+                  id:1,
+                  name:"Krishna",
                   position:"CEO",
                   salary:"$500"
                 }
@@ -24,7 +26,18 @@ export class EmployeeComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  onNotify(event){
+     for(let i =0; i<this.employees.length; i++){
+      if(this.employees[i].id== event.id){
+        this.employees[i]= event;
+        this.msg = "Record is successfully updated";
+      }
+  }
+
+  };
   addEmployee(){
+      this.model.id = this.employees.length+1;
       this.employees.push(this.model);
       this.model={};
       this.msg = "Record is successfully added";
@@ -34,12 +47,13 @@ export class EmployeeComponent implements OnInit {
     this.msgg = "Record is successfully deleted";
   }
   editEmployee(k){
+    this.model2.id = this.employees[k].id;
     this.model2.name = this.employees[k].name;
     this.model2.position = this.employees[k].position;
     this.model2.salary = this.employees[k].salary;
     this.myValue = k;
   }
-  updateEmployee(){
+  /*updateEmployee(){
     let k= this.myValue;
     for(let i =0; i<this.employees.length; i++){
      if(i==k){
@@ -48,5 +62,5 @@ export class EmployeeComponent implements OnInit {
        this.msg = "Record is successfully updated";
      }
     }
-  }
+  }*/
 }
