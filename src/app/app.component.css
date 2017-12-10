@@ -13,7 +13,9 @@ li{
 .Helo1{
   width: 57px;
   height: 50px;
-
+  transition: 0.5s all;
 }
-
+.Helo1:hover{
+  transform: rotatez(180deg);
+}
 

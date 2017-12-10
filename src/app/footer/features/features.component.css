@@ -78,6 +78,10 @@
   height: 80px;
   line-height: 80px;
   opacity: 0.7;
+  transition: 0.5s all;
+}
+.nik:hover{
+  transform: rotatez(360deg);
 }
 .box-title{
   font-size: 1.5625em;

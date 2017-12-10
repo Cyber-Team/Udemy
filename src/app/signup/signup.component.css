@@ -23,6 +23,10 @@
 .nik{
   width: 50px;
   height: 50px;
+  transition: 0.5s all;
+}
+.nik:hover{
+  transform: rotatez(360deg);
 }
 .OR{
   margin-top: 25px;

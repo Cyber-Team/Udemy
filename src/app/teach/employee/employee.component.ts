@@ -16,7 +16,7 @@ export class EmployeeComponent implements OnInit {
    ];
    model:any={};
    model2: any={};
-
+  /*popups*/
    msg:any="";
    msgg:any="";
 
@@ -33,7 +33,6 @@ export class EmployeeComponent implements OnInit {
           this.msg = "Record is successfully updated";
         }
      }
-
   };
   addEmployee(){
       this.model.id = this.employees.length+1;
