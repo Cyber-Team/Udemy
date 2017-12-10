@@ -17,7 +17,7 @@ export class BlogComponent implements OnInit {
   name = [];
   onRe: string = "Reply";
   onReplyor: boolean = false;
-
+ search: string;
   constructor(private http: Http) { }
 
   ngOnInit() {

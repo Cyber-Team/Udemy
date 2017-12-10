@@ -17,7 +17,7 @@ import {MatInputModule} from '@angular/material';
 import {MatCardModule} from '@angular/material';
 import {BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Angular2FontawesomeModule } from 'angular2-fontawesome/angular2-fontawesome';
-
+import {MatDialogModule} from '@angular/material';
 /*environment setup*/
 import {environment} from "../environments/environment";
 
@@ -84,6 +84,7 @@ import { FeaturesComponent } from './footer/features/features.component';
     BrowserModule,
     MatButtonModule, MatMenuModule, MatChipsModule, MatInputModule, MatIconModule, MatCardModule,
     BrowserAnimationsModule,
+    MatDialogModule,
     HttpModule,
     AppRoutingModule,
     FormsModule, ReactiveFormsModule,
