@@ -28,7 +28,7 @@ import { AngularFireDatabaseModule} from "angularfire2/database-deprecated";*/
 import { DataService } from './services/data.service';
 import { AuthService } from './services/Auth/auth.service';
 import { CartService } from './services/cart/cart.service';
-
+import {UserServiceService } from './Admin/user-service.service';
 /*pipes*/
 import { BloPipe } from './blo.pipe';
 import { BlogPipe } from './pipes/blog.pipe';
@@ -41,8 +41,8 @@ import { TrainingComponent } from './training/training.component';
 import { HomeComponent } from './home/home.component';
 import { MobileComponent } from './mobile/mobile.component';
 import { JavascriptComponent } from './javascript/javascript.component';
-import { SignupComponent } from './signup/signup.component';
-import { SigninComponent } from './signin/signin.component';
+import { SignupComponent } from './Admin/signup/signup.component';
+import { SigninComponent } from './Admin/signin/signin.component';
 import { ForgetComponent } from './forget/forget.component';
 import { TeachComponent } from './teach/teach.component';
 import { BlogComponent } from './blog/blog.component';
@@ -91,7 +91,7 @@ import { FeaturesComponent } from './footer/features/features.component';
     Angular2FontawesomeModule
 
   ],
-  providers: [DataService,AuthService, CartService],
+  providers: [DataService,AuthService, CartService, UserServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

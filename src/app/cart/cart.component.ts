@@ -12,7 +12,7 @@ export class CartComponent implements OnInit {
   email: string;
   constructor(public route:ActivatedRoute) {
     this.route.params.subscribe(params=>{
-      this.name=params['id'];
+      this.name = params['id'];
     })
   }
 
