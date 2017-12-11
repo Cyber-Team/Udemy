@@ -16,14 +16,34 @@
         <div class="account-wall">
           <img class="profile-img" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png" alt="">
           <!--form started-->
-          <form class="form-signin" (ngSubmit)="formSubmit()">
-            <input type="text" class="form-control" placeholder="Email address"
+          <form class="form-signin">
+            <!--<input type="text" class="form-control" placeholder="Email address"
                    autofocus [(ngModel)]="data.firstName" name="first">
             <input type="password" class="form-control" placeholder="Password" [(ngModel)]="data.password" name="pass" >
             <p class="wrn">{{wrong}}</p>
             <div class="wrap">
                 <button  [ngClass]="'Three'" style="border-radius: 24px;" type="submit"
                      (click)="SignChange()">{{signin}}</button>
+            </div>-->
+
+            <input type="text" class="form-control" placeholder="Enter Email" id="email" [(ngModel)]="email"
+                   name="email" required autofocus #em="ngModel">
+            <div [hidden]="em.valid || em.pristine" class="alert callout">Email required</div>
+
+
+            <input type="password" class="form-control" placeholder="Enter Password" id="password1"
+                   [(ngModel)]="password1" name="password1" required autofocus #pwd1="ngModel">
+            <div [hidden]="pwd1.valid || pwd1.pristine" class="alert callout">Password required</div>
+
+
+            <div class="small-12 columns">
+              <div class="expanded button-group">
+                <a class="success button" (click)="login()">Login</a>
+                <a class="cancel button" (click)="signup()">SignUp</a>
+              </div>
+            </div>
+            <div>
+              <p (click)="cancel()">back to the main site</p>
             </div>
             <div class="text-center">
             <label class="checkbox">

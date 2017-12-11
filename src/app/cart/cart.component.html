@@ -1,3 +1,11 @@
 
-<p>{{name}}</p>
+<div class="top-bar">
+  <div class="top-bar-title">GGC admin</div>
+</div>
 
+<div *ngIf="theUser" class="top-bar-right">
+  <ul class="menu">
+    <li class="admin-menu"><a (click)="logout()">logout</a> </li>
+    <li class="admin-menu"><a>{{theUser}} Logged In </a></li>
+  </ul>
+</div>

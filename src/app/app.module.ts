@@ -24,6 +24,7 @@ import {environment} from "../environments/environment";
 /*firebase setup*/
 /*import { AngularFireModule} from "angularfire2";
 import { AngularFireDatabaseModule} from "angularfire2/database-deprecated";*/
+
 /*services*/
 import { DataService } from './services/data.service';
 import { AuthService } from './services/Auth/auth.service';

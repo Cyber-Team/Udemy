@@ -65,7 +65,7 @@ const appRoute: Routes = [
     component: BlogComponent,
   },
   {
-    path:'cart/:id',
+    path:'cart',
     component: CartComponent,
   },
   {

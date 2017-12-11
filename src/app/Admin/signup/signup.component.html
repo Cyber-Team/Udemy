@@ -17,15 +17,32 @@
             <span class="orr">OR</span>
           </div>
           <!--form started-->
-          <form class="form-signin" (ngSubmit)="formSubmi()">
-            <input type="text" class="form-control" placeholder="Your Name" [(ngModel)]="data.name"
-                   name="first" required autofocus>
-            <input type="text" class="form-control" placeholder="Email address" [(ngModel)]="data.email"
-                   name="email" required autofocus>
-            <input type="password" class="form-control" placeholder="Password" [(ngModel)]="data.pass"
-                   name="pass" required>
+          <form class="form-signin">
+            <input type="text" class="form-control" placeholder="Enter Email" id="email" [(ngModel)]="email"
+                   name="email" required autofocus #em="ngModel">
+            <div [hidden]="em.valid || em.pristine" class="alert callout">Email required</div>
 
-            <p class="wrn">{{wrong}}</p>
+
+            <input type="password" class="form-control" placeholder="Enter Password" id="password1"
+                   [(ngModel)]="password1" name="password1" required autofocus #pwd1="ngModel">
+            <div [hidden]="pwd1.valid || pwd1.pristine" class="alert callout">Password required</div>
+
+            <input type="password" class="form-control" placeholder="Confirm Password" id="password2"
+                   [(ngModel)]="password2" name="password2" required autofocus #pwd2="ngModel">
+            <div [hidden]="pwd2.valid || pwd2.pristine" class="alert callout">Password required</div>
+
+            <div *ngIf="passwordFail" class="alert callout">
+              Password do not match
+            </div>
+
+            <div class="small-12 columns">
+              <div class="expanded button-group">
+                <a class="success button" (click)="signUp()">singup</a>
+                <a class="cancel button" (click)="cancel()">Cancel</a>
+              </div>
+            </div>
+
+            <!--<p class="wrn">{{wrong}}</p>-->
             <div class="wrap">
                 <button [ngClass]="'Three'" style="border-radius: 24px;">Create free account</button>
             </div>
@@ -37,6 +54,8 @@
               <a routerLink="/forget" class="need-help">Need help? </a><span class="clearfix"></span>
             </div>
           </form>
+
+
         </div>
         <p class="jurr text-center" style="color:black">By creating an accout you agree to Terms and conditions and Privacy               Policy</p>
         <a routerLink="/signin" class="text-center new-account">Alreadt have account LogIn </a>
