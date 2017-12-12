@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-contact-form',
@@ -16,7 +16,9 @@ export class ContactFormComponent implements OnInit {
   sendOr: string = "Send";
   Hel = [];
 
-  constructor() {
+
+
+  constructor( private router:Router) {
 
   }
 
