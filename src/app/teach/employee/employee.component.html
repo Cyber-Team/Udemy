@@ -64,7 +64,7 @@
           </tr>
           </thead>
           <tbody>
-          <tr *ngFor="let employee of employees; let i=index">
+          <tr *ngFor="let employee of employees; let i=index" [@myTrigger]="state">
             <td>{{employee.name}}</td>
             <td>{{employee.position}}</td>
             <td>{{employee.salary}}</td>
