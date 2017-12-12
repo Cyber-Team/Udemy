@@ -38,7 +38,6 @@ export class EmployeeComponent implements OnInit {
    msg:any="";
    msgg:any="";
    state: string = 'fadeIn';
-
    constructor() { }
 
   ngOnInit() {
@@ -70,4 +69,5 @@ export class EmployeeComponent implements OnInit {
     this.model2.position = this.employees[k].position;
     this.model2.salary = this.employees[k].salary;
   }
+
 }
