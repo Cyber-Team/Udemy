@@ -1,6 +1,5 @@
 import { Component, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
-
 import {UserServiceService} from '../user-service.service';
 @Component({
   selector: 'app-signin',
@@ -10,6 +9,7 @@ import {UserServiceService} from '../user-service.service';
 export class SigninComponent implements OnInit {
   email: string;
   password1: string;
+  sign: string;
   constructor(private router: Router, private userSVC: UserServiceService) {}
 
   ngOnInit() {
@@ -23,7 +23,5 @@ export class SigninComponent implements OnInit {
    signup(){
      this.router.navigate(['/signup']);
    }
-   cancel(){
-     this.router.navigate(['']);
-   }
+
 }

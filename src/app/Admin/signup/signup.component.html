@@ -31,19 +31,16 @@
                    [(ngModel)]="password2" name="password2" required autofocus #pwd2="ngModel">
             <div [hidden]="pwd2.valid || pwd2.pristine" class="alert callout">Password required</div>
 
-            <div *ngIf="passwordFail" class="alert callout">
-              Password do not match
+            <div *ngIf="passwordFail" class="alert alert-danger">
+                <strong> Password do not match!</strong>
             </div>
 
-            <div class="small-12 columns">
-              <div class="expanded button-group">
-                <a class="success button" (click)="signUp()">singup</a>
-                <a class="cancel button" (click)="cancel()">Cancel</a>
-              </div>
+            <div class="alert alert-success" role="alert">
+            {{succ}}
             </div>
-
             <div class="wrap">
-                <button [ngClass]="'Three'" style="border-radius: 24px;">Create free account</button>
+                <button [ngClass]="'Three'" style="border-radius: 24px;" (click)="signUp()">singup</button>
+                <button [ngClass]="'Three'" style="border-radius: 24px;" (click)="cancel()">Cancel</button>
             </div>
             <div class="text-center">
             <label class="checkbox">

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
+import {UserServiceService} from '../user-service.service';
 
 @Component({
   selector: 'app-forget',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ForgetComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router, private userSVC: UserServiceService) { }
 
   ngOnInit() {
   }

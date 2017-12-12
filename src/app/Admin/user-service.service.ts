@@ -18,13 +18,15 @@ export class UserServiceService implements CanActivate{
     })
   }
    canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean {
-    let url: string = state.url;
-    return this.verifyLogin(url);
+      let url: string = state.url;
+      return this.verifyLogin(url);
    }
    verifyLogin(url: string):boolean{
-    if(this.userLoggedIn){ return true; }
-    this.router.navigate(['/signin']);
-    return false;
+      if(this.userLoggedIn){
+         return true;
+      }
+      this.router.navigate(['/signin']);
+      return false;
    }
    register(email: string, password: string){
     firebase.auth().createUserWithEmailAndPassword(email, password)
@@ -34,7 +36,6 @@ export class UserServiceService implements CanActivate{
    }
    verifyUser(){
      this.authUser = firebase.auth().currentUser;
-
      if(this.authUser){
        alert(`welcome ${this.authUser.email}`);
        this.loggedInUser = this.authUser.email;
@@ -51,7 +52,7 @@ export class UserServiceService implements CanActivate{
    logout(){
      this.userLoggedIn = false;
      firebase.auth().signOut().then(function () {
-       alert('Logged out');
+       /*alert('Logged out');*/
      }, function (error) {
        alert(`${error.message} Unable to logout`);
      });

@@ -19,6 +19,6 @@ export class CartComponent implements OnInit {
   }
   logout(){
       this.userSVC.logout();
-      this.router.navigate(['']);
+      this.router.navigate(['/signin']);
   }
 }

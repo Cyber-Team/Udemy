@@ -44,7 +44,7 @@ import { MobileComponent } from './mobile/mobile.component';
 import { JavascriptComponent } from './javascript/javascript.component';
 import { SignupComponent } from './Admin/signup/signup.component';
 import { SigninComponent } from './Admin/signin/signin.component';
-import { ForgetComponent } from './forget/forget.component';
+import { ForgetComponent } from './Admin/forget/forget.component';
 import { TeachComponent } from './teach/teach.component';
 import { BlogComponent } from './blog/blog.component';
 import { CartComponent } from './cart/cart.component';

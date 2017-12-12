@@ -1,11 +1,34 @@
 
-<div class="top-bar">
-  <div class="top-bar-title">GGC admin</div>
-</div>
+<nav class="navbar" *ngIf="theUser">
+  <div class="container-fluid">
+      <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Welcome</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a routerLink="/signin">Home</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+              <li>
+                <button mat-raised-button [matMenuTriggerFor]="menu">Your Account &nbsp;<i class="fa fa-user-circle-o"></i></button>
+                <mat-menu #menu="matMenu">
+                  <button mat-menu-item>
+                    <i class="fa fa-user"></i>
+                    <span><a>{{theUser}}</a></span>
+                  </button>
+                  <button mat-menu-item (click)="logout()">
+                    <i class="fa fa-sign-out"></i>
+                    <a>logout</a>
+                  </button>
+                </mat-menu>
+              </li>
+          </ul>
+      </div>
+  </div>
+</nav>
 
-<div *ngIf="theUser" class="top-bar-right">
-  <ul class="menu">
-    <li class="admin-menu"><a (click)="logout()">logout</a> </li>
-    <li class="admin-menu"><a>{{theUser}} Logged In </a></li>
-  </ul>
-</div>
