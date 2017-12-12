@@ -13,12 +13,12 @@ import { Component, OnInit, Input, trigger, state, style, transition, animate, k
         transform: 'scale(1.4)'
       })),
       state('fadeIn', style({opacity: '1'})),
-      //  transition('small => large', animate('500ms ease-in')),
-      // transition('large => small', animate('500ms ease-out'))
-      // transition('* => *', animate('500ms')),
       transition('void => *',[
-        style({ opacity: '0', transform: 'translateY(20px)'}),
-        animate('500ms 0.5s ease-in')
+        animate(500, keyframes([
+          style({opacity:0, transform: 'translateY(-30px)', offset: 0}),
+          style({opacity:1, transform: 'translateY(5px)', offset: .3}),
+          style({opacity:1, transform: 'translateY(0)', offset: 1}),
+        ]))
       ])
     ])
   ]
