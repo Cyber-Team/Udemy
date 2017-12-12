@@ -6,7 +6,8 @@
               <mat-card-content class="text-center kr">
                    <img alt="Logo" class="center-block" src="../../assets/Images/c.png">
                    <p  class="jurr text-center" style="color:black">Code4Startup</p>
-                   <button class="c4s-btn" type="button" (click)="toggledFanSwitch()">{{followOrUnfollow}} </button>
+                   <button class="c4s-btn" type="button" [@myTrigger]="state"
+                           (click)="toggledFanSwitch()">{{followOrUnfollow}} </button>
               </mat-card-content>
               <mat-card-actions class="text-center">
                   <button mat-fab>
