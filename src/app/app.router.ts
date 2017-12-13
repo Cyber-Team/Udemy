@@ -14,6 +14,7 @@ import {CartComponent} from './cart/cart.component';
 import {FeaturesComponent} from './footer/features/features.component';
 import {provideRoutes} from "@angular/router";
 import { AboutComponent } from './about/about.component';
+import {ServicesComponent} from './footer/services/services.component';
 
 const appRoute: Routes = [
   {
@@ -31,6 +32,10 @@ const appRoute: Routes = [
   {
     path: 'training',
     component: TrainingComponent,
+  },
+  {
+    path: 'services',
+    component: ServicesComponent,
   },
   {
     path: 'mobile',
