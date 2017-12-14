@@ -9,3 +9,22 @@
     background-image: url('../../assets/Images/course.jpg');
   }
 }
+.cha{
+  padding-top: 30px;
+}
+.card{
+  box-shadow: 0 0 1px 1px rgba(20,23,28,.1), 0 3px 1px 0 rgba(20,23,28,.1);
+  opacity: 1;
+}
+.card:hover{
+  box-shadow: 0 2px 8px 2px rgba(20,23,28,.15);
+  transition: .2s ease;
+}
+.sdf{
+  filter: sepia(.1) grayscale(.1) saturate(.8);
+  width: 100%;
+  opacity: 1;
+}
+.card-body{
+  padding: 18px;
+}
