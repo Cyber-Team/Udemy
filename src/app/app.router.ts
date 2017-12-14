@@ -1,20 +1,20 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import {HomeComponent} from "./home/home.component";
+import { AboutComponent } from './about/about.component';
 import { ContactComponent } from "./contact/contact.component";
 import { TrainingComponent } from "./training/training.component";
-import {HomeComponent} from "./home/home.component";
-import {MobileComponent } from './mobile/mobile.component';
-import {JavascriptComponent} from './javascript/javascript.component';
-import {SignupComponent} from './Admin/signup/signup.component';
-import {SigninComponent} from './Admin/signin/signin.component';
-import {ForgetComponent} from './Admin/forget/forget.component';
-import {TeachComponent} from './teach/teach.component';
-import {BlogComponent} from './blog/blog.component';
-import {CartComponent} from './cart/cart.component';
-import {FeaturesComponent} from './footer/features/features.component';
-import {provideRoutes} from "@angular/router";
-import { AboutComponent } from './about/about.component';
-import {ServicesComponent} from './footer/services/services.component';
+import { ServicesComponent } from './footer/services/services.component';
+import { MobileComponent } from './mobile/mobile.component';
+import { CourseComponent} from './course/course.component';
+import { JavascriptComponent } from './javascript/javascript.component';
+import { SignupComponent } from './Admin/signup/signup.component';
+import { SigninComponent } from './Admin/signin/signin.component';
+import { FeaturesComponent } from './footer/features/features.component';
+import { ForgetComponent } from './Admin/forget/forget.component';
+import { TeachComponent } from './teach/teach.component';
+import { BlogComponent } from './blog/blog.component';
+import { CartComponent } from './cart/cart.component';
 
 const appRoute: Routes = [
   {
@@ -40,6 +40,10 @@ const appRoute: Routes = [
   {
     path: 'mobile',
     component: MobileComponent,
+  },
+  {
+    path: 'course',
+    component: CourseComponent,
   },
   {
     path: 'javascript',

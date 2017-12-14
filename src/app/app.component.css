@@ -16,6 +16,6 @@ li{
   transition: 0.5s all;
 }
 .Helo1:hover{
-  transform: rotatez(180deg);
+  transform: rotatez(360deg);
 }
 

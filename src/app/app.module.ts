@@ -56,6 +56,7 @@ import { EmployeeListComponent } from './teach/employee-list/employee-list.compo
 import { ProjectComponent } from './home/project/project.component';
 import { FeaturesComponent } from './footer/features/features.component';
 import { ServicesComponent } from './footer/services/services.component';
+import { CourseComponent } from './course/course.component';
 
 
 @NgModule({
@@ -81,7 +82,8 @@ import { ServicesComponent } from './footer/services/services.component';
     AboutComponent,
     ProjectComponent,
     FeaturesComponent,
-    ServicesComponent
+    ServicesComponent,
+    CourseComponent
   ],
   imports: [
     BrowserModule,
