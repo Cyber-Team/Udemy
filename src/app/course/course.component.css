@@ -1,0 +1,11 @@
+#example1 {
+  padding: 75px;
+  background: url(../../assets/Images/course.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media only screen and (min-width: 400px) {
+  #example1 {
+    background-image: url('../../assets/Images/course.jpg');
+  }
+}
