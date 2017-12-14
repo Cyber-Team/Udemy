@@ -13,8 +13,9 @@
   padding-top: 30px;
 }
 .card{
-  box-shadow: 0 0 1px 1px rgba(20,23,28,.1), 0 3px 1px 0 rgba(20,23,28,.1);
+  box-shadow: 2px 7px 29px 0 rgba(38,38,38,.1);
   opacity: 1;
+  background-image: linear-gradient(rgba(255,255,255,.03) 0,rgba(255,255,255,.03) 65%,rgba(0,0,0,.03) 100%);
 }
 .card:hover{
   box-shadow: 0 5px 15px 0 rgba(0,0,0,.1);
