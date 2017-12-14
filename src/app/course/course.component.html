@@ -1,15 +1,16 @@
-<div id="example1">
-  <h1 class="text-light">10 Days of learning</h1>
-  <p class="jurr">Check back daily to see which courses are $10</p>
-</div>
+<!--header-->
+  <div id="example1">
+    <h1 class="text-light">10 Days of learning</h1>
+    <p class="jurr">Check back daily to see which courses are $10</p>
+  </div>
 <!--courses started-->
-  <div class="container cha">
-    <div class="col-sm-3">
+  <div class="cha">
+    <div class="col-sm-2" *ngFor="let numbers of myLise; let i=index">
       <div class="card">
-        <img  src="../../assets/Images/course/web1.jpg" alt="Card image" class="sdf">
+        <img  src="../../assets/Images/course/{{numbers.pic}}.jpg" alt="Card image" class="sdf">
         <div class="card-body">
-          <h4 class="card-title"><b>The Web Developer Bootcamp</b></h4>
-          <p class="card-text">Colt steele</p>
+          <h4 class="card-title"><b>{{numbers.cardtitle}}</b></h4>
+          <p class="card-text">{{numbers.nam}}</p>
           <a href="#" class="btn btn-primary">See Profile</a>
         </div>
       </div>
