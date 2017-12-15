@@ -4,20 +4,34 @@
     <p class="jurr">Check back daily to see which courses are $10</p>
   </div>
 <!--courses started-->
-  <div class="cha">
-    <div class="col-sm-2 col-xs-6" *ngFor="let numbers of myLise; let i=index">
-      <div class="card thumbnail">
-        <img  src="../../assets/Images/course/{{numbers.pic}}.jpg" alt="Card image" class="sdf">
-        <div class="card-body">
-          <h4 class="card-title"><b>{{numbers.cardtitle}}</b></h4>
-          <p class="card-text">{{numbers.nam}}</p>
-
-          <span class="card-wraper">
-          <span class="card-list-price">$30</span>
-          <span class="card-discount-price">$12</span>
-            </span>
-        </div>
+  <div class="cha row">
+      <div class="col-sm-2 col-xs-6 kk"  *ngFor="let numbers of myLise; let i=index">
+          <div class="card thumbnail">
+              <img  src="../../assets/Images/course/{{numbers.pic}}.jpg" alt="Card image" class="sdf">
+              <div class="card-body">
+                  <h4 class="card-title"><b>{{numbers.cardtitle}}</b></h4>
+                  <p class="card-text">{{numbers.nam}}</p>
+                  <span class="card-wraper">
+                    <span class="card-list-price">$30</span>
+                    <span class="card-discount-price">$12</span>
+                  </span>
+              </div>
+          </div>
       </div>
-    </div>
   </div>
+<!--course end-->
 
+<div class="container-fluid hdf">
+   <div class="col-sm-2 text-center" style="padding: 11px;">
+     <img src="../../assets/Images/tool1.png" style="width:70px;"  />
+   </div>
+  <div class="col-sm-6" style="padding:  19px;">
+    <p class="inst_banner">Ever thought about creating your own Cyberdude course?</p>
+    <p>Share your knowledge on the world’s largest online learning marketplace.
+      Learn More
+    </p>
+  </div>
+  <div class="col-sm-2" style="padding: 30px;">
+    <button mat-raised-button [ngClass]="'hee'" routerLink="/teach">Learn More&gt;&gt;</button>
+  </div>
+</div>

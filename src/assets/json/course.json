@@ -42,7 +42,7 @@
   {
     "pic":"web9",
     "cardtitle":"Ionic2/Ionic3- Build IOS",
-    "nam":"Mazimillan"
+    "nam":"Dion"
   },
   {
     "pic":"web10",
@@ -52,11 +52,41 @@
   {
     "pic":"web11",
     "cardtitle":"Vue JS 2-The Complete Guide",
-    "nam":"Maximillan"
+    "nam":"Anthony"
   },
   {
     "pic":"web12",
     "cardtitle":"Angular2 + Rails 5 Bootcamp",
     "nam":"Jordan Hudgens"
+  },
+  {
+    "pic":"web13",
+    "cardtitle":"Learn By Example: AngularJS",
+    "nam":"Loony Corn"
+  },
+  {
+    "pic":"web14",
+    "cardtitle":"Ultimate Angular4 & (Angular 2)",
+    "nam":"Jon Bonso"
+  },
+  {
+    "pic":"web15",
+    "cardtitle":"Angular Styling & Animations",
+    "nam":"Manzoor "
+  },
+  {
+    "pic":"web16",
+    "cardtitle":"Angular & NodeJS- The MEAN ",
+    "nam":"Dan Wahlin"
+  },
+  {
+    "pic":"web17",
+    "cardtitle":"Angular Crash Course",
+    "nam":"Matthian Kentzia"
+  },
+  {
+    "pic":"web18",
+    "cardtitle":"Build a Real-world app ",
+    "nam":"Ryan Chenkie"
   }
 ]
