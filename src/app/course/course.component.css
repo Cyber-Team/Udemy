@@ -11,6 +11,7 @@
 }
 .cha{
   padding-top: 30px;
+  background-color: #f7f8fa;
 }
 .card{
   box-shadow: 2px 7px 29px 0 rgba(38,38,38,.1);
@@ -28,4 +29,22 @@
 }
 .card-body{
   padding: 18px;
+}
+.card-wraper{
+  display: flex;
+  justify-content: flex-end;
+}
+.card-list-price{
+  text-decoration: line-through;
+  color: #686f7a;
+  font-weight: 400;
+  font-size: 13px;
+  margin-right: 5px;
+
+}
+.card-discount-price{
+  color: #29303b;
+  font-size: 18px;
+  font-weight: 600;
+  margin-right: 10px;
 }
