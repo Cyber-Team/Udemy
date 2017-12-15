@@ -11,10 +11,19 @@
               <div class="card-body">
                   <h4 class="card-title"><b>{{numbers.cardtitle}}</b></h4>
                   <p class="card-text">{{numbers.nam}}</p>
-                  <span class="card-wraper">
-                    <span class="card-list-price">$30</span>
-                    <span class="card-discount-price">$12</span>
-                  </span>
+                  <div class="card-wraper">
+                    <span>
+                      <span>
+                        <button mat-icon-button color="accent">
+                            <mat-icon>favorite</mat-icon>
+                        </button>
+                      </span>
+                    </span>
+                    <span class="pull-right">
+                        <span class="card-list-price">$30</span>
+                        <span class="card-discount-price">$12</span>
+                      </span>
+                  </div>
               </div>
           </div>
       </div>
@@ -35,3 +44,19 @@
     <button mat-raised-button [ngClass]="'hee'" routerLink="/teach">Learn More&gt;&gt;</button>
   </div>
 </div>
+<hr/>
+<!--footer-->
+<div class="row ff">
+  <div class="col-sm-6">
+    <div class="col-sm-2 col-sm-offset-2 text-center">
+      <img class="logo-image" src="../../assets/Images/fire.png"/>
+    </div>
+    <div class="col-sm-6" style="padding: 14px;">
+      <p>CyberDude Admin <br/>Panel</p>
+    </div>
+  </div>
+  <div class="col-sm-6 text-center" style="padding: 14px;">
+    <P><a routerLink="/about"> About us</a><br/>Cyberdude, all rights reserved. 2017 ©</P>
+  </div>
+</div>
+<!--footer end-->
