@@ -30,10 +30,6 @@
 .card-body{
   padding: 18px;
 }
-.card-wraper{
-
-  justify-content: flex-end;
-}
 .card-list-price{
   text-decoration: line-through;
   color: #686f7a;
@@ -48,7 +44,6 @@
   font-weight: 600;
   margin-right: 10px;
 }
-
 .hdf{
   background: #e8e9eb;
   line-height: 1.43;

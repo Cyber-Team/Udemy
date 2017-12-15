@@ -11,18 +11,16 @@
               <div class="card-body">
                   <h4 class="card-title"><b>{{numbers.cardtitle}}</b></h4>
                   <p class="card-text">{{numbers.nam}}</p>
-                  <div class="card-wraper">
-                    <span>
-                      <span>
+                  <div class="row">
+                      <span class="col-sm-6 col-xs-6">
                         <button mat-icon-button color="accent">
                             <mat-icon>favorite</mat-icon>
                         </button>
                       </span>
-                    </span>
-                    <span class="pull-right">
+                    <div class="col-sm-6 col-xs-6">
                         <span class="card-list-price">$30</span>
                         <span class="card-discount-price">$12</span>
-                      </span>
+                    </div>
                   </div>
               </div>
           </div>
@@ -30,33 +28,33 @@
   </div>
 <!--course end-->
 
-<div class="container-fluid hdf">
-   <div class="col-sm-2 text-center" style="padding: 11px;">
-     <img src="../../assets/Images/tool1.png" style="width:70px;"  />
-   </div>
-  <div class="col-sm-6" style="padding:  19px;">
-    <p class="inst_banner">Ever thought about creating your own Cyberdude course?</p>
-    <p>Share your knowledge on the world’s largest online learning marketplace.
-      Learn More
-    </p>
+  <div class="container-fluid hdf">
+       <div class="col-sm-2 text-center" style="padding: 11px;">
+         <img src="../../assets/Images/tool1.png" style="width:70px;"  />
+       </div>
+      <div class="col-sm-6" style="padding:  19px;">
+        <p class="inst_banner">Ever thought about creating your own Cyberdude course?</p>
+        <p>Share your knowledge on the world’s largest online learning marketplace.
+          Learn More
+        </p>
+      </div>
+      <div class="col-sm-2" style="padding: 30px;">
+        <button mat-raised-button [ngClass]="'hee'" routerLink="/teach">Learn More&gt;&gt;</button>
+      </div>
   </div>
-  <div class="col-sm-2" style="padding: 30px;">
-    <button mat-raised-button [ngClass]="'hee'" routerLink="/teach">Learn More&gt;&gt;</button>
-  </div>
-</div>
 <hr/>
 <!--footer-->
-<div class="row ff">
-  <div class="col-sm-6">
-    <div class="col-sm-2 col-sm-offset-2 text-center">
-      <img class="logo-image" src="../../assets/Images/fire.png"/>
-    </div>
-    <div class="col-sm-6" style="padding: 14px;">
-      <p>CyberDude Admin <br/>Panel</p>
-    </div>
+  <div class="row ff">
+      <div class="col-sm-6">
+          <div class="col-sm-2 col-sm-offset-2 text-center">
+            <img class="logo-image" src="../../assets/Images/fire.png"/>
+          </div>
+          <div class="col-sm-6" style="padding: 14px;">
+            <p>CyberDude Admin <br/>Panel</p>
+          </div>
+      </div>
+        <div class="col-sm-6 text-center" style="padding: 14px;">
+          <P><a routerLink="/about"> About us</a><br/>Cyberdude, all rights reserved. 2017 ©</P>
+        </div>
   </div>
-  <div class="col-sm-6 text-center" style="padding: 14px;">
-    <P><a routerLink="/about"> About us</a><br/>Cyberdude, all rights reserved. 2017 ©</P>
-  </div>
-</div>
 <!--footer end-->
