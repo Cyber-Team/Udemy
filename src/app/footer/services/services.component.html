@@ -1,3 +1,13 @@
-<p>
-  services works!
-</p>
+<mat-drawer-container class="example-container">
+  <mat-drawer #drawer class="example-sidenav" >
+    <p>Auto-resizing sidenav</p>
+    <p>Lorem, ipsum dolor sit afsdf</p>
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+    <button type="button" mat-button (click)="drawer.toggle()">
+      Toggle sidenav
+    </button>
+  </div>
+
+</mat-drawer-container>

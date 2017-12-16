@@ -18,6 +18,7 @@ import {MatCardModule} from '@angular/material';
 import {BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Angular2FontawesomeModule } from 'angular2-fontawesome/angular2-fontawesome';
 import {MatDialogModule} from '@angular/material';
+import {MatSidenavModule} from '@angular/material';
 /*environment setup*/
 import {environment} from "../environments/environment";
 
@@ -91,7 +92,7 @@ import { CourseDetailsComponent } from './course/course-details/course-details.c
     CourseDetailsComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule,MatSidenavModule,
     MatButtonModule, MatMenuModule, MatChipsModule, MatInputModule, MatIconModule, MatCardModule,
     BrowserAnimationsModule,
     MatDialogModule,
