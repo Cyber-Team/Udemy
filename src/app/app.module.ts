@@ -28,7 +28,7 @@ import { AngularFireDatabaseModule} from "angularfire2/database-deprecated";*/
 /*services*/
 import { DataService } from './services/data.service';
 import { AuthService } from './services/Auth/auth.service';
-
+import {CourseService} from './course/course.service';
 import {UserServiceService } from './Admin/user-service.service';
 /*pipes*/
 import { BloPipe } from './blo.pipe';
@@ -97,7 +97,7 @@ import { CourseComponent } from './course/course.component';
     Angular2FontawesomeModule
 
   ],
-  providers: [DataService,AuthService, UserServiceService],
+  providers: [DataService,AuthService, UserServiceService, CourseService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
