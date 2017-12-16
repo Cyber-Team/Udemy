@@ -22,6 +22,7 @@ export class CourseComponent implements OnInit {
   }
   onSelect(numbers){
     this.router.navigate(['course', numbers.id]);
+    console.log(JSON.stringify(numbers));
   }
 }
 

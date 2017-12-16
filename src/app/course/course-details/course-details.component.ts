@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from "@angular/router";
-
+import { CourseService } from '../course.service';
 @Component({
   selector: 'app-course-details',
   templateUrl: './course-details.component.html',
@@ -9,15 +9,16 @@ import { ActivatedRoute, Params } from "@angular/router";
 export class CourseDetailsComponent implements OnInit {
   public courseID;
 
-  constructor(private route: ActivatedRoute) {
+  constructor(private route: ActivatedRoute, private course: CourseService) {
   }
 
   ngOnInit() {
     /*let kk = this.route.snapshot.params['id'];
     this.courseID = kk;*/
     this.route.params.subscribe((parms: Params) => {
-      let id = parseInt(parms['id']);
+      const id = parms['id'];
       this.courseID = id;
+      console.log(id);
     })
   }
 }
