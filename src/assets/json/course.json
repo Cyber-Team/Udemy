@@ -3,108 +3,126 @@
     "id": "1",
     "pic":"web1",
     "cardtitle":"The Web Bootcamp.",
-    "nam":"Colt steele"
+    "nam":"Colt steele",
+    "cost": "12"
   },
   {
     "id": "2",
     "pic":"web2",
     "cardtitle":"Complete Python Bootcamp",
-    "nam":"Jose Portilla"
+    "nam":"Jose Portilla",
+    "cost": "10"
   },
   {
     "id": "3",
     "pic":"web3",
     "cardtitle":"Complete Java Masterclass",
-    "nam":"Tim Buchalka"
+    "nam":"Tim Buchalka",
+    "cost": "15"
   },
   {
     "id": "4",
     "pic":"web4",
     "cardtitle":"IOS 11 & swift 4 the complete IOS App",
-    "nam":"Angela Yu"
+    "nam":"Angela Yu",
+    "cost": "17"
   },
   {
     "id": "5",
     "pic":"web5",
     "cardtitle":"The Complete web developer course",
-    "nam":"Rob pervical"
+    "nam":"Rob pervical",
+    "cost": "12"
   },
   {
     "id": "6",
     "pic":"web6",
     "cardtitle":"The complete javascript course",
-    "nam":"Jonas Schmedtmann"
+    "nam":"Jonas Schmedtmann",
+    "cost": "25"
   },
   {
     "id": "7",
     "pic":"web7",
     "cardtitle":"Angular 5(formerly Angular2)",
-    "nam":"Maximilian Schwazm"
+    "nam":"Maximilian Schwazm",
+    "cost": "21"
   },
   {
     "id": "8",
     "pic":"web8",
     "cardtitle":"The Complete Angular course",
-    "nam":"Mosh Hamedani"
+    "nam":"Mosh Hamedani",
+    "cost": "27"
   },
   {
     "id": "9",
     "pic":"web9",
     "cardtitle":"Ionic2/Ionic3- Build IOS",
-    "nam":"Dion"
+    "nam":"Dion",
+    "cost": "21"
   },
   {
     "id": "10",
     "pic":"web10",
     "cardtitle":"Build a real-world ASP.NET",
-    "nam":"Mosh"
+    "nam":"Mosh",
+    "cost": "28"
   },
   {
     "id": "11",
     "pic":"web11",
     "cardtitle":"Vue JS 2-The Complete Guide",
-    "nam":"Anthony"
+    "nam":"Anthony",
+    "cost": "10"
   },
   {
     "id": "12",
     "pic":"web12",
     "cardtitle":"Angular2 + Rails 5 Bootcamp",
-    "nam":"Jordan Hudgens"
+    "nam":"Jordan Hudgens",
+    "cost": "13"
   },
   {
     "id": "13",
     "pic":"web13",
     "cardtitle":"Learn By Example: AngularJS",
-    "nam":"Loony Corn"
+    "nam":"Loony Corn",
+    "cost": "19"
   },
   {
     "id": "14",
     "pic":"web14",
     "cardtitle":"Ultimate Angular4 & (Angular 2)",
-    "nam":"Jon Bonso"
+    "nam":"Jon Bonso",
+    "cost": "10"
   },
   {
     "id": "15",
     "pic":"web15",
     "cardtitle":"Angular Styling & Animations",
-    "nam":"Manzoor "
+    "nam":"Manzoor ",
+    "cost": "24"
   },
   {
     "id": "16",
     "pic":"web16",
     "cardtitle":"Angular & NodeJS- The MEAN ",
-    "nam":"Dan Wahlin"
+    "nam":"Dan Wahlin",
+    "cost": "28"
   },
   {
     "id": "17",
     "pic":"web17",
     "cardtitle":"Angular Crash Course",
-    "nam":"Matthian Kentzia"
+    "nam":"Matthian Kentzia",
+    "cost": "21"
   },
   {
     "id": "18",
     "pic":"web18",
     "cardtitle":"Build a Real-world app ",
-    "nam":"Ryan Chenkie"
+    "nam":"Ryan Chenkie",
+    "cost": "12"
   }
 ]
