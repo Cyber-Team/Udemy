@@ -57,6 +57,7 @@ import { ProjectComponent } from './home/project/project.component';
 import { FeaturesComponent } from './footer/features/features.component';
 import { ServicesComponent } from './footer/services/services.component';
 import { CourseComponent } from './course/course.component';
+import { CoursePipe } from './course/course.pipe';
 
 
 
@@ -84,7 +85,8 @@ import { CourseComponent } from './course/course.component';
     ProjectComponent,
     FeaturesComponent,
     ServicesComponent,
-    CourseComponent
+    CourseComponent,
+    CoursePipe
   ],
   imports: [
     BrowserModule,

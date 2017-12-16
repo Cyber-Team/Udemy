@@ -10,7 +10,7 @@ import {CourseService} from './course.service';
 })
 export class CourseComponent implements OnInit {
   myLise: Icourse[];
-
+  search: string;
   constructor(private http: Http, private _course: CourseService) { }
 
   ngOnInit() {

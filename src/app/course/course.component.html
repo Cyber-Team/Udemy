@@ -4,16 +4,16 @@
     <p class="jurr">Check back daily to see which courses are $10</p>
   </div>
 <div class="col-lg-12" style="float:right">
-        <input class="form-control" type="text"  placeholder="serach here..." name="search" />
+        <input class="form-control" type="text"  placeholder="serach here..." name="search"  [(ngModel)]="search" />
     </div>
 <!--courses started-->
   <div class="cha row">
-      <div class="col-sm-2 col-xs-6 kk"  *ngFor="let numbers of myLise; let i=index">
+      <div class="col-sm-2 col-xs-6 kk"  *ngFor="let numbers of myLise | course: search">
           <div class="card thumbnail">
               <img  src="../../assets/Images/course/{{numbers.pic}}.jpg" alt="Card image" class="sdf">
               <div class="card-body">
                   <h4 class="card-title"><b>{{numbers.cardtitle}}</b></h4>
-                  <p class="card-text">{{numbers.nam}}</p>
+                  <p class="card-text">{{numbers.nam | lowercase}}</p>
                   <div class="row">
                       <span class="col-sm-6 col-xs-6">
                         <button mat-icon-button color="accent">
