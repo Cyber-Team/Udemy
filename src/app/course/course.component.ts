@@ -21,7 +21,7 @@ export class CourseComponent implements OnInit {
       .subscribe(res => this.myLise = res);
   }
   onSelect(numbers){
-    this.router.navigate(['course/', numbers.id]);
+    this.router.navigate(['course', numbers.id]);
   }
 }
 
