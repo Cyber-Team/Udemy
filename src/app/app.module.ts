@@ -58,6 +58,7 @@ import { FeaturesComponent } from './footer/features/features.component';
 import { ServicesComponent } from './footer/services/services.component';
 import { CourseComponent } from './course/course.component';
 import { CoursePipe } from './course/course.pipe';
+import { CourseDetailsComponent } from './course/course-details/course-details.component';
 
 
 
@@ -86,7 +87,8 @@ import { CoursePipe } from './course/course.pipe';
     FeaturesComponent,
     ServicesComponent,
     CourseComponent,
-    CoursePipe
+    CoursePipe,
+    CourseDetailsComponent
   ],
   imports: [
     BrowserModule,

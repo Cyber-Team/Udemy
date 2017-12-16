@@ -9,7 +9,7 @@
   </div>
 <!--courses started-->
   <div class="cha row">
-      <div class="col-sm-2 col-xs-6 kk"  *ngFor="let numbers of myLise | course: search">
+      <div class="col-sm-2 col-xs-6 kk" (click)="onSelect(numbers)"  *ngFor="let numbers of myLise | course: search">
           <div class="card thumbnail">
               <img  src="../../assets/Images/course/{{numbers.pic}}.jpg" alt="Card image" class="sdf">
               <div class="card-body">

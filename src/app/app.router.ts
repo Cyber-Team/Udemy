@@ -15,6 +15,7 @@ import { ForgetComponent } from './Admin/forget/forget.component';
 import { TeachComponent } from './teach/teach.component';
 import { BlogComponent } from './blog/blog.component';
 import { CartComponent } from './cart/cart.component';
+import { CourseDetailsComponent } from './course/course-details/course-details.component';
 
 const appRoute: Routes = [
   {
@@ -44,6 +45,10 @@ const appRoute: Routes = [
   {
     path: 'course',
     component: CourseComponent,
+  },
+  {
+    path: 'course/:id',
+    component: CourseDetailsComponent,
   },
   {
     path: 'javascript',
