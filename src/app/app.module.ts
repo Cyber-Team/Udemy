@@ -33,7 +33,7 @@ import {UserServiceService } from './Admin/user-service.service';
 /*pipes*/
 import { BloPipe } from './blo.pipe';
 import { BlogPipe } from './pipes/blog.pipe';
-
+import {RatingModule} from 'ngx-rating';
 /*components*/
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
@@ -96,7 +96,8 @@ import { CoursePipe } from './course/course.pipe';
     HttpModule,
     AppRoutingModule,
     FormsModule, ReactiveFormsModule,
-    Angular2FontawesomeModule
+    Angular2FontawesomeModule,
+    RatingModule
 
   ],
   providers: [DataService,AuthService, UserServiceService, CourseService],

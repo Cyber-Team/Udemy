@@ -11,6 +11,7 @@ import {CourseService} from './course.service';
 export class CourseComponent implements OnInit {
   myLise: Icourse[];
   search: string;
+  starsCount: number;
   constructor(private http: Http, private _course: CourseService) { }
 
   ngOnInit() {
