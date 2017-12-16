@@ -1,13 +1,31 @@
 <mat-drawer-container class="example-container">
   <mat-drawer #drawer class="example-sidenav" >
-    <p>Auto-resizing sidenav</p>
-    <p>Lorem, ipsum dolor sit afsdf</p>
-  </mat-drawer>
+    <ul>
+      <li><a href=""> <p class="block">Web Design</p></a></li>
+      <li><a href=""> <p class="block">Web Development</p></a></li>
+      <li><a href=""> <p class="block">Ecommerce</p></a></li>
+      <li><a href=""> <p class="block">Hosting</p></a></li>
+      <li><a href=""> <p class="block">Integration</p></a></li>
+      <li><a href=""> <p class="block">Mobile</p></a></li>
+      <li><a href=""> <p class="block">A/B Testing</p></a></li>
+      <li><a href=""> <p class="block">SEO</p></a></li>
+      <li><a href=""> <p class="block">Online Branding</p></a></li>
 
-  <div class="example-sidenav-content">
-    <button type="button" mat-button (click)="drawer.toggle()">
-      Toggle sidenav
-    </button>
+    </ul>
+  </mat-drawer>
+  <div class="container">
+    <div class="example-sidenav-content">
+      <button type="button" mat-button (click)="drawer.toggle()">
+        <mat-icon><i class="fa fa-bars"></i></mat-icon>
+      </button>
+
+
+
+    </div>
   </div>
 
 </mat-drawer-container>
+
+
+<!--footer added-->
+<app-footer></app-footer>

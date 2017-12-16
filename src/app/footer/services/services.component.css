@@ -5,6 +5,40 @@
 .example-sidenav-content {
   display: flex;
   height: 100%;
-  align-items: center;
-  justify-content: center;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+}
+li a{
+  text-decoration: none;
+}
+
+.block{
+  padding: 8px 16px;
+  background: red;
+  
+  text-align: center;
+  font-weight: bold;
+  margin: 11px;
+  color:white;
+  display: block;
+  background-image: linear-gradient(to left,
+  transparent,
+  transparent 50%,
+  #00c6ff 50%,
+  #00c6ff);
+  background-position: 100% 0;
+  background-size: 200% 100%;
+  transition: all .25s ease-in;
+
+}
+.block:hover{
+  background-position: 0 0;
+  color:#333;
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
 }
