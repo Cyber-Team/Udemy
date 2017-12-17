@@ -15,11 +15,9 @@ ul {
 li a{
   text-decoration: none;
 }
-
 .block{
   padding: 8px 16px;
   background: red;
-  
   text-align: center;
   font-weight: bold;
   margin: 11px;
@@ -33,7 +31,6 @@ li a{
   background-position: 100% 0;
   background-size: 200% 100%;
   transition: all .25s ease-in;
-
 }
 .block:hover{
   background-position: 0 0;
@@ -41,4 +38,36 @@ li a{
   -webkit-transform: scale(0.8);
   -ms-transform: scale(0.8);
   transform: scale(0.8);
+}
+.se{
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  display:block;
+  width: 153px;
+  border-radius: 32px;
+ outline: none;
+}
+.hax{
+  box-shadow: 2px 7px 29px 0 rgba(38,38,38,.1);
+}
+.hax:hover{
+  background-color: rgba(148, 196, 45, 1);
+  transition: all 0.2s ease-out;
+}
+.service-icon{
+  background-color: #FFFFFF;
+  display: inline-block;
+  height: 73px;
+  margin-top: 17px;
+  width: 95px;
+  cursor: default;
+  text-align: center;
+  border-radius: 50%;
+  background-clip: padding-box;
+  box-shadow: inset 0 0 0 50px #fff;
+  transition: all 0.2s ease-out;
 }
