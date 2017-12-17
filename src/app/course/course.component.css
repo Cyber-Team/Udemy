@@ -26,6 +26,7 @@
   filter: sepia(.1) grayscale(.1) saturate(.8);
   width: 100%;
   opacity: 1;
+  cursor: pointer;
 }
 .card-body{
   padding: 18px;
@@ -51,4 +52,7 @@
 .inst_banner{
   color: #29303b;
   font-size: 18px;
+}
+.jurr{
+  color:black;
 }

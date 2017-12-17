@@ -9,9 +9,10 @@
   </div>
 <!--courses started-->
   <div class="cha row">
-      <div class="col-sm-2 col-xs-6 kk" (click)="onSelect(numbers)"  *ngFor="let numbers of myLise | course: search">
+      <div class="col-sm-2 col-xs-6 kk"  *ngFor="let numbers of myLise | course: search">
           <div class="card thumbnail">
-              <img  src="../../assets/Images/course/{{numbers.pic}}.jpg" alt="Card image" class="sdf">
+              <img  (click)="onSelect(numbers)" src="../../assets/Images/course/{{numbers.pic}}.jpg"
+                    alt="Card image" class="sdf">
               <div class="card-body">
                   <h4 class="card-title"><b>{{numbers.cardtitle}}</b></h4>
                   <p class="card-text">{{numbers.nam | lowercase}}</p>
@@ -40,7 +41,16 @@
   </div>
 <!--course end-->
 
-  <div class="container-fluid hdf">
+<!--last section started-->
+  <section class="row hacc">
+    <div class="juk">
+      <h1 class="jur"><b>The Right Team For Your JavaScript Project.</b></h1>
+      <p class="jurr">We've developed solutions for companies in many different industries, from e-commerce to security.     No matter what your team's focus, we're able to dive in and assist.</p>
+    </div>
+  </section>
+
+
+  <section class="container-fluid hdf row">
        <div class="col-sm-2 text-center" style="padding: 11px;">
          <img src="../../assets/Images/tool1.png" style="width:70px;"  />
        </div>
@@ -53,7 +63,8 @@
       <div class="col-sm-2" style="padding: 30px;">
         <button mat-raised-button [ngClass]="'hee'" routerLink="/teach">Learn More&gt;&gt;</button>
       </div>
-  </div>
+  </section>
+
 <hr/>
 <!--footer-->
   <div class="row ff">
