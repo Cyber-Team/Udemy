@@ -12,36 +12,29 @@
         <li><a href=""> <p class="block">Online Branding</p></a></li>
       </ul>
   </mat-drawer>
-  <div class="container">
     <div class="example-sidenav-content">
-      <div>
-        <button type="button" mat-button (click)="drawer.toggle()">
-          <mat-icon><i class="fa fa-bars"></i></mat-icon>
-        </button>
-      </div>
-
-
-      <div class="container">
-        <div class="col-sm-4" *ngFor="let List of ServiceList; let i=index">
-          <div class="panel panel-default hax text-center">
-            <div class="panel-heading">
-              <h4><font size="6px"> {{List.toph}}</font> </h4>
-            </div>
-            <div class="panel-body">
-              <figure class="service-icon"><i class="fa fa-tint fa-5x"></i></figure><br><br>
-              <p>{{List.service}} </p>
-              <div class="text-center" style="display: inline-block;">
-                  <button  class="se">Learn more</button>
+        <div>
+          <button type="button" mat-button (click)="drawer.toggle()">
+            <mat-icon><i class="fa fa-bars"></i></mat-icon>
+          </button>
+        </div>
+        <div class="container">
+            <div class="col-sm-4 col-xs-12" *ngFor="let List of ServiceList; let i=index">
+              <div class="panel panel-default hax text-center">
+                <div class="panel-heading">
+                  <h4><font size="6px"> {{List.toph}}</font> </h4>
+                </div>
+                <div class="panel-body">
+                  <figure class="service-icon"><i class="fa fa-tint fa-5x"></i></figure><br><br>
+                  <p>{{List.service}} </p>
+                  <div class="text-center" style="display: inline-block;">
+                    <button  class="se">Learn more</button>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
         </div>
-      </div>
-
-
-
     </div>
-  </div>
 </mat-drawer-container>
 
 
