@@ -47,8 +47,8 @@ const appRoute: Routes = [
     component: CourseComponent,
   },
   {
-    path: 'course/:id',
-    component: CourseDetailsComponent,
+    path: 'course/:numbers',
+    component: CourseDetailsComponent
   },
   {
     path: 'javascript',
