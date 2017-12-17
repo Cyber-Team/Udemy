@@ -48,8 +48,13 @@
 <!--show details-->
               <div  class="card-body" *ngIf="numbers.showDetails">
                 <h4 class="card-title"><b>{{numbers.cardtitle}}</b></h4>
-               Sub-Total:  <span class="card-discount-price" #num1>{{numbers.total | currency:'USD':true}}</span>
-               Discout: {{num1 }}
+               Sub-Total:  <span class="card-discount-price">{{numbers.total | currency:'USD':true}}</span>
+
+
+                Discout: <span class="card-discount-price">-{{numbers.total * 10 / 100 | currency:'USD':true}}</span>
+
+
+
                 Total:  <span class="card-discount-price">{{numbers.cost | currency:'USD':true}}</span>
 
                 <hr>
