@@ -69,7 +69,7 @@
      <li class="col-md-4 col-xs-4">
        <input class="form-control col-xs-4" placeholder="Search.." type="text"></li>
      <li class="col-md-1 hidden-xs">
-       <button mat-button routerLink="/teach">Teach here</button>
+       <span matTooltip="Teach here!"> <button mat-button routerLink="/teach">Teach here</button></span>
      </li>
      <!--<li class="col-md-1 hidden-xs">
        <button mat-icon-button style="float: right;">
@@ -77,14 +77,16 @@
        </button>
      </li>-->
      <li class="col-md-1 col-xs-4"><a routerLink="/signin">
-       <button mat-raised-button [ngClass]="'Two'">
-         <i class="material-icons">fingerprint</i>LogIn
-       </button></a>
+      <span matTooltip="LogIn">
+        <button mat-raised-button [ngClass]="'Two'">
+            <i class="material-icons">fingerprint</i>  LogIn
+         </button>
+      </span></a>
      </li>
      <li class="col-md-1 col-xs-4"><a routerLink="/signup">
-       <button mat-raised-button [ngClass]="'Two'">SignUp</button></a></li>
+       <span matTooltip="SignUp"><button mat-raised-button [ngClass]="'Two'"> SignUp</button></span></a></li>
      <li class="col-md-1 col-xs-4"><a routerLink="contact">
-       <button mat-raised-button [ngClass]="'One'">TALK</button></a>
+       <span matTooltip="TALK"> <button mat-raised-button [ngClass]="'One'">TALK</button></span></a>
      </li>
    </ul>
  </div>
