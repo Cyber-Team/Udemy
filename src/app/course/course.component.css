@@ -56,3 +56,6 @@
 .jurr{
   color:black;
 }
+.thumbnail{
+  min-height: 408px;
+}

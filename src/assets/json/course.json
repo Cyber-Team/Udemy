@@ -43,7 +43,7 @@
     "id": "6",
     "pic":"web6",
     "cardtitle":"The complete javascript course",
-    "nam":"Jonas Schmedtmann",
+    "nam":"Schmedtmann",
     "total": "30",
     "cost": "25"
   },
@@ -51,7 +51,7 @@
     "id": "7",
     "pic":"web7",
     "cardtitle":"Angular 5(formerly Angular2)",
-    "nam":"Maximilian Schwazm",
+    "nam":"Maximilian",
     "total": "35",
     "cost": "21"
   },
@@ -59,7 +59,7 @@
     "id": "8",
     "pic":"web8",
     "cardtitle":"The Complete Angular course",
-    "nam":"Mosh Hamedani",
+    "nam":"Hamedani",
     "total": "35",
     "cost": "27"
   },
@@ -131,7 +131,7 @@
     "id": "17",
     "pic":"web17",
     "cardtitle":"Angular Crash Course",
-    "nam":"Matthian Kentzia",
+    "nam":"Matthian",
     "total": "30",
     "cost": "21"
   },

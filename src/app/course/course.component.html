@@ -30,33 +30,44 @@
                             <mat-icon>favorite</mat-icon>
                         </button>
                       </span>
-                    <div class="col-sm-8 col-xs-6">
-                        <span class="card-list-price">${{numbers.total}}</span>
-                        <span class="card-discount-price">{{numbers.cost | currency:'USD':true}}</span>
-                    </div>
+                      <div class="col-sm-8 col-xs-6">
+                          <span class="card-list-price">${{numbers.total}}</span>
+                          <span class="card-discount-price">{{numbers.cost | currency:'USD':true}}</span>
+                      </div>
                   </div>
-                <hr>
+                  <hr>
                   <mat-chip-list>
-                    <mat-chip  *ngIf="!numbers.showDetails"
-                               (click)="numbers.showDetails = !numbers.showDetails"
-                               color="warn" selected="true">Buy
-                    </mat-chip>
-                    <mat-chip>Cart</mat-chip>
+                      <mat-chip  *ngIf="!numbers.showDetails"
+                                 (click)="numbers.showDetails = !numbers.showDetails"
+                                 color="warn" selected="true">Buy
+                      </mat-chip>
+                     <mat-chip>Add to Cart</mat-chip>
                   </mat-chip-list>
               </div>
               <!--show details-->
               <div  class="card-body" *ngIf="numbers.showDetails">
                 <h4 class="card-title"><b>{{numbers.cardtitle}}</b></h4>
+                <div>
+                  <span matTooltip="Author">
+                    <span class="label label-info">{{numbers.nam | lowercase}}</span>
+                  </span>
+                  <span class="label label-success">10% Discount</span>
+                </div>
                 Sub-Total:  <span class="card-discount-price">{{numbers.total | currency:'USD':true}}</span>
-                Discout: <span class="card-discount-price">-{{numbers.total * 10 / 100 | currency:'USD':true}}</span>
+                Discout: <span class="card-discount-price">-
+                {{numbers.total * 10 / 100 | currency:'USD':true}}</span>
                 <hr>
                 final: {{finalvalue}}
                 Total:  <span class="card-discount-price">{{numbers.cost | currency:'USD':true}}</span>
                 <mat-chip-list>
-                  <mat-chip color="accent" selected="true">Check Out</mat-chip>
-                  <mat-chip color="warn" selected="true"
-                            (click)="numbers.showDetails = !numbers.showDetails">Cancel
-                  </mat-chip>
+                    <span matTooltip="Check Out">
+                      <mat-chip color="accent" selected="true">Check Out</mat-chip>
+                    </span>
+                    <span matTooltip="Cancel">
+                      <mat-chip color="warn" selected="true"
+                              (click)="numbers.showDetails = !numbers.showDetails">Cancel
+                      </mat-chip>
+                    </span>
                 </mat-chip-list>
               </div>
               <!--show details end-->
@@ -68,7 +79,8 @@
   <section class="row hacc">
     <div class="juk">
       <h1 class="jur"><b>The Right Team For Your JavaScript Project.</b></h1>
-      <p class="jurr">We've developed solutions for companies in many different industries, from e-commerce to security.     No matter what your team's focus, we're able to dive in and assist.</p>
+      <p class="jurr">We've developed solutions for companies in many different industries, from e-commerce
+        to security.No matter what your team's focus, we're able to dive in and assist.</p>
     </div>
   </section>
   <section class="container-fluid hdf row">
@@ -97,9 +109,9 @@
             <p>CyberDude Admin <br/>Panel</p>
           </div>
       </div>
-        <div class="col-sm-6 text-center" style="padding: 14px;">
+      <div class="col-sm-6 text-center" style="padding: 14px;">
           <P><a routerLink="/about"> About us</a><br/>Cyberdude, all rights reserved. 2017 ©</P>
-        </div>
+      </div>
   </div>
 <!--footer end-->
 
