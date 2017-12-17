@@ -9,11 +9,11 @@
   </div>
 <!--courses started-->
   <div class="cha row">
-      <div class="col-sm-2 col-xs-6 kk"  *ngFor="let numbers of myLise | course: search">
+      <div class="col-sm-2 col-xs-6"  *ngFor="let numbers of myLise | course: search">
           <div class="card thumbnail">
               <img  (click)="onSelect(numbers)" src="../../assets/Images/course/{{numbers.pic}}.jpg"
                     alt="Card image" class="sdf">
-              <div class="card-body">
+              <div class="card-body" *ngIf="!numbers.showDetails">
                   <h4 class="card-title"><b>{{numbers.cardtitle}}</b></h4>
                   <p class="card-text">{{numbers.nam | lowercase}}</p>
                 <!--rating added-->
@@ -31,14 +31,34 @@
                         </button>
                       </span>
                     <div class="col-sm-8 col-xs-6">
-                        <span class="card-list-price">$30</span>
+                        <span class="card-list-price">${{numbers.total}}</span>
                         <span class="card-discount-price">{{numbers.cost | currency:'USD':true}}</span>
                     </div>
                   </div>
+
+                <hr>
+
+
                   <mat-chip-list>
-                    <mat-chip>Buy</mat-chip>
+                    <mat-chip  *ngIf="!numbers.showDetails"
+                               (click)="numbers.showDetails = !numbers.showDetails">Buy</mat-chip>
                     <mat-chip>Cart</mat-chip>
                   </mat-chip-list>
+              </div>
+<!--show details-->
+              <div  class="card-body" *ngIf="numbers.showDetails">
+                <h4 class="card-title"><b>{{numbers.cardtitle}}</b></h4>
+               Sub-Total:  <span class="card-discount-price" #num1>{{numbers.total | currency:'USD':true}}</span>
+               Discout: {{num1 }}
+                Total:  <span class="card-discount-price">{{numbers.cost | currency:'USD':true}}</span>
+
+                <hr>
+                <mat-chip-list>
+                  <mat-chip color="accent" selected="true">Check Out</mat-chip>
+                  <mat-chip color="warn" selected="true"
+                            (click)="numbers.showDetails = !numbers.showDetails">Cancel</mat-chip>
+                </mat-chip-list>
+
               </div>
           </div>
       </div>

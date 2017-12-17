@@ -4,6 +4,7 @@
     "pic":"web1",
     "cardtitle":"The Web Bootcamp.",
     "nam":"Colt steele",
+    "total": "30",
     "cost": "12"
   },
   {
@@ -11,6 +12,7 @@
     "pic":"web2",
     "cardtitle":"Complete Python Bootcamp",
     "nam":"Jose Portilla",
+    "total": "25",
     "cost": "10"
   },
   {
@@ -18,6 +20,7 @@
     "pic":"web3",
     "cardtitle":"Complete Java Masterclass",
     "nam":"Tim Buchalka",
+    "total": "25",
     "cost": "15"
   },
   {
@@ -25,6 +28,7 @@
     "pic":"web4",
     "cardtitle":"IOS 11 & swift 4 the complete IOS App",
     "nam":"Angela Yu",
+    "total": "20",
     "cost": "17"
   },
   {
@@ -32,6 +36,7 @@
     "pic":"web5",
     "cardtitle":"The Complete web developer course",
     "nam":"Rob pervical",
+    "total": "15",
     "cost": "12"
   },
   {
@@ -39,6 +44,7 @@
     "pic":"web6",
     "cardtitle":"The complete javascript course",
     "nam":"Jonas Schmedtmann",
+    "total": "30",
     "cost": "25"
   },
   {
@@ -46,6 +52,7 @@
     "pic":"web7",
     "cardtitle":"Angular 5(formerly Angular2)",
     "nam":"Maximilian Schwazm",
+    "total": "35",
     "cost": "21"
   },
   {
@@ -53,6 +60,7 @@
     "pic":"web8",
     "cardtitle":"The Complete Angular course",
     "nam":"Mosh Hamedani",
+    "total": "35",
     "cost": "27"
   },
   {
@@ -60,6 +68,7 @@
     "pic":"web9",
     "cardtitle":"Ionic2/Ionic3- Build IOS",
     "nam":"Dion",
+    "total": "25",
     "cost": "21"
   },
   {
@@ -67,6 +76,7 @@
     "pic":"web10",
     "cardtitle":"Build a real-world ASP.NET",
     "nam":"Mosh",
+    "total": "35",
     "cost": "28"
   },
   {
@@ -74,6 +84,7 @@
     "pic":"web11",
     "cardtitle":"Vue JS 2-The Complete Guide",
     "nam":"Anthony",
+    "total": "15",
     "cost": "10"
   },
   {
@@ -81,6 +92,7 @@
     "pic":"web12",
     "cardtitle":"Angular2 + Rails 5 Bootcamp",
     "nam":"Jordan Hudgens",
+    "total": "15",
     "cost": "13"
   },
   {
@@ -88,6 +100,7 @@
     "pic":"web13",
     "cardtitle":"Learn By Example: AngularJS",
     "nam":"Loony Corn",
+    "total": "25",
     "cost": "19"
   },
   {
@@ -95,6 +108,7 @@
     "pic":"web14",
     "cardtitle":"Ultimate Angular4 & (Angular 2)",
     "nam":"Jon Bonso",
+    "total": "15",
     "cost": "10"
   },
   {
@@ -102,6 +116,7 @@
     "pic":"web15",
     "cardtitle":"Angular Styling & Animations",
     "nam":"Manzoor ",
+    "total": "30",
     "cost": "24"
   },
   {
@@ -109,6 +124,7 @@
     "pic":"web16",
     "cardtitle":"Angular & NodeJS- The MEAN ",
     "nam":"Dan Wahlin",
+    "total": "35",
     "cost": "28"
   },
   {
@@ -116,6 +132,7 @@
     "pic":"web17",
     "cardtitle":"Angular Crash Course",
     "nam":"Matthian Kentzia",
+    "total": "30",
     "cost": "21"
   },
   {
@@ -123,6 +140,7 @@
     "pic":"web18",
     "cardtitle":"Build a Real-world app ",
     "nam":"Ryan Chenkie",
+    "total": "15",
     "cost": "12"
   }
 ]
