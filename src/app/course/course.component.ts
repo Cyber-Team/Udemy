@@ -13,16 +13,20 @@ export class CourseComponent implements OnInit {
   myLise: Icourse[];
   search: string;
   starsCount: number;
-  constructor(private router: Router, private http: Http, private _course: CourseService) { }
+  finalvalue: number;
+
+  constructor(private router: Router, private http: Http, private _course: CourseService) {}
 
   ngOnInit() {
     // services added
     this._course.getData()
       .subscribe(res => this.myLise = res);
+
   }
   onSelect(numbers){
     this.router.navigate(['course', numbers.id]);
     console.log(JSON.stringify(numbers));
   }
+
 }
 

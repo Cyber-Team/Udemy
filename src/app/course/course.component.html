@@ -35,41 +35,35 @@
                         <span class="card-discount-price">{{numbers.cost | currency:'USD':true}}</span>
                     </div>
                   </div>
-
                 <hr>
-
-
                   <mat-chip-list>
                     <mat-chip  *ngIf="!numbers.showDetails"
-                               (click)="numbers.showDetails = !numbers.showDetails">Buy</mat-chip>
+                               (click)="numbers.showDetails = !numbers.showDetails"
+                               color="warn" selected="true">Buy
+                    </mat-chip>
                     <mat-chip>Cart</mat-chip>
                   </mat-chip-list>
               </div>
-<!--show details-->
+              <!--show details-->
               <div  class="card-body" *ngIf="numbers.showDetails">
                 <h4 class="card-title"><b>{{numbers.cardtitle}}</b></h4>
-               Sub-Total:  <span class="card-discount-price">{{numbers.total | currency:'USD':true}}</span>
-
-
+                Sub-Total:  <span class="card-discount-price">{{numbers.total | currency:'USD':true}}</span>
                 Discout: <span class="card-discount-price">-{{numbers.total * 10 / 100 | currency:'USD':true}}</span>
-
-
-
-                Total:  <span class="card-discount-price">{{numbers.cost | currency:'USD':true}}</span>
-
                 <hr>
+                final: {{finalvalue}}
+                Total:  <span class="card-discount-price">{{numbers.cost | currency:'USD':true}}</span>
                 <mat-chip-list>
                   <mat-chip color="accent" selected="true">Check Out</mat-chip>
                   <mat-chip color="warn" selected="true"
-                            (click)="numbers.showDetails = !numbers.showDetails">Cancel</mat-chip>
+                            (click)="numbers.showDetails = !numbers.showDetails">Cancel
+                  </mat-chip>
                 </mat-chip-list>
-
               </div>
+              <!--show details end-->
           </div>
       </div>
   </div>
 <!--course end-->
-
 <!--last section started-->
   <section class="row hacc">
     <div class="juk">
@@ -77,8 +71,6 @@
       <p class="jurr">We've developed solutions for companies in many different industries, from e-commerce to security.     No matter what your team's focus, we're able to dive in and assist.</p>
     </div>
   </section>
-
-
   <section class="container-fluid hdf row">
        <div class="col-sm-2 text-center" style="padding: 11px;">
          <img src="../../assets/Images/tool1.png" style="width:70px;"  />
@@ -94,7 +86,7 @@
       </div>
   </section>
 
-<hr/>
+  <hr/>
 <!--footer-->
   <div class="row ff">
       <div class="col-sm-6">
