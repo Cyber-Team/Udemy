@@ -15,28 +15,29 @@
   <div class="container">
     <div class="example-sidenav-content">
       <div>
-      <button type="button" mat-button (click)="drawer.toggle()">
-        <mat-icon><i class="fa fa-bars"></i></mat-icon>
-      </button>
+        <button type="button" mat-button (click)="drawer.toggle()">
+          <mat-icon><i class="fa fa-bars"></i></mat-icon>
+        </button>
       </div>
 
 
-
-      <div class="col-sm-4">
-        <div class="panel panel-default hax text-center">
-          <div class="panel-heading">
-            <h4><font size="6px"> Web Design</font> </h4>
-          </div>
-          <div class="panel-body">
-            <figure class="service-icon"><i class="fa fa-tint fa-5x"></i></figure><br><br>
-            <p> The appearance of your website make strong impression on the image of your company. A good web design                 agency with creative web designers could make it happen...
-            </p>
-            <div class="text-center" style="display: inline-block;">
-                <button  class="se">Learn more</button>
+      <div class="container">
+        <div class="col-sm-4" *ngFor="let List of ServiceList; let i=index">
+          <div class="panel panel-default hax text-center">
+            <div class="panel-heading">
+              <h4><font size="6px"> {{List.toph}}</font> </h4>
+            </div>
+            <div class="panel-body">
+              <figure class="service-icon"><i class="fa fa-tint fa-5x"></i></figure><br><br>
+              <p>{{List.service}} </p>
+              <div class="text-center" style="display: inline-block;">
+                  <button  class="se">Learn more</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
 
 
     </div>
