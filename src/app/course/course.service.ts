@@ -16,7 +16,7 @@ export class CourseService {
   }
 
   addCourse(data){
-    data.pic = 'web1';
+    data.pic = 'course';
     this.newCourse.next(data);
   }
 }

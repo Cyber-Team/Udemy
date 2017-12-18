@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Http } from '@angular/http';
 import { Icourse } from '../Interfaces/icourse';
 import { CourseService } from './course.service';
+import { UtilService } from '../services/util.service';
+
 import { Router } from "@angular/router";
 
 @Component({
@@ -13,8 +15,17 @@ export class CourseComponent implements OnInit {
   myLise: Icourse[];
   search: string;
   starsCount: number;
-
-  constructor(private router: Router, private http: Http, private _course: CourseService) {}
+  sortField: string = 'cost';
+  sortDirection: string = 'asc';
+  sortFields: Array<string> = [
+    'Price',
+    'Discount',
+    'Author'
+  ];
+  constructor( private router: Router,
+               private http: Http,
+               private _course: CourseService,
+               public utilService: UtilService ) {}
 
   ngOnInit() {
     // services added

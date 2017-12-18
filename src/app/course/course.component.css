@@ -59,3 +59,7 @@
 .thumbnail{
   min-height: 408px;
 }
+.panel{
+  box-shadow: 2px 7px 29px 0 rgba(38,38,38,.1) !important;
+  border: 0px;
+}

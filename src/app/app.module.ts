@@ -9,17 +9,17 @@ import { AppRoutingModule} from "./app.router";
 import {RouterModule, Routes} from '@angular/router';
 
 /*material desing imports*/
-import {MatButtonModule} from '@angular/material';
-import {MatMenuModule} from '@angular/material';
-import {MatIconModule} from '@angular/material';
-import {MatChipsModule} from '@angular/material';
-import {MatInputModule} from '@angular/material';
-import {MatCardModule} from '@angular/material';
-import {BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material';
+import { MatMenuModule } from '@angular/material';
+import { MatIconModule } from '@angular/material';
+import { MatChipsModule } from '@angular/material';
+import { MatInputModule } from '@angular/material';
+import { MatCardModule } from '@angular/material';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Angular2FontawesomeModule } from 'angular2-fontawesome/angular2-fontawesome';
-import {MatDialogModule} from '@angular/material';
-import {MatSidenavModule} from '@angular/material';
-import {MatTooltipModule} from '@angular/material';
+import { MatDialogModule } from '@angular/material';
+import { MatSidenavModule } from '@angular/material';
+import { MatTooltipModule } from '@angular/material';
 
 /*environment setup*/
 import {environment} from "../environments/environment";
@@ -31,12 +31,14 @@ import { AngularFireDatabaseModule} from "angularfire2/database-deprecated";*/
 /*services*/
 import { DataService } from './services/data.service';
 import { AuthService } from './services/Auth/auth.service';
-import {CourseService} from './course/course.service';
-import {UserServiceService } from './Admin/user-service.service';
+import { CourseService } from './course/course.service';
+import { UserServiceService } from './Admin/user-service.service';
+import { UtilService } from './services/util.service';
 /*pipes*/
 import { BloPipe } from './blo.pipe';
 import { BlogPipe } from './pipes/blog.pipe';
-import {RatingModule} from 'ngx-rating';
+import { CoursePipe } from './course/course.pipe';
+import { RatingModule } from 'ngx-rating';
 /*components*/
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
@@ -60,9 +62,9 @@ import { ProjectComponent } from './home/project/project.component';
 import { FeaturesComponent } from './footer/features/features.component';
 import { ServicesComponent } from './footer/services/services.component';
 import { CourseComponent } from './course/course.component';
-import { CoursePipe } from './course/course.pipe';
 import { CourseDetailsComponent } from './course/course-details/course-details.component';
 import { CourseListComponent } from './course/course-list/course-list.component';
+import { SortByPipe } from './pipes/sort-by.pipe';
 
 
 
@@ -93,7 +95,8 @@ import { CourseListComponent } from './course/course-list/course-list.component'
     CourseComponent,
     CoursePipe,
     CourseDetailsComponent,
-    CourseListComponent
+    CourseListComponent,
+    SortByPipe
   ],
   imports: [
     BrowserModule,MatSidenavModule, MatTooltipModule,
@@ -105,9 +108,8 @@ import { CourseListComponent } from './course/course-list/course-list.component'
     FormsModule, ReactiveFormsModule,
     Angular2FontawesomeModule,
     RatingModule
-
   ],
-  providers: [DataService,AuthService, UserServiceService, CourseService],
+  providers: [DataService,AuthService, UserServiceService, CourseService, UtilService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
