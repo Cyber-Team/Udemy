@@ -5,7 +5,7 @@
 ![Quality Score](https://img.shields.io/scrutinizer/g/onigoetz/daux.io.svg?style=flat-square)
 
 
-![Udemy Logo](https://www.valuecoders.com/blog/wp-content/uploads/2017/03/angular-4-release.jpg)
+![Udemy Logo](https://s33.postimg.org/mb3os4uz3/Screenshot_9.png)
 
 # Udemy
 
