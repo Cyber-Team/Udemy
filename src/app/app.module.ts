@@ -62,6 +62,7 @@ import { ServicesComponent } from './footer/services/services.component';
 import { CourseComponent } from './course/course.component';
 import { CoursePipe } from './course/course.pipe';
 import { CourseDetailsComponent } from './course/course-details/course-details.component';
+import { CourseListComponent } from './course/course-list/course-list.component';
 
 
 
@@ -91,7 +92,8 @@ import { CourseDetailsComponent } from './course/course-details/course-details.c
     ServicesComponent,
     CourseComponent,
     CoursePipe,
-    CourseDetailsComponent
+    CourseDetailsComponent,
+    CourseListComponent
   ],
   imports: [
     BrowserModule,MatSidenavModule, MatTooltipModule,
