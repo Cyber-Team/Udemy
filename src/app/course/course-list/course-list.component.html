@@ -1,3 +1,58 @@
-<p>
-  course-list works!
-</p>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4>Add a Course</h4>
+  </div>
+
+  <div class="panel-body">
+    <form #newCourseForm="ngForm" (ngSubmit)="onCourseSubmit(newCourseForm.value)">
+        <div class="form-group col-sm-4">
+          <label for="Course" class="">Course Name</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Course Name"
+            name="Course"
+            id="Course"
+            ngModel
+            required>
+        </div>
+        <div class="form-group col-sm-4">
+          <label for="Author" class="">Author</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Author Name"
+            id="Author"
+            name="Author"
+            ngModel
+            required>
+        </div>
+        <div class="form-group col-sm-4">
+          <label for="price" class="">Price</label>
+          <input
+            type="number"
+            class="form-control"
+            placeholder="Price"
+            id="price"
+            name="price"
+            ngModel
+            required>
+        </div>
+        <div class="form-group col-sm-2">
+          <label for="fullprice" class="">Price without Discount</label>
+          <input
+            type="number"
+            id="fullprice"
+            class="form-control"
+            placeholder="Price without Discount"
+            name="fullprice"
+            ngModel
+            required>
+        </div>
+        <div class="form-group col-sm-12">
+          <button class="btn btn-primary" type="submit">Add</button>
+        </div>
+    </form>
+  </div>
+</div>
+

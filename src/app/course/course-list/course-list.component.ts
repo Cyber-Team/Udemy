@@ -12,4 +12,7 @@ export class CourseListComponent implements OnInit {
   ngOnInit() {
   }
 
+  onCourseSubmit(data){
+        console.log(data);
+  }
 }

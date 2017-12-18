@@ -3,10 +3,16 @@
     <h1 class="text-light">10 Days of learning</h1>
     <p class="jurr">Check back daily to see which courses are $10</p>
   </div>
-  <div class="col-lg-12" style="float:right">
-    <input class="form-control" type="text"  placeholder="serach here by Author name..."  name="search"
-           [(ngModel)]="search" />
-  </div>
+
+<!--form started-->
+<app-course-list></app-course-list>
+<!--form ended-->
+<!--search bar started-->
+<div class="col-lg-12" style="float:right">
+  <input class="form-control" type="text"  placeholder="serach here by Author name..."  name="search"
+         [(ngModel)]="search" />
+</div>
+<!--search bar end-->
 <!--courses started-->
   <div class="cha row">
       <div class="col-sm-2 col-xs-6"  *ngFor="let numbers of myLise | course: search">
@@ -41,7 +47,7 @@
                                  (click)="numbers.showDetails = !numbers.showDetails"
                                  color="warn" selected="true">Buy
                       </mat-chip>
-                     <mat-chip>Add to Cart</mat-chip>
+                     <mat-chip>Cart</mat-chip>
                   </mat-chip-list>
               </div>
               <!--show details-->
