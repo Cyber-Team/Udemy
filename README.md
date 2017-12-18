@@ -5,7 +5,7 @@
 ![Quality Score](https://img.shields.io/scrutinizer/g/onigoetz/daux.io.svg?style=flat-square)
 
 
-
+![Udemy Logo](https://www.valuecoders.com/blog/wp-content/uploads/2017/03/angular-4-release.jpg)
 
 # Udemy
 
@@ -33,4 +33,4 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 ## Developer
 
-`Developed` By [Krishna K](https://github.com/angular/krishnaUIDev).
+`Developed` By [Krishna K](https://github.com/krishnaUIDev).
