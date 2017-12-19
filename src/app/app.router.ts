@@ -47,7 +47,7 @@ const appRoute: Routes = [
     component: CourseComponent,
   },
   {
-    path: 'course/:numbers',
+    path: 'course/:id',
     component: CourseDetailsComponent
   },
   {
