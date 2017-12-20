@@ -14,9 +14,7 @@ export class ContactFormComponent implements OnInit {
   messText: string;
   onReplyor: boolean = true;
   sendOr: string = "Send";
-  Hel = [];
-
-
+   Hel = [];
 
   constructor( private router:Router) {
 
