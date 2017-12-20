@@ -53,22 +53,3 @@ export class BlogComponent implements OnInit {
     }
   }
 }
-
-
-
-/*
-
-<div ng-app="my-app" ng-controller="controlCtrl">
-
-  <h1>{{txt| lowercase }}</h1>
-</div>
-
-<script>
-  var app= angular.module('myApp',[]);
-app.controller('controlCtrl',function ($scope) {
-  $scope.txt = "Hello world!";
-
-});
-
-  </script>
-*/

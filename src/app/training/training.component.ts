@@ -12,7 +12,7 @@ export class TrainingComponent implements OnInit {
 
   item: string[] = ['american','boom','cap','net'];
   constructor(private http: Http) { }
-//http request
+
   ngOnInit() {
     this.http.get('../assets/json/traning.json')
       .map(response => response.json())

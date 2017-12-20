@@ -6,7 +6,6 @@ import 'rxjs/add/operator/map'
 
 @Injectable()
 export class CourseService {
-
   public newCourse = new Subject<any>();
   constructor(private http:Http) { }
 

@@ -32,16 +32,12 @@ export class CourseComponent implements OnInit {
       .subscribe(res => this.myLise = res);
 
     this._course.newCourse.subscribe(
-      //data =>console.log(data)
-      //data =>this.myLise.push(data)
       data => this.myLise = [data, ...this.myLise]
     )
   }
   onSelect(numbers){
     this.router.navigate(['course', numbers.id]);
     console.log(JSON.stringify(numbers));
-
   }
-
 }
 

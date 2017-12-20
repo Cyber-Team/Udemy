@@ -16,9 +16,7 @@ export class CourseListComponent implements OnInit {
   }
 
   onCourseSubmit(data):void{
-       // console.log(data);
         this.courseService.addCourse(data);
-        // for reset values in form
         this.newCourseForm.reset();
   }
 }
