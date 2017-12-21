@@ -9,8 +9,7 @@ import {Http} from '@angular/http';
 })
 export class FooterComponent implements OnInit {
 
-  constructor(private http: Http,
-              private router: Router) { }
+  constructor(private http: Http, private router: Router) { }
 
   ngOnInit() {
   }
