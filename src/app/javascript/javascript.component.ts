@@ -12,6 +12,7 @@ export class JavascriptComponent implements OnInit {
   error: string;
   ite: any[] = ["angular","react","vue","node"];
   ites: any[] = ["typescript",'javascripts','graph','webpack'];
+
   constructor(private http: Http,private dataService: DataService) { }
 
   ngOnInit() {
