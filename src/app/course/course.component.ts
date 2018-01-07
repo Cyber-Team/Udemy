@@ -11,9 +11,11 @@ import { Router } from "@angular/router";
   styleUrls: ['./course.component.css']
 })
 export class CourseComponent implements OnInit {
-  myLise: Icourse[];
+  myLise : Icourse[];
+  goals = [1,2];
   search: string;
   starsCount: number;
+  courseCount: number;
   sortField: string = 'cost';
   sortDirection: string = 'asc';
   sortFields: Array<string> = [
@@ -33,11 +35,16 @@ export class CourseComponent implements OnInit {
 
     this._course.newCourse.subscribe(
       data => this.myLise = [data, ...this.myLise]
-    )
+    );
+    this.courseCount = this.goals.length;
   }
   onSelect(numbers){
     this.router.navigate(['course', numbers.id]);
     console.log(JSON.stringify(numbers));
   }
+  deleteItem(numbers){
+    this.myLise.splice(numbers, 1);
+  }
+
 }
 
