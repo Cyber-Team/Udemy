@@ -12,7 +12,6 @@ import { Router } from "@angular/router";
 })
 export class CourseComponent implements OnInit {
   myLise : Icourse[];
-  goals = [1,2];
   search: string;
   starsCount: number;
   courseCount: number;
@@ -36,7 +35,7 @@ export class CourseComponent implements OnInit {
     this._course.newCourse.subscribe(
       data => this.myLise = [data, ...this.myLise]
     );
-    this.courseCount = this.goals.length;
+   // this.courseCount = this.myLise.length;
   }
   onSelect(numbers){
     this.router.navigate(['course', numbers.id]);
